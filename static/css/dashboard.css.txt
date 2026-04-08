@@ -1,0 +1,74 @@
+/* dashboard.css — polished modern styles for the Ultra dashboard */
+:root{
+  --bg1:#f6fff8; --bg2:#eef7ff;
+  --panel:#ffffff; --accent:#027a48; --accent2:#0b7bcc; --danger:#e64545;
+  --muted:#64748b; --radius:12px; --shadow: 0 8px 30px rgba(6,12,20,0.06);
+  --maxw:1280px; --font: "Inter", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:var(--font);background:linear-gradient(180deg,var(--bg1),var(--bg2));color:#07121a}
+a{text-decoration:none;color:inherit}
+
+/* Topbar */
+.topbar{position:sticky;top:0;z-index:1100;background:rgba(255,255,255,0.9);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid rgba(0,0,0,0.04)}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+.title{font-weight:700}
+.subtitle{font-size:12px;color:var(--muted)}
+.top-controls{display:flex;align-items:center;gap:10px}
+
+/* layout */
+.wrap{max-width:var(--maxw);margin:18px auto;display:flex;gap:18px;padding:0 16px}
+.sidebar{width:250px;background:linear-gradient(180deg,#05311f,#0a4d30);padding:16px;border-radius:14px;color:white;box-shadow:var(--shadow);height:calc(100vh - 120px);position:sticky;top:86px;overflow:auto}
+.sidebar h4{font-size:13px;margin:0 0 12px 0}
+.nav a{display:flex;align-items:center;padding:10px;border-radius:10px;color:white;margin-bottom:6px;font-weight:600}
+.nav a:hover{background:rgba(255,255,255,0.04);transform:translateX(6px)}
+.tools{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.chip{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.06);font-weight:700}
+.tip{margin-top:12px;color:rgba(255,255,255,0.8);font-size:13px}
+
+/* content */
+.content{flex:1;min-width:720px}
+.card{background:var(--panel);padding:16px;border-radius:12px;box-shadow:var(--shadow);margin-bottom:16px}
+.card-head{display:flex;justify-content:space-between;align-items:center}
+.small{color:var(--muted);font-size:13px}
+.section-note{color:var(--muted);margin-top:8px}
+
+/* kpis */
+.kpi-row{display:flex;gap:12px;margin-top:12px}
+.kpi{display:flex;align-items:center;gap:12px;background:var(--panel);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(6,12,20,0.04);flex:1}
+.kpi .icon{width:48px;height:48;border-radius:10px;background:linear-gradient(135deg,#10b981,#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+.kpi-value{font-weight:800;font-size:20px}
+
+/* tables */
+.table-wrap{overflow:auto;margin-top:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px;border-bottom:1px solid rgba(7,18,26,0.04);text-align:center}
+th{background:linear-gradient(180deg,#f6fff8,#fff);color:#05402a}
+td.left{text-align:left;padding-left:12px}
+.badge{padding:6px 8px;border-radius:8px;color:white;font-weight:800}
+.badge.green{background:var(--accent)} .badge.red{background:var(--danger)} .badge.gray{background:#94a3b8}
+
+/* grid & charts */
+.grid-2{display:grid;grid-template-columns:1fr 420px;gap:12px}
+.mini-chart{height:220px}
+.chart-card{height:380px;padding:12px;}
+
+/* factors & simulation */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.factors-list{display:flex;flex-direction:column;gap:12px}
+.sim-controls{display:flex;gap:12px;align-items:center;margin-top:12px;flex-wrap:wrap}
+.sim-value{font-weight:900;font-size:20px;color:var(--accent)}
+
+/* modal/backdrop */
+.backdrop{position:fixed;inset:0;background:rgba(3,7,6,0.45);display:none;align-items:center;justify-content:center;z-index:1500}
+.modal{width:920px;max-width:96%;background:white;border-radius:12px;padding:16px;box-shadow:0 12px 40px rgba(6,12,20,0.4)}
+.modal-close{background:transparent;border:0;font-weight:900;cursor:pointer}
+
+/* responsive */
+@media (max-width:1100px){
+  .wrap{flex-direction:column;padding:8px}
+  .sidebar{position:relative;width:100%;height:auto}
+  .grid-2{grid-template-columns:1fr}
+  .chart-card{height:300px}
+}

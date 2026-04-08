@@ -1,0 +1,6260 @@
+{
+  "pest_cols": [
+    "Pest_Q1",
+    "Pest_Q2",
+    "Pest_Q3",
+    "Pest_Q4"
+  ],
+  "rain_cols": [
+    "Rainfall_Q1",
+    "Rainfall_Q2",
+    "Rainfall_Q3",
+    "Rainfall_Q4"
+  ],
+  "temp_cols": [
+    "Temp_Q1",
+    "Temp_Q2",
+    "Temp_Q3",
+    "Temp_Q4"
+  ],
+  "available_villages": [
+    "Anekal",
+    "Belagavi",
+    "Bhainsa",
+    "Bolpur",
+    "Chamrajnagar",
+    "Chandrapur",
+    "Chandwad",
+    "Chettipalayam",
+    "Chitradurga",
+    "Dindori",
+    "Doddaballapura",
+    "Gangavathi",
+    "Gokarna",
+    "Guntakal",
+    "Harapanahalli",
+    "Hassan",
+    "Haveri",
+    "Hosapete",
+    "Hunsur",
+    "Indapur",
+    "Jaggayyapeta",
+    "Jalgaon",
+    "Jamnagar",
+    "Kanakapura",
+    "Khanapur",
+    "Kolar",
+    "Kolaras",
+    "Kopargaon",
+    "Kottayam",
+    "Mahad",
+    "Mandya",
+    "Mangalagiri",
+    "Manjeshwar",
+    "Murud",
+    "Nandapur",
+    "Nanjangud",
+    "Narasaraopet",
+    "Narnaul",
+    "Narsipatnam",
+    "Pandaripur",
+    "Peddapalli",
+    "Pollachi",
+    "Raichur",
+    "Ranebennur",
+    "Sakleshpur",
+    "Sathyamangalam",
+    "Shahpur",
+    "Shimoga",
+    "Shivamogga",
+    "Shrirampur",
+    "Sindhanur",
+    "Siruguppa",
+    "Tandur",
+    "Tiptur",
+    "Tumakuru",
+    "Udumalpet",
+    "Unjha",
+    "Vijayapura",
+    "Wani",
+    "Yelandur",
+    "Yermal",
+    "Zaheerabad"
+  ],
+  "village_info": {
+    "Anekal": [
+      "Arecanut",
+      "Bengal Gram",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Belagavi": [
+      "Bengal Gram",
+      "Jowar",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Bhainsa": [
+      "Arecanut",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Bolpur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Potato",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Chamrajnagar": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Potato",
+      "Sunflower",
+      "Tomato",
+      "Turmeric"
+    ],
+    "Chandrapur": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato"
+    ],
+    "Chandwad": [
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Chettipalayam": [
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Chitradurga": [
+      "Bengal Gram",
+      "Groundnut",
+      "Maize",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Dindori": [
+      "Arecanut",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Doddaballapura": [
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Gangavathi": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Gokarna": [
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Guntakal": [
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Tomato",
+      "Wheat"
+    ],
+    "Harapanahalli": [
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Hassan": [
+      "Bengal Gram",
+      "Coffee",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Potato",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Haveri": [
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato"
+    ],
+    "Hosapete": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Sugarcane",
+      "Sunflower",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Hunsur": [
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Wheat"
+    ],
+    "Indapur": [
+      "Bengal Gram",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Jaggayyapeta": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Potato",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Jalgaon": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Pepper",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Jamnagar": [
+      "Arecanut",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Kanakapura": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Turmeric"
+    ],
+    "Khanapur": [
+      "Bengal Gram",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Kolar": [
+      "Bengal Gram",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Kolaras": [
+      "Bengal Gram",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Ragi",
+      "Sugarcane",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Kopargaon": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Kottayam": [
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Tomato",
+      "Turmeric"
+    ],
+    "Mahad": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Mandya": [
+      "Bengal Gram",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Mangalagiri": [
+      "Arecanut",
+      "Bengal Gram",
+      "Cotton",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Manjeshwar": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Murud": [
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Nandapur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Nanjangud": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Sugarcane",
+      "Sunflower",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Narasaraopet": [
+      "Arecanut",
+      "Cotton",
+      "Jowar",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Narnaul": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Narsipatnam": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Pepper",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Pandaripur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Sunflower",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Peddapalli": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Tomato",
+      "Wheat"
+    ],
+    "Pollachi": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Tomato",
+      "Turmeric"
+    ],
+    "Raichur": [
+      "Bengal Gram",
+      "Cotton",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Ranebennur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Sakleshpur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Turmeric"
+    ],
+    "Sathyamangalam": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Tomato",
+      "Turmeric"
+    ],
+    "Shahpur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Cotton",
+      "Jowar",
+      "Maize",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Shimoga": [
+      "Arecanut",
+      "Coffee",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Shivamogga": [
+      "Arecanut",
+      "Bengal Gram",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Shrirampur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Maize",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric"
+    ],
+    "Sindhanur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Sugarcane",
+      "Sunflower",
+      "Turmeric"
+    ],
+    "Siruguppa": [
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Tomato",
+      "Turmeric"
+    ],
+    "Tandur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Sugarcane",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Tiptur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sunflower",
+      "Wheat"
+    ],
+    "Tumakuru": [
+      "Arecanut",
+      "Bengal Gram",
+      "Cotton",
+      "Jowar",
+      "Maize",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Udumalpet": [
+      "Arecanut",
+      "Bengal Gram",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sunflower",
+      "Tomato",
+      "Wheat"
+    ],
+    "Unjha": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Potato",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Vijayapura": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Groundnut",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Wani": [
+      "Arecanut",
+      "Coffee",
+      "Cotton",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Yelandur": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Cotton",
+      "Jowar",
+      "Maize",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Paddy",
+      "Potato",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower"
+    ],
+    "Yermal": [
+      "Arecanut",
+      "Bengal Gram",
+      "Coffee",
+      "Groundnut",
+      "Jowar",
+      "Mango",
+      "Millet",
+      "Onion",
+      "Pepper",
+      "Potato",
+      "Ragi",
+      "Turmeric",
+      "Wheat"
+    ],
+    "Zaheerabad": [
+      "Bengal Gram",
+      "Cotton",
+      "Groundnut",
+      "Maize",
+      "Mango",
+      "Onion",
+      "Paddy",
+      "Pepper",
+      "Ragi",
+      "Sugarcane",
+      "Sunflower",
+      "Tomato",
+      "Turmeric"
+    ]
+  },
+  "pest_medians": {
+    "Anekal||Arecanut": {
+      "Pest_Q1": 17.419999999999998,
+      "Pest_Q2": 21.63,
+      "Pest_Q3": 28.155,
+      "Pest_Q4": 11.13
+    },
+    "Anekal||Bengal Gram": {
+      "Pest_Q1": 4.98,
+      "Pest_Q2": 32.36,
+      "Pest_Q3": 40.865,
+      "Pest_Q4": 9.885
+    },
+    "Anekal||Jowar": {
+      "Pest_Q1": 0.89,
+      "Pest_Q2": 10.5,
+      "Pest_Q3": 29.8,
+      "Pest_Q4": 5.19
+    },
+    "Anekal||Maize": {
+      "Pest_Q1": 4.07,
+      "Pest_Q2": 10.65,
+      "Pest_Q3": 18.66,
+      "Pest_Q4": 2.6
+    },
+    "Anekal||Mango": {
+      "Pest_Q1": 1.2249999999999999,
+      "Pest_Q2": 13.719999999999999,
+      "Pest_Q3": 25.92,
+      "Pest_Q4": 5.845000000000001
+    },
+    "Anekal||Millet": {
+      "Pest_Q1": 6.85,
+      "Pest_Q2": 8.63,
+      "Pest_Q3": 19.05,
+      "Pest_Q4": 13.785
+    },
+    "Anekal||Onion": {
+      "Pest_Q1": 29.225,
+      "Pest_Q2": 33.754999999999995,
+      "Pest_Q3": 17.445,
+      "Pest_Q4": 11.629999999999999
+    },
+    "Anekal||Pepper": {
+      "Pest_Q1": 3.05,
+      "Pest_Q2": 16.51,
+      "Pest_Q3": 32.62,
+      "Pest_Q4": 6.4
+    },
+    "Anekal||Potato": {
+      "Pest_Q1": 5.39,
+      "Pest_Q2": 37.925,
+      "Pest_Q3": 49.050000000000004,
+      "Pest_Q4": 8.219999999999999
+    },
+    "Anekal||Ragi": {
+      "Pest_Q1": 0.06,
+      "Pest_Q2": 15.77,
+      "Pest_Q3": 23.75,
+      "Pest_Q4": 5.11
+    },
+    "Anekal||Sugarcane": {
+      "Pest_Q1": 18.525,
+      "Pest_Q2": 21.12,
+      "Pest_Q3": 27.865000000000002,
+      "Pest_Q4": 12.495
+    },
+    "Anekal||Sunflower": {
+      "Pest_Q1": 4.455,
+      "Pest_Q2": 32.93,
+      "Pest_Q3": 41.005,
+      "Pest_Q4": 9.375
+    },
+    "Anekal||Turmeric": {
+      "Pest_Q1": 27.5,
+      "Pest_Q2": 26.84,
+      "Pest_Q3": 23.39,
+      "Pest_Q4": 13.21
+    },
+    "Anekal||Wheat": {
+      "Pest_Q1": 0.88,
+      "Pest_Q2": 11.06,
+      "Pest_Q3": 28.01,
+      "Pest_Q4": 3.8
+    },
+    "Belagavi||Bengal Gram": {
+      "Pest_Q1": 1.62,
+      "Pest_Q2": 9.565,
+      "Pest_Q3": 24.195,
+      "Pest_Q4": 2.385
+    },
+    "Belagavi||Jowar": {
+      "Pest_Q1": 2.09,
+      "Pest_Q2": 10.440000000000001,
+      "Pest_Q3": 25.049999999999997,
+      "Pest_Q4": 4.175000000000001
+    },
+    "Belagavi||Millet": {
+      "Pest_Q1": 25.884999999999998,
+      "Pest_Q2": 26.645,
+      "Pest_Q3": 24.32,
+      "Pest_Q4": 13.4
+    },
+    "Belagavi||Onion": {
+      "Pest_Q1": 30.62,
+      "Pest_Q2": 29.555,
+      "Pest_Q3": 26.634999999999998,
+      "Pest_Q4": 15.79
+    },
+    "Belagavi||Pepper": {
+      "Pest_Q1": 2.315,
+      "Pest_Q2": 11.52,
+      "Pest_Q3": 25.75,
+      "Pest_Q4": 5.1850000000000005
+    },
+    "Belagavi||Sugarcane": {
+      "Pest_Q1": 29.46,
+      "Pest_Q2": 29.46,
+      "Pest_Q3": 24.549999999999997,
+      "Pest_Q4": 14.73
+    },
+    "Belagavi||Sunflower": {
+      "Pest_Q1": 27.95,
+      "Pest_Q2": 28.6,
+      "Pest_Q3": 25.43,
+      "Pest_Q4": 15.29
+    },
+    "Belagavi||Tomato": {
+      "Pest_Q1": 3.23,
+      "Pest_Q2": 10.75,
+      "Pest_Q3": 25.0,
+      "Pest_Q4": 5.97
+    },
+    "Belagavi||Turmeric": {
+      "Pest_Q1": 27.43,
+      "Pest_Q2": 27.270000000000003,
+      "Pest_Q3": 23.835,
+      "Pest_Q4": 13.344999999999999
+    },
+    "Belagavi||Wheat": {
+      "Pest_Q1": 16.355,
+      "Pest_Q2": 19.985,
+      "Pest_Q3": 24.505000000000003,
+      "Pest_Q4": 9.11
+    },
+    "Bhainsa||Arecanut": {
+      "Pest_Q1": 25.615000000000002,
+      "Pest_Q2": 30.785000000000004,
+      "Pest_Q3": 15.395,
+      "Pest_Q4": 15.995000000000001
+    },
+    "Bhainsa||Coffee": {
+      "Pest_Q1": 0.79,
+      "Pest_Q2": 14.48,
+      "Pest_Q3": 27.19,
+      "Pest_Q4": 4.69
+    },
+    "Bhainsa||Groundnut": {
+      "Pest_Q1": 14.155000000000001,
+      "Pest_Q2": 18.055,
+      "Pest_Q3": 20.98,
+      "Pest_Q4": 9.01
+    },
+    "Bhainsa||Jowar": {
+      "Pest_Q1": 15.825,
+      "Pest_Q2": 24.365,
+      "Pest_Q3": 16.955,
+      "Pest_Q4": 7.53
+    },
+    "Bhainsa||Mango": {
+      "Pest_Q1": 28.45,
+      "Pest_Q2": 36.1,
+      "Pest_Q3": 10.23,
+      "Pest_Q4": 8.99
+    },
+    "Bhainsa||Millet": {
+      "Pest_Q1": 9.525,
+      "Pest_Q2": 7.46,
+      "Pest_Q3": 20.795,
+      "Pest_Q4": 14.739999999999998
+    },
+    "Bhainsa||Paddy": {
+      "Pest_Q1": 29.29,
+      "Pest_Q2": 32.05,
+      "Pest_Q3": 22.92,
+      "Pest_Q4": 17.09
+    },
+    "Bhainsa||Pepper": {
+      "Pest_Q1": 15.41,
+      "Pest_Q2": 12.95,
+      "Pest_Q3": 11.235,
+      "Pest_Q4": 15.945
+    },
+    "Bhainsa||Potato": {
+      "Pest_Q1": 18.7,
+      "Pest_Q2": 21.66,
+      "Pest_Q3": 11.86,
+      "Pest_Q4": 9.02
+    },
+    "Bhainsa||Ragi": {
+      "Pest_Q1": 1.62,
+      "Pest_Q2": 14.63,
+      "Pest_Q3": 27.62,
+      "Pest_Q4": 6.06
+    },
+    "Bhainsa||Sugarcane": {
+      "Pest_Q1": 13.865,
+      "Pest_Q2": 17.919999999999998,
+      "Pest_Q3": 21.025,
+      "Pest_Q4": 13.915000000000001
+    },
+    "Bhainsa||Sunflower": {
+      "Pest_Q1": 0.11,
+      "Pest_Q2": 7.85,
+      "Pest_Q3": 25.18,
+      "Pest_Q4": 0.84
+    },
+    "Bhainsa||Turmeric": {
+      "Pest_Q1": 12.76,
+      "Pest_Q2": 20.59,
+      "Pest_Q3": 21.055,
+      "Pest_Q4": 16.3
+    },
+    "Bhainsa||Wheat": {
+      "Pest_Q1": 9.455,
+      "Pest_Q2": 16.064999999999998,
+      "Pest_Q3": 19.96,
+      "Pest_Q4": 6.255
+    },
+    "Bolpur||Arecanut": {
+      "Pest_Q1": 13.18,
+      "Pest_Q2": 3.03,
+      "Pest_Q3": 10.72,
+      "Pest_Q4": 21.57
+    },
+    "Bolpur||Bengal Gram": {
+      "Pest_Q1": 17.3,
+      "Pest_Q2": 20.48,
+      "Pest_Q3": 12.34,
+      "Pest_Q4": 5.805
+    },
+    "Bolpur||Cotton": {
+      "Pest_Q1": 21.12,
+      "Pest_Q2": 29.18,
+      "Pest_Q3": 14.6,
+      "Pest_Q4": 20.86
+    },
+    "Bolpur||Groundnut": {
+      "Pest_Q1": -0.83,
+      "Pest_Q2": 10.57,
+      "Pest_Q3": 21.95,
+      "Pest_Q4": 5.72
+    },
+    "Bolpur||Jowar": {
+      "Pest_Q1": 4.61,
+      "Pest_Q2": 36.38,
+      "Pest_Q3": 46.395,
+      "Pest_Q4": 10.16
+    },
+    "Bolpur||Maize": {
+      "Pest_Q1": 3.68,
+      "Pest_Q2": 11.3,
+      "Pest_Q3": 24.03,
+      "Pest_Q4": 4.38
+    },
+    "Bolpur||Mango": {
+      "Pest_Q1": 27.52,
+      "Pest_Q2": 28.75,
+      "Pest_Q3": 25.0,
+      "Pest_Q4": 12.76
+    },
+    "Bolpur||Millet": {
+      "Pest_Q1": 26.71,
+      "Pest_Q2": 20.6,
+      "Pest_Q3": 19.89,
+      "Pest_Q4": 20.634999999999998
+    },
+    "Bolpur||Onion": {
+      "Pest_Q1": 30.04,
+      "Pest_Q2": 34.165,
+      "Pest_Q3": 18.75,
+      "Pest_Q4": 14.080000000000002
+    },
+    "Bolpur||Paddy": {
+      "Pest_Q1": 7.185,
+      "Pest_Q2": 35.38,
+      "Pest_Q3": 42.11,
+      "Pest_Q4": 9.825
+    },
+    "Bolpur||Potato": {
+      "Pest_Q1": 15.265,
+      "Pest_Q2": 22.154999999999998,
+      "Pest_Q3": 13.8,
+      "Pest_Q4": 5.26
+    },
+    "Bolpur||Sugarcane": {
+      "Pest_Q1": 34.26,
+      "Pest_Q2": 35.385,
+      "Pest_Q3": 27.33,
+      "Pest_Q4": 18.215
+    },
+    "Bolpur||Sunflower": {
+      "Pest_Q1": 25.049999999999997,
+      "Pest_Q2": 20.77,
+      "Pest_Q3": 20.055,
+      "Pest_Q4": 22.85
+    },
+    "Bolpur||Tomato": {
+      "Pest_Q1": 1.8,
+      "Pest_Q2": 15.84,
+      "Pest_Q3": 30.45,
+      "Pest_Q4": 4.17
+    },
+    "Bolpur||Turmeric": {
+      "Pest_Q1": 6.82,
+      "Pest_Q2": 64.54,
+      "Pest_Q3": 71.03,
+      "Pest_Q4": 16.55
+    },
+    "Bolpur||Wheat": {
+      "Pest_Q1": 34.45,
+      "Pest_Q2": 35.29,
+      "Pest_Q3": 29.39,
+      "Pest_Q4": 15.95
+    },
+    "Chamrajnagar||Arecanut": {
+      "Pest_Q1": 3.56,
+      "Pest_Q2": 13.08,
+      "Pest_Q3": 30.31,
+      "Pest_Q4": 6.42
+    },
+    "Chamrajnagar||Bengal Gram": {
+      "Pest_Q1": 3.33,
+      "Pest_Q2": 7.25,
+      "Pest_Q3": 22.21,
+      "Pest_Q4": 3.95
+    },
+    "Chamrajnagar||Coffee": {
+      "Pest_Q1": 0.08,
+      "Pest_Q2": 10.76,
+      "Pest_Q3": 25.83,
+      "Pest_Q4": 0.46
+    },
+    "Chamrajnagar||Groundnut": {
+      "Pest_Q1": 1.4,
+      "Pest_Q2": 11.41,
+      "Pest_Q3": 20.065,
+      "Pest_Q4": 4.33
+    },
+    "Chamrajnagar||Jowar": {
+      "Pest_Q1": 14.75,
+      "Pest_Q2": 22.02,
+      "Pest_Q3": 15.605,
+      "Pest_Q4": 6.17
+    },
+    "Chamrajnagar||Maize": {
+      "Pest_Q1": 18.33,
+      "Pest_Q2": 24.07,
+      "Pest_Q3": 13.04,
+      "Pest_Q4": 9.84
+    },
+    "Chamrajnagar||Mango": {
+      "Pest_Q1": 2.83,
+      "Pest_Q2": 13.61,
+      "Pest_Q3": 26.66,
+      "Pest_Q4": 4.36
+    },
+    "Chamrajnagar||Millet": {
+      "Pest_Q1": 11.16,
+      "Pest_Q2": 15.094999999999999,
+      "Pest_Q3": 15.34,
+      "Pest_Q4": 7.1
+    },
+    "Chamrajnagar||Onion": {
+      "Pest_Q1": 6.98,
+      "Pest_Q2": 56.2,
+      "Pest_Q3": 60.31,
+      "Pest_Q4": 15.76
+    },
+    "Chamrajnagar||Paddy": {
+      "Pest_Q1": 23.195,
+      "Pest_Q2": 27.064999999999998,
+      "Pest_Q3": 15.504999999999999,
+      "Pest_Q4": 18.41
+    },
+    "Chamrajnagar||Potato": {
+      "Pest_Q1": 0.55,
+      "Pest_Q2": 10.63,
+      "Pest_Q3": 30.44,
+      "Pest_Q4": 5.64
+    },
+    "Chamrajnagar||Sunflower": {
+      "Pest_Q1": 25.729999999999997,
+      "Pest_Q2": 29.335,
+      "Pest_Q3": 22.415,
+      "Pest_Q4": 12.030000000000001
+    },
+    "Chamrajnagar||Tomato": {
+      "Pest_Q1": 3.58,
+      "Pest_Q2": 12.59,
+      "Pest_Q3": 32.04,
+      "Pest_Q4": 8.49
+    },
+    "Chamrajnagar||Turmeric": {
+      "Pest_Q1": 33.23,
+      "Pest_Q2": 33.115,
+      "Pest_Q3": 26.575000000000003,
+      "Pest_Q4": 16.55
+    },
+    "Chandrapur||Arecanut": {
+      "Pest_Q1": 7.43,
+      "Pest_Q2": 59.81,
+      "Pest_Q3": 65.32,
+      "Pest_Q4": 15.41
+    },
+    "Chandrapur||Coffee": {
+      "Pest_Q1": 30.634999999999998,
+      "Pest_Q2": 26.869999999999997,
+      "Pest_Q3": 23.310000000000002,
+      "Pest_Q4": 14.305
+    },
+    "Chandrapur||Cotton": {
+      "Pest_Q1": 1.73,
+      "Pest_Q2": 13.32,
+      "Pest_Q3": 30.75,
+      "Pest_Q4": 5.39
+    },
+    "Chandrapur||Groundnut": {
+      "Pest_Q1": 26.19,
+      "Pest_Q2": 28.77,
+      "Pest_Q3": 21.59,
+      "Pest_Q4": 24.71
+    },
+    "Chandrapur||Jowar": {
+      "Pest_Q1": 3.31,
+      "Pest_Q2": 10.8,
+      "Pest_Q3": 22.14,
+      "Pest_Q4": 4.11
+    },
+    "Chandrapur||Maize": {
+      "Pest_Q1": 2.3,
+      "Pest_Q2": 13.25,
+      "Pest_Q3": 29.345,
+      "Pest_Q4": 6.07
+    },
+    "Chandrapur||Mango": {
+      "Pest_Q1": 20.924999999999997,
+      "Pest_Q2": 18.7,
+      "Pest_Q3": 15.515,
+      "Pest_Q4": 25.575000000000003
+    },
+    "Chandrapur||Millet": {
+      "Pest_Q1": 15.145,
+      "Pest_Q2": 19.005,
+      "Pest_Q3": 21.22,
+      "Pest_Q4": 9.395
+    },
+    "Chandrapur||Paddy": {
+      "Pest_Q1": 28.025,
+      "Pest_Q2": 32.155,
+      "Pest_Q3": 18.095,
+      "Pest_Q4": 11.905000000000001
+    },
+    "Chandrapur||Pepper": {
+      "Pest_Q1": 28.58,
+      "Pest_Q2": 29.45,
+      "Pest_Q3": 19.51,
+      "Pest_Q4": 10.0
+    },
+    "Chandrapur||Potato": {
+      "Pest_Q1": 1.87,
+      "Pest_Q2": 17.72,
+      "Pest_Q3": 25.47,
+      "Pest_Q4": 5.74
+    },
+    "Chandrapur||Ragi": {
+      "Pest_Q1": 21.53,
+      "Pest_Q2": 23.01,
+      "Pest_Q3": 15.24,
+      "Pest_Q4": 20.34
+    },
+    "Chandrapur||Sugarcane": {
+      "Pest_Q1": -0.165,
+      "Pest_Q2": 10.629999999999999,
+      "Pest_Q3": 23.744999999999997,
+      "Pest_Q4": 3.9749999999999996
+    },
+    "Chandrapur||Sunflower": {
+      "Pest_Q1": 5.6,
+      "Pest_Q2": 12.84,
+      "Pest_Q3": 24.85,
+      "Pest_Q4": 5.84
+    },
+    "Chandrapur||Tomato": {
+      "Pest_Q1": 1.09,
+      "Pest_Q2": 7.79,
+      "Pest_Q3": 17.674999999999997,
+      "Pest_Q4": 2.66
+    },
+    "Chandwad||Bengal Gram": {
+      "Pest_Q1": 5.140000000000001,
+      "Pest_Q2": 32.635,
+      "Pest_Q3": 45.415,
+      "Pest_Q4": 9.135
+    },
+    "Chandwad||Coffee": {
+      "Pest_Q1": 3.22,
+      "Pest_Q2": 4.23,
+      "Pest_Q3": 15.16,
+      "Pest_Q4": 3.42
+    },
+    "Chandwad||Cotton": {
+      "Pest_Q1": 2.1,
+      "Pest_Q2": 11.925,
+      "Pest_Q3": 21.57,
+      "Pest_Q4": 4.255
+    },
+    "Chandwad||Groundnut": {
+      "Pest_Q1": 36.03,
+      "Pest_Q2": 37.15,
+      "Pest_Q3": 25.95,
+      "Pest_Q4": 19.67
+    },
+    "Chandwad||Jowar": {
+      "Pest_Q1": 4.79,
+      "Pest_Q2": 15.22,
+      "Pest_Q3": 28.2,
+      "Pest_Q4": 3.45
+    },
+    "Chandwad||Maize": {
+      "Pest_Q1": 1.17,
+      "Pest_Q2": 4.74,
+      "Pest_Q3": 21.41,
+      "Pest_Q4": 2.47
+    },
+    "Chandwad||Mango": {
+      "Pest_Q1": 18.8,
+      "Pest_Q2": 19.37,
+      "Pest_Q3": 11.23,
+      "Pest_Q4": 10.75
+    },
+    "Chandwad||Onion": {
+      "Pest_Q1": 2.98,
+      "Pest_Q2": 9.254999999999999,
+      "Pest_Q3": 23.275,
+      "Pest_Q4": 3.4850000000000003
+    },
+    "Chandwad||Paddy": {
+      "Pest_Q1": 3.68,
+      "Pest_Q2": 13.085,
+      "Pest_Q3": 26.35,
+      "Pest_Q4": 3.67
+    },
+    "Chandwad||Pepper": {
+      "Pest_Q1": 3.35,
+      "Pest_Q2": 15.37,
+      "Pest_Q3": 32.89,
+      "Pest_Q4": 6.93
+    },
+    "Chandwad||Ragi": {
+      "Pest_Q1": 3.78,
+      "Pest_Q2": 11.24,
+      "Pest_Q3": 29.8,
+      "Pest_Q4": 5.09
+    },
+    "Chandwad||Sugarcane": {
+      "Pest_Q1": 3.87,
+      "Pest_Q2": 7.61,
+      "Pest_Q3": 23.54,
+      "Pest_Q4": 3.39
+    },
+    "Chandwad||Sunflower": {
+      "Pest_Q1": 0.925,
+      "Pest_Q2": 10.83,
+      "Pest_Q3": 23.35,
+      "Pest_Q4": 4.605
+    },
+    "Chandwad||Tomato": {
+      "Pest_Q1": 8.77,
+      "Pest_Q2": 65.67,
+      "Pest_Q3": 73.49,
+      "Pest_Q4": 15.38
+    },
+    "Chandwad||Turmeric": {
+      "Pest_Q1": 19.09,
+      "Pest_Q2": 24.12,
+      "Pest_Q3": 15.28,
+      "Pest_Q4": 10.79
+    },
+    "Chandwad||Wheat": {
+      "Pest_Q1": 2.5700000000000003,
+      "Pest_Q2": 10.620000000000001,
+      "Pest_Q3": 24.08,
+      "Pest_Q4": 2.48
+    },
+    "Chettipalayam||Bengal Gram": {
+      "Pest_Q1": 31.65,
+      "Pest_Q2": 38.095,
+      "Pest_Q3": 20.48,
+      "Pest_Q4": 12.735
+    },
+    "Chettipalayam||Coffee": {
+      "Pest_Q1": 25.28,
+      "Pest_Q2": 33.62,
+      "Pest_Q3": 9.16,
+      "Pest_Q4": 7.43
+    },
+    "Chettipalayam||Cotton": {
+      "Pest_Q1": 25.91,
+      "Pest_Q2": 35.45,
+      "Pest_Q3": 9.42,
+      "Pest_Q4": 9.19
+    },
+    "Chettipalayam||Groundnut": {
+      "Pest_Q1": 20.58,
+      "Pest_Q2": 20.18,
+      "Pest_Q3": 12.99,
+      "Pest_Q4": 8.43
+    },
+    "Chettipalayam||Jowar": {
+      "Pest_Q1": 1.34,
+      "Pest_Q2": 10.81,
+      "Pest_Q3": 27.54,
+      "Pest_Q4": 2.46
+    },
+    "Chettipalayam||Maize": {
+      "Pest_Q1": 32.86,
+      "Pest_Q2": 35.93,
+      "Pest_Q3": 24.28,
+      "Pest_Q4": 18.97
+    },
+    "Chettipalayam||Mango": {
+      "Pest_Q1": 11.57,
+      "Pest_Q2": 10.465,
+      "Pest_Q3": 20.59,
+      "Pest_Q4": 17.39
+    },
+    "Chettipalayam||Millet": {
+      "Pest_Q1": 12.52,
+      "Pest_Q2": 40.945,
+      "Pest_Q3": 42.379999999999995,
+      "Pest_Q4": 13.475
+    },
+    "Chettipalayam||Onion": {
+      "Pest_Q1": 8.115,
+      "Pest_Q2": 6.75,
+      "Pest_Q3": 14.98,
+      "Pest_Q4": 14.655
+    },
+    "Chettipalayam||Paddy": {
+      "Pest_Q1": 31.81,
+      "Pest_Q2": 39.73,
+      "Pest_Q3": 9.62,
+      "Pest_Q4": 9.42
+    },
+    "Chettipalayam||Pepper": {
+      "Pest_Q1": 3.9,
+      "Pest_Q2": 11.16,
+      "Pest_Q3": 28.4,
+      "Pest_Q4": 6.24
+    },
+    "Chettipalayam||Potato": {
+      "Pest_Q1": 5.15,
+      "Pest_Q2": 60.09,
+      "Pest_Q3": 66.76,
+      "Pest_Q4": 14.93
+    },
+    "Chettipalayam||Ragi": {
+      "Pest_Q1": 14.42,
+      "Pest_Q2": 24.15,
+      "Pest_Q3": 11.195,
+      "Pest_Q4": 5.165
+    },
+    "Chettipalayam||Sugarcane": {
+      "Pest_Q1": 37.37,
+      "Pest_Q2": 38.14,
+      "Pest_Q3": 33.33,
+      "Pest_Q4": 21.44
+    },
+    "Chettipalayam||Sunflower": {
+      "Pest_Q1": 13.024999999999999,
+      "Pest_Q2": 22.045,
+      "Pest_Q3": 22.744999999999997,
+      "Pest_Q4": 14.415000000000001
+    },
+    "Chettipalayam||Tomato": {
+      "Pest_Q1": 9.055,
+      "Pest_Q2": 10.745,
+      "Pest_Q3": 23.075000000000003,
+      "Pest_Q4": 17.04
+    },
+    "Chettipalayam||Wheat": {
+      "Pest_Q1": 5.03,
+      "Pest_Q2": 10.89,
+      "Pest_Q3": 26.53,
+      "Pest_Q4": 5.42
+    },
+    "Chitradurga||Bengal Gram": {
+      "Pest_Q1": 1.71,
+      "Pest_Q2": 13.47,
+      "Pest_Q3": 20.34,
+      "Pest_Q4": 4.06
+    },
+    "Chitradurga||Groundnut": {
+      "Pest_Q1": 1.82,
+      "Pest_Q2": 10.89,
+      "Pest_Q3": 19.97,
+      "Pest_Q4": 3.63
+    },
+    "Chitradurga||Maize": {
+      "Pest_Q1": 2.325,
+      "Pest_Q2": 13.95,
+      "Pest_Q3": 25.575,
+      "Pest_Q4": 4.65
+    },
+    "Chitradurga||Millet": {
+      "Pest_Q1": 1.4549999999999998,
+      "Pest_Q2": 13.585,
+      "Pest_Q3": 24.425,
+      "Pest_Q4": 4.24
+    },
+    "Chitradurga||Onion": {
+      "Pest_Q1": 1.37,
+      "Pest_Q2": 15.14,
+      "Pest_Q3": 25.85,
+      "Pest_Q4": 5.05
+    },
+    "Chitradurga||Pepper": {
+      "Pest_Q1": 2.5549999999999997,
+      "Pest_Q2": 12.84,
+      "Pest_Q3": 21.090000000000003,
+      "Pest_Q4": 3.88
+    },
+    "Chitradurga||Sunflower": {
+      "Pest_Q1": 1.08,
+      "Pest_Q2": 12.2,
+      "Pest_Q3": 21.46,
+      "Pest_Q4": 3.82
+    },
+    "Chitradurga||Tomato": {
+      "Pest_Q1": 2.19,
+      "Pest_Q2": 11.64,
+      "Pest_Q3": 21.65,
+      "Pest_Q4": 4.95
+    },
+    "Chitradurga||Turmeric": {
+      "Pest_Q1": 3.34,
+      "Pest_Q2": 14.33,
+      "Pest_Q3": 26.18,
+      "Pest_Q4": 4.49
+    },
+    "Chitradurga||Wheat": {
+      "Pest_Q1": 2.44,
+      "Pest_Q2": 10.73,
+      "Pest_Q3": 17.92,
+      "Pest_Q4": 2.82
+    },
+    "Dindori||Arecanut": {
+      "Pest_Q1": 1.7950000000000002,
+      "Pest_Q2": 11.71,
+      "Pest_Q3": 27.25,
+      "Pest_Q4": 4.585
+    },
+    "Dindori||Coffee": {
+      "Pest_Q1": 3.66,
+      "Pest_Q2": 12.15,
+      "Pest_Q3": 20.16,
+      "Pest_Q4": 7.67
+    },
+    "Dindori||Groundnut": {
+      "Pest_Q1": 0.19,
+      "Pest_Q2": 6.43,
+      "Pest_Q3": 17.71,
+      "Pest_Q4": 1.8
+    },
+    "Dindori||Jowar": {
+      "Pest_Q1": 15.84,
+      "Pest_Q2": 20.48,
+      "Pest_Q3": 25.23,
+      "Pest_Q4": 5.8
+    },
+    "Dindori||Maize": {
+      "Pest_Q1": 28.04,
+      "Pest_Q2": 34.64,
+      "Pest_Q3": 8.36,
+      "Pest_Q4": 9.14
+    },
+    "Dindori||Mango": {
+      "Pest_Q1": 4.35,
+      "Pest_Q2": 10.65,
+      "Pest_Q3": 22.41,
+      "Pest_Q4": 3.53
+    },
+    "Dindori||Millet": {
+      "Pest_Q1": 29.035,
+      "Pest_Q2": 34.11,
+      "Pest_Q3": 15.48,
+      "Pest_Q4": 11.95
+    },
+    "Dindori||Onion": {
+      "Pest_Q1": 17.965,
+      "Pest_Q2": 49.225,
+      "Pest_Q3": 42.57,
+      "Pest_Q4": 12.02
+    },
+    "Dindori||Paddy": {
+      "Pest_Q1": 9.575000000000001,
+      "Pest_Q2": 15.46,
+      "Pest_Q3": 14.075,
+      "Pest_Q4": 5.76
+    },
+    "Dindori||Pepper": {
+      "Pest_Q1": 3.13,
+      "Pest_Q2": 11.95,
+      "Pest_Q3": 22.39,
+      "Pest_Q4": 6.31
+    },
+    "Dindori||Ragi": {
+      "Pest_Q1": 3.34,
+      "Pest_Q2": 12.41,
+      "Pest_Q3": 31.12,
+      "Pest_Q4": 5.99
+    },
+    "Dindori||Sunflower": {
+      "Pest_Q1": 4.33,
+      "Pest_Q2": 11.01,
+      "Pest_Q3": 27.88,
+      "Pest_Q4": 2.7
+    },
+    "Dindori||Tomato": {
+      "Pest_Q1": 2.76,
+      "Pest_Q2": 13.81,
+      "Pest_Q3": 24.29,
+      "Pest_Q4": 4.53
+    },
+    "Dindori||Turmeric": {
+      "Pest_Q1": 3.34,
+      "Pest_Q2": 15.215,
+      "Pest_Q3": 28.425000000000004,
+      "Pest_Q4": 6.3149999999999995
+    },
+    "Dindori||Wheat": {
+      "Pest_Q1": 24.24,
+      "Pest_Q2": 25.29,
+      "Pest_Q3": 17.58,
+      "Pest_Q4": 22.2
+    },
+    "Doddaballapura||Bengal Gram": {
+      "Pest_Q1": 1.92,
+      "Pest_Q2": 13.19,
+      "Pest_Q3": 28.22,
+      "Pest_Q4": 4.91
+    },
+    "Doddaballapura||Coffee": {
+      "Pest_Q1": 0.24,
+      "Pest_Q2": 10.24,
+      "Pest_Q3": 25.81,
+      "Pest_Q4": 5.53
+    },
+    "Doddaballapura||Cotton": {
+      "Pest_Q1": 6.1049999999999995,
+      "Pest_Q2": 5.865,
+      "Pest_Q3": 17.85,
+      "Pest_Q4": 12.66
+    },
+    "Doddaballapura||Groundnut": {
+      "Pest_Q1": 31.1,
+      "Pest_Q2": 30.53,
+      "Pest_Q3": 28.17,
+      "Pest_Q4": 15.67
+    },
+    "Doddaballapura||Maize": {
+      "Pest_Q1": 13.61,
+      "Pest_Q2": 3.55,
+      "Pest_Q3": 12.55,
+      "Pest_Q4": 25.53
+    },
+    "Doddaballapura||Mango": {
+      "Pest_Q1": 25.125,
+      "Pest_Q2": 28.884999999999998,
+      "Pest_Q3": 20.009999999999998,
+      "Pest_Q4": 18.455
+    },
+    "Doddaballapura||Onion": {
+      "Pest_Q1": 17.34,
+      "Pest_Q2": 46.845,
+      "Pest_Q3": 34.465,
+      "Pest_Q4": 11.030000000000001
+    },
+    "Doddaballapura||Paddy": {
+      "Pest_Q1": 4.15,
+      "Pest_Q2": 10.84,
+      "Pest_Q3": 23.17,
+      "Pest_Q4": 2.42
+    },
+    "Doddaballapura||Pepper": {
+      "Pest_Q1": 29.23,
+      "Pest_Q2": 24.89,
+      "Pest_Q3": 23.0,
+      "Pest_Q4": 10.94
+    },
+    "Doddaballapura||Potato": {
+      "Pest_Q1": 2.38,
+      "Pest_Q2": 15.37,
+      "Pest_Q3": 28.23,
+      "Pest_Q4": 5.18
+    },
+    "Doddaballapura||Ragi": {
+      "Pest_Q1": 26.04,
+      "Pest_Q2": 34.89,
+      "Pest_Q3": 6.93,
+      "Pest_Q4": 8.1
+    },
+    "Doddaballapura||Sunflower": {
+      "Pest_Q1": 12.25,
+      "Pest_Q2": 33.4,
+      "Pest_Q3": 41.805,
+      "Pest_Q4": 23.795
+    },
+    "Doddaballapura||Tomato": {
+      "Pest_Q1": 15.149999999999999,
+      "Pest_Q2": 20.355,
+      "Pest_Q3": 25.59,
+      "Pest_Q4": 15.725
+    },
+    "Doddaballapura||Turmeric": {
+      "Pest_Q1": 10.38,
+      "Pest_Q2": 67.72,
+      "Pest_Q3": 73.95,
+      "Pest_Q4": 17.86
+    },
+    "Doddaballapura||Wheat": {
+      "Pest_Q1": 3.87,
+      "Pest_Q2": 10.69,
+      "Pest_Q3": 17.42,
+      "Pest_Q4": 2.26
+    },
+    "Gangavathi||Arecanut": {
+      "Pest_Q1": -0.26,
+      "Pest_Q2": 11.925,
+      "Pest_Q3": 23.23,
+      "Pest_Q4": 4.555
+    },
+    "Gangavathi||Coffee": {
+      "Pest_Q1": 5.455,
+      "Pest_Q2": 31.89,
+      "Pest_Q3": 43.47,
+      "Pest_Q4": 10.280000000000001
+    },
+    "Gangavathi||Cotton": {
+      "Pest_Q1": 0.93,
+      "Pest_Q2": 11.78,
+      "Pest_Q3": 24.3,
+      "Pest_Q4": 6.03
+    },
+    "Gangavathi||Groundnut": {
+      "Pest_Q1": 19.095,
+      "Pest_Q2": 47.415,
+      "Pest_Q3": 47.14,
+      "Pest_Q4": 16.14
+    },
+    "Gangavathi||Maize": {
+      "Pest_Q1": 3.94,
+      "Pest_Q2": 13.29,
+      "Pest_Q3": 26.36,
+      "Pest_Q4": 6.27
+    },
+    "Gangavathi||Mango": {
+      "Pest_Q1": 2.8,
+      "Pest_Q2": 9.34,
+      "Pest_Q3": 23.83,
+      "Pest_Q4": 4.97
+    },
+    "Gangavathi||Millet": {
+      "Pest_Q1": 8.14,
+      "Pest_Q2": 54.56,
+      "Pest_Q3": 64.27,
+      "Pest_Q4": 14.2
+    },
+    "Gangavathi||Onion": {
+      "Pest_Q1": 15.0,
+      "Pest_Q2": 9.7,
+      "Pest_Q3": 13.53,
+      "Pest_Q4": 26.55
+    },
+    "Gangavathi||Paddy": {
+      "Pest_Q1": 4.74,
+      "Pest_Q2": 10.52,
+      "Pest_Q3": 28.69,
+      "Pest_Q4": 6.45
+    },
+    "Gangavathi||Pepper": {
+      "Pest_Q1": 0.91,
+      "Pest_Q2": 9.855,
+      "Pest_Q3": 24.145000000000003,
+      "Pest_Q4": 3.855
+    },
+    "Gangavathi||Potato": {
+      "Pest_Q1": 15.295,
+      "Pest_Q2": 44.815,
+      "Pest_Q3": 41.105000000000004,
+      "Pest_Q4": 21.295
+    },
+    "Gangavathi||Ragi": {
+      "Pest_Q1": 3.17,
+      "Pest_Q2": 8.51,
+      "Pest_Q3": 21.84,
+      "Pest_Q4": 5.79
+    },
+    "Gangavathi||Sunflower": {
+      "Pest_Q1": 34.349999999999994,
+      "Pest_Q2": 33.125,
+      "Pest_Q3": 28.055,
+      "Pest_Q4": 14.935
+    },
+    "Gangavathi||Tomato": {
+      "Pest_Q1": 27.8,
+      "Pest_Q2": 35.82,
+      "Pest_Q3": 9.32,
+      "Pest_Q4": 8.86
+    },
+    "Gangavathi||Turmeric": {
+      "Pest_Q1": 3.2,
+      "Pest_Q2": 6.39,
+      "Pest_Q3": 16.67,
+      "Pest_Q4": 7.08
+    },
+    "Gangavathi||Wheat": {
+      "Pest_Q1": 3.61,
+      "Pest_Q2": 13.57,
+      "Pest_Q3": 19.01,
+      "Pest_Q4": 4.02
+    },
+    "Gokarna||Bengal Gram": {
+      "Pest_Q1": 23.4,
+      "Pest_Q2": 23.275,
+      "Pest_Q3": 16.43,
+      "Pest_Q4": 11.969999999999999
+    },
+    "Gokarna||Coffee": {
+      "Pest_Q1": 14.74,
+      "Pest_Q2": 4.08,
+      "Pest_Q3": 12.03,
+      "Pest_Q4": 23.05
+    },
+    "Gokarna||Cotton": {
+      "Pest_Q1": 8.03,
+      "Pest_Q2": 65.6,
+      "Pest_Q3": 72.38,
+      "Pest_Q4": 15.72
+    },
+    "Gokarna||Groundnut": {
+      "Pest_Q1": 1.8849999999999998,
+      "Pest_Q2": 12.175,
+      "Pest_Q3": 21.32,
+      "Pest_Q4": 5.53
+    },
+    "Gokarna||Jowar": {
+      "Pest_Q1": 29.785,
+      "Pest_Q2": 32.980000000000004,
+      "Pest_Q3": 24.375,
+      "Pest_Q4": 23.065
+    },
+    "Gokarna||Maize": {
+      "Pest_Q1": 2.15,
+      "Pest_Q2": 12.92,
+      "Pest_Q3": 28.47,
+      "Pest_Q4": 7.49
+    },
+    "Gokarna||Mango": {
+      "Pest_Q1": 3.61,
+      "Pest_Q2": 37.275,
+      "Pest_Q3": 50.145,
+      "Pest_Q4": 10.66
+    },
+    "Gokarna||Millet": {
+      "Pest_Q1": 3.29,
+      "Pest_Q2": 11.58,
+      "Pest_Q3": 21.45,
+      "Pest_Q4": 2.21
+    },
+    "Gokarna||Onion": {
+      "Pest_Q1": 1.24,
+      "Pest_Q2": 10.69,
+      "Pest_Q3": 28.38,
+      "Pest_Q4": 5.83
+    },
+    "Gokarna||Paddy": {
+      "Pest_Q1": 11.4,
+      "Pest_Q2": 3.37,
+      "Pest_Q3": 12.07,
+      "Pest_Q4": 24.87
+    },
+    "Gokarna||Potato": {
+      "Pest_Q1": 8.35,
+      "Pest_Q2": 36.53,
+      "Pest_Q3": 18.43,
+      "Pest_Q4": 6.84
+    },
+    "Gokarna||Ragi": {
+      "Pest_Q1": 3.37,
+      "Pest_Q2": 6.78,
+      "Pest_Q3": 21.31,
+      "Pest_Q4": 3.8
+    },
+    "Gokarna||Sugarcane": {
+      "Pest_Q1": 15.035,
+      "Pest_Q2": 18.86,
+      "Pest_Q3": 20.46,
+      "Pest_Q4": 14.05
+    },
+    "Gokarna||Sunflower": {
+      "Pest_Q1": 0.97,
+      "Pest_Q2": 11.08,
+      "Pest_Q3": 20.14,
+      "Pest_Q4": 2.93
+    },
+    "Gokarna||Tomato": {
+      "Pest_Q1": 9.2,
+      "Pest_Q2": 18.625,
+      "Pest_Q3": 21.12,
+      "Pest_Q4": 5.595000000000001
+    },
+    "Gokarna||Wheat": {
+      "Pest_Q1": 23.34,
+      "Pest_Q2": 28.73,
+      "Pest_Q3": 17.57,
+      "Pest_Q4": 20.2
+    },
+    "Guntakal||Bengal Gram": {
+      "Pest_Q1": 2.01,
+      "Pest_Q2": 8.83,
+      "Pest_Q3": 19.93,
+      "Pest_Q4": 2.79
+    },
+    "Guntakal||Coffee": {
+      "Pest_Q1": 38.08,
+      "Pest_Q2": 36.77,
+      "Pest_Q3": 29.55,
+      "Pest_Q4": 17.28
+    },
+    "Guntakal||Groundnut": {
+      "Pest_Q1": 18.72,
+      "Pest_Q2": 17.76,
+      "Pest_Q3": 11.8,
+      "Pest_Q4": 7.42
+    },
+    "Guntakal||Jowar": {
+      "Pest_Q1": 37.98,
+      "Pest_Q2": 35.6,
+      "Pest_Q3": 29.72,
+      "Pest_Q4": 20.12
+    },
+    "Guntakal||Mango": {
+      "Pest_Q1": 0.62,
+      "Pest_Q2": 7.98,
+      "Pest_Q3": 24.15,
+      "Pest_Q4": 2.72
+    },
+    "Guntakal||Onion": {
+      "Pest_Q1": 2.06,
+      "Pest_Q2": 10.885,
+      "Pest_Q3": 23.795,
+      "Pest_Q4": 5.24
+    },
+    "Guntakal||Paddy": {
+      "Pest_Q1": 39.02,
+      "Pest_Q2": 36.96,
+      "Pest_Q3": 30.05,
+      "Pest_Q4": 16.12
+    },
+    "Guntakal||Pepper": {
+      "Pest_Q1": 13.775,
+      "Pest_Q2": 22.665,
+      "Pest_Q3": 15.615,
+      "Pest_Q4": 5.095
+    },
+    "Guntakal||Potato": {
+      "Pest_Q1": 18.575,
+      "Pest_Q2": 20.71,
+      "Pest_Q3": 23.23,
+      "Pest_Q4": 9.86
+    },
+    "Guntakal||Ragi": {
+      "Pest_Q1": 0.73,
+      "Pest_Q2": 11.39,
+      "Pest_Q3": 23.45,
+      "Pest_Q4": 3.8
+    },
+    "Guntakal||Sugarcane": {
+      "Pest_Q1": 3.24,
+      "Pest_Q2": 13.76,
+      "Pest_Q3": 21.61,
+      "Pest_Q4": 3.63
+    },
+    "Guntakal||Tomato": {
+      "Pest_Q1": 2.95,
+      "Pest_Q2": 12.74,
+      "Pest_Q3": 18.54,
+      "Pest_Q4": 3.41
+    },
+    "Guntakal||Wheat": {
+      "Pest_Q1": 14.41,
+      "Pest_Q2": 6.29,
+      "Pest_Q3": 12.18,
+      "Pest_Q4": 10.9
+    },
+    "Harapanahalli||Coffee": {
+      "Pest_Q1": 13.97,
+      "Pest_Q2": 7.21,
+      "Pest_Q3": 14.36,
+      "Pest_Q4": 26.31
+    },
+    "Harapanahalli||Cotton": {
+      "Pest_Q1": 8.26,
+      "Pest_Q2": 8.37,
+      "Pest_Q3": 20.675,
+      "Pest_Q4": 14.195
+    },
+    "Harapanahalli||Groundnut": {
+      "Pest_Q1": 3.43,
+      "Pest_Q2": 9.79,
+      "Pest_Q3": 21.5,
+      "Pest_Q4": 3.51
+    },
+    "Harapanahalli||Jowar": {
+      "Pest_Q1": 11.229999999999999,
+      "Pest_Q2": 10.459999999999999,
+      "Pest_Q3": 22.045,
+      "Pest_Q4": 17.56
+    },
+    "Harapanahalli||Maize": {
+      "Pest_Q1": 28.86,
+      "Pest_Q2": 36.59,
+      "Pest_Q3": 11.07,
+      "Pest_Q4": 9.11
+    },
+    "Harapanahalli||Mango": {
+      "Pest_Q1": 1.37,
+      "Pest_Q2": 10.2,
+      "Pest_Q3": 20.66,
+      "Pest_Q4": 3.73
+    },
+    "Harapanahalli||Millet": {
+      "Pest_Q1": 4.7,
+      "Pest_Q2": 10.97,
+      "Pest_Q3": 30.22,
+      "Pest_Q4": 2.73
+    },
+    "Harapanahalli||Onion": {
+      "Pest_Q1": 4.5,
+      "Pest_Q2": 15.93,
+      "Pest_Q3": 26.67,
+      "Pest_Q4": 4.59
+    },
+    "Harapanahalli||Paddy": {
+      "Pest_Q1": 3.77,
+      "Pest_Q2": 12.6,
+      "Pest_Q3": 21.63,
+      "Pest_Q4": 5.77
+    },
+    "Harapanahalli||Pepper": {
+      "Pest_Q1": 30.26,
+      "Pest_Q2": 37.32,
+      "Pest_Q3": 7.6,
+      "Pest_Q4": 10.08
+    },
+    "Harapanahalli||Potato": {
+      "Pest_Q1": 3.6900000000000004,
+      "Pest_Q2": 41.504999999999995,
+      "Pest_Q3": 49.769999999999996,
+      "Pest_Q4": 11.399999999999999
+    },
+    "Harapanahalli||Sugarcane": {
+      "Pest_Q1": 24.65,
+      "Pest_Q2": 33.51,
+      "Pest_Q3": 8.92,
+      "Pest_Q4": 9.31
+    },
+    "Harapanahalli||Sunflower": {
+      "Pest_Q1": 2.63,
+      "Pest_Q2": 10.95,
+      "Pest_Q3": 26.12,
+      "Pest_Q4": 4.6
+    },
+    "Harapanahalli||Tomato": {
+      "Pest_Q1": 2.65,
+      "Pest_Q2": 18.0,
+      "Pest_Q3": 29.31,
+      "Pest_Q4": 3.24
+    },
+    "Harapanahalli||Turmeric": {
+      "Pest_Q1": 28.82,
+      "Pest_Q2": 31.5,
+      "Pest_Q3": 18.43,
+      "Pest_Q4": 24.87
+    },
+    "Harapanahalli||Wheat": {
+      "Pest_Q1": 37.24,
+      "Pest_Q2": 38.97,
+      "Pest_Q3": 32.28,
+      "Pest_Q4": 18.82
+    },
+    "Hassan||Bengal Gram": {
+      "Pest_Q1": 18.41,
+      "Pest_Q2": 18.97,
+      "Pest_Q3": 11.86,
+      "Pest_Q4": 10.01
+    },
+    "Hassan||Coffee": {
+      "Pest_Q1": 18.615000000000002,
+      "Pest_Q2": 21.72,
+      "Pest_Q3": 12.41,
+      "Pest_Q4": 9.309999999999999
+    },
+    "Hassan||Millet": {
+      "Pest_Q1": 15.67,
+      "Pest_Q2": 7.0,
+      "Pest_Q3": 11.76,
+      "Pest_Q4": 25.83
+    },
+    "Hassan||Onion": {
+      "Pest_Q1": 16.75,
+      "Pest_Q2": 7.64,
+      "Pest_Q3": 12.17,
+      "Pest_Q4": 26.0
+    },
+    "Hassan||Pepper": {
+      "Pest_Q1": 16.805,
+      "Pest_Q2": 12.940000000000001,
+      "Pest_Q3": 11.285,
+      "Pest_Q4": 17.595
+    },
+    "Hassan||Potato": {
+      "Pest_Q1": 14.440000000000001,
+      "Pest_Q2": 5.775,
+      "Pest_Q3": 11.55,
+      "Pest_Q4": 25.990000000000002
+    },
+    "Hassan||Sunflower": {
+      "Pest_Q1": 19.11,
+      "Pest_Q2": 19.04,
+      "Pest_Q3": 12.97,
+      "Pest_Q4": 11.35
+    },
+    "Hassan||Tomato": {
+      "Pest_Q1": 15.94,
+      "Pest_Q2": 7.81,
+      "Pest_Q3": 11.98,
+      "Pest_Q4": 23.89
+    },
+    "Hassan||Turmeric": {
+      "Pest_Q1": 13.91,
+      "Pest_Q2": 8.03,
+      "Pest_Q3": 13.1,
+      "Pest_Q4": 25.43
+    },
+    "Hassan||Wheat": {
+      "Pest_Q1": 18.07,
+      "Pest_Q2": 21.759999999999998,
+      "Pest_Q3": 11.74,
+      "Pest_Q4": 9.875
+    },
+    "Haveri||Bengal Gram": {
+      "Pest_Q1": 0.87,
+      "Pest_Q2": 14.47,
+      "Pest_Q3": 28.71,
+      "Pest_Q4": 5.08
+    },
+    "Haveri||Coffee": {
+      "Pest_Q1": 22.009999999999998,
+      "Pest_Q2": 24.685000000000002,
+      "Pest_Q3": 16.43,
+      "Pest_Q4": 18.174999999999997
+    },
+    "Haveri||Cotton": {
+      "Pest_Q1": 19.795,
+      "Pest_Q2": 19.75,
+      "Pest_Q3": 12.639999999999999,
+      "Pest_Q4": 25.835
+    },
+    "Haveri||Groundnut": {
+      "Pest_Q1": 17.345000000000002,
+      "Pest_Q2": 20.865000000000002,
+      "Pest_Q3": 23.555,
+      "Pest_Q4": 9.395
+    },
+    "Haveri||Jowar": {
+      "Pest_Q1": 15.765,
+      "Pest_Q2": 24.395000000000003,
+      "Pest_Q3": 18.825,
+      "Pest_Q4": 5.279999999999999
+    },
+    "Haveri||Mango": {
+      "Pest_Q1": 12.084999999999999,
+      "Pest_Q2": 21.419999999999998,
+      "Pest_Q3": 13.969999999999999,
+      "Pest_Q4": 4.355
+    },
+    "Haveri||Millet": {
+      "Pest_Q1": 3.72,
+      "Pest_Q2": 14.28,
+      "Pest_Q3": 31.44,
+      "Pest_Q4": 4.21
+    },
+    "Haveri||Onion": {
+      "Pest_Q1": -0.07,
+      "Pest_Q2": 10.55,
+      "Pest_Q3": 22.99,
+      "Pest_Q4": 6.32
+    },
+    "Haveri||Paddy": {
+      "Pest_Q1": 3.65,
+      "Pest_Q2": 14.8,
+      "Pest_Q3": 30.87,
+      "Pest_Q4": 6.62
+    },
+    "Haveri||Pepper": {
+      "Pest_Q1": 1.9500000000000002,
+      "Pest_Q2": 9.26,
+      "Pest_Q3": 24.29,
+      "Pest_Q4": 4.33
+    },
+    "Haveri||Potato": {
+      "Pest_Q1": 27.07,
+      "Pest_Q2": 30.74,
+      "Pest_Q3": 21.21,
+      "Pest_Q4": 24.16
+    },
+    "Haveri||Ragi": {
+      "Pest_Q1": 1.365,
+      "Pest_Q2": 8.15,
+      "Pest_Q3": 22.855,
+      "Pest_Q4": 3.66
+    },
+    "Haveri||Sugarcane": {
+      "Pest_Q1": 15.899999999999999,
+      "Pest_Q2": 43.879999999999995,
+      "Pest_Q3": 40.725,
+      "Pest_Q4": 18.605
+    },
+    "Haveri||Sunflower": {
+      "Pest_Q1": 18.865000000000002,
+      "Pest_Q2": 22.405,
+      "Pest_Q3": 22.72,
+      "Pest_Q4": 11.6
+    },
+    "Haveri||Tomato": {
+      "Pest_Q1": 1.21,
+      "Pest_Q2": 14.11,
+      "Pest_Q3": 29.97,
+      "Pest_Q4": 6.47
+    },
+    "Hosapete||Arecanut": {
+      "Pest_Q1": 4.04,
+      "Pest_Q2": 7.73,
+      "Pest_Q3": 20.75,
+      "Pest_Q4": 3.11
+    },
+    "Hosapete||Coffee": {
+      "Pest_Q1": 17.65,
+      "Pest_Q2": 4.88,
+      "Pest_Q3": 13.77,
+      "Pest_Q4": 27.93
+    },
+    "Hosapete||Cotton": {
+      "Pest_Q1": 1.25,
+      "Pest_Q2": 11.4,
+      "Pest_Q3": 18.95,
+      "Pest_Q4": 6.23
+    },
+    "Hosapete||Groundnut": {
+      "Pest_Q1": 1.41,
+      "Pest_Q2": 12.22,
+      "Pest_Q3": 22.75,
+      "Pest_Q4": 3.9050000000000002
+    },
+    "Hosapete||Jowar": {
+      "Pest_Q1": 9.57,
+      "Pest_Q2": 16.515,
+      "Pest_Q3": 20.28,
+      "Pest_Q4": 4.83
+    },
+    "Hosapete||Maize": {
+      "Pest_Q1": 0.35,
+      "Pest_Q2": 11.41,
+      "Pest_Q3": 23.9,
+      "Pest_Q4": 5.03
+    },
+    "Hosapete||Millet": {
+      "Pest_Q1": 9.92,
+      "Pest_Q2": 65.94,
+      "Pest_Q3": 70.73,
+      "Pest_Q4": 15.19
+    },
+    "Hosapete||Onion": {
+      "Pest_Q1": 3.13,
+      "Pest_Q2": 12.635,
+      "Pest_Q3": 27.14,
+      "Pest_Q4": 6.605
+    },
+    "Hosapete||Paddy": {
+      "Pest_Q1": 26.99,
+      "Pest_Q2": 27.99,
+      "Pest_Q3": 23.7,
+      "Pest_Q4": 12.7
+    },
+    "Hosapete||Pepper": {
+      "Pest_Q1": 22.84,
+      "Pest_Q2": 30.25,
+      "Pest_Q3": 18.5,
+      "Pest_Q4": 20.41
+    },
+    "Hosapete||Sugarcane": {
+      "Pest_Q1": 26.04,
+      "Pest_Q2": 37.97,
+      "Pest_Q3": 9.71,
+      "Pest_Q4": 8.48
+    },
+    "Hosapete||Sunflower": {
+      "Pest_Q1": 9.06,
+      "Pest_Q2": 66.44,
+      "Pest_Q3": 70.15,
+      "Pest_Q4": 15.57
+    },
+    "Hosapete||Turmeric": {
+      "Pest_Q1": 2.005,
+      "Pest_Q2": 6.470000000000001,
+      "Pest_Q3": 19.689999999999998,
+      "Pest_Q4": 5.805
+    },
+    "Hosapete||Wheat": {
+      "Pest_Q1": 33.76,
+      "Pest_Q2": 31.75,
+      "Pest_Q3": 25.64,
+      "Pest_Q4": 17.52
+    },
+    "Hunsur||Bengal Gram": {
+      "Pest_Q1": 2.14,
+      "Pest_Q2": 12.43,
+      "Pest_Q3": 28.18,
+      "Pest_Q4": 5.8
+    },
+    "Hunsur||Coffee": {
+      "Pest_Q1": 1.56,
+      "Pest_Q2": 9.12,
+      "Pest_Q3": 21.94,
+      "Pest_Q4": 4.52
+    },
+    "Hunsur||Cotton": {
+      "Pest_Q1": 3.08,
+      "Pest_Q2": 9.89,
+      "Pest_Q3": 21.15,
+      "Pest_Q4": 4.575
+    },
+    "Hunsur||Groundnut": {
+      "Pest_Q1": 37.39,
+      "Pest_Q2": 35.13,
+      "Pest_Q3": 31.24,
+      "Pest_Q4": 17.83
+    },
+    "Hunsur||Jowar": {
+      "Pest_Q1": 1.095,
+      "Pest_Q2": 9.1,
+      "Pest_Q3": 21.375,
+      "Pest_Q4": 4.215
+    },
+    "Hunsur||Maize": {
+      "Pest_Q1": 25.67,
+      "Pest_Q2": 38.73,
+      "Pest_Q3": 11.38,
+      "Pest_Q4": 6.64
+    },
+    "Hunsur||Mango": {
+      "Pest_Q1": 4.225,
+      "Pest_Q2": 39.18,
+      "Pest_Q3": 47.45,
+      "Pest_Q4": 9.43
+    },
+    "Hunsur||Millet": {
+      "Pest_Q1": 2.33,
+      "Pest_Q2": 11.56,
+      "Pest_Q3": 29.76,
+      "Pest_Q4": 2.93
+    },
+    "Hunsur||Onion": {
+      "Pest_Q1": 29.94,
+      "Pest_Q2": 30.52,
+      "Pest_Q3": 27.69,
+      "Pest_Q4": 15.5
+    },
+    "Hunsur||Paddy": {
+      "Pest_Q1": 2.96,
+      "Pest_Q2": 11.945,
+      "Pest_Q3": 23.065,
+      "Pest_Q4": 5.745
+    },
+    "Hunsur||Pepper": {
+      "Pest_Q1": 15.870000000000001,
+      "Pest_Q2": 22.12,
+      "Pest_Q3": 14.085,
+      "Pest_Q4": 5.705
+    },
+    "Hunsur||Ragi": {
+      "Pest_Q1": 39.94,
+      "Pest_Q2": 36.33,
+      "Pest_Q3": 33.99,
+      "Pest_Q4": 20.04
+    },
+    "Hunsur||Sugarcane": {
+      "Pest_Q1": 7.49,
+      "Pest_Q2": 20.79,
+      "Pest_Q3": 22.65,
+      "Pest_Q4": 8.56
+    },
+    "Hunsur||Sunflower": {
+      "Pest_Q1": 28.33,
+      "Pest_Q2": 36.82,
+      "Pest_Q3": 7.21,
+      "Pest_Q4": 5.7
+    },
+    "Hunsur||Wheat": {
+      "Pest_Q1": 28.86,
+      "Pest_Q2": 25.4,
+      "Pest_Q3": 22.79,
+      "Pest_Q4": 9.6
+    },
+    "Indapur||Bengal Gram": {
+      "Pest_Q1": 32.42,
+      "Pest_Q2": 34.27,
+      "Pest_Q3": 25.72,
+      "Pest_Q4": 15.62
+    },
+    "Indapur||Groundnut": {
+      "Pest_Q1": 8.969999999999999,
+      "Pest_Q2": 45.505,
+      "Pest_Q3": 47.599999999999994,
+      "Pest_Q4": 10.16
+    },
+    "Indapur||Jowar": {
+      "Pest_Q1": 3.43,
+      "Pest_Q2": 13.66,
+      "Pest_Q3": 30.77,
+      "Pest_Q4": 3.73
+    },
+    "Indapur||Maize": {
+      "Pest_Q1": 11.96,
+      "Pest_Q2": 20.25,
+      "Pest_Q3": 23.485,
+      "Pest_Q4": 9.855
+    },
+    "Indapur||Mango": {
+      "Pest_Q1": 36.015,
+      "Pest_Q2": 35.1,
+      "Pest_Q3": 29.244999999999997,
+      "Pest_Q4": 17.085
+    },
+    "Indapur||Millet": {
+      "Pest_Q1": 17.79,
+      "Pest_Q2": 24.395,
+      "Pest_Q3": 29.185000000000002,
+      "Pest_Q4": 13.015
+    },
+    "Indapur||Onion": {
+      "Pest_Q1": 4.87,
+      "Pest_Q2": 36.18,
+      "Pest_Q3": 45.695,
+      "Pest_Q4": 8.435
+    },
+    "Indapur||Pepper": {
+      "Pest_Q1": 4.16,
+      "Pest_Q2": 11.87,
+      "Pest_Q3": 30.79,
+      "Pest_Q4": 2.72
+    },
+    "Indapur||Potato": {
+      "Pest_Q1": 31.884999999999998,
+      "Pest_Q2": 31.21,
+      "Pest_Q3": 24.285,
+      "Pest_Q4": 21.02
+    },
+    "Indapur||Ragi": {
+      "Pest_Q1": -0.84,
+      "Pest_Q2": 13.46,
+      "Pest_Q3": 24.67,
+      "Pest_Q4": 3.55
+    },
+    "Indapur||Sugarcane": {
+      "Pest_Q1": 7.52,
+      "Pest_Q2": 56.68,
+      "Pest_Q3": 60.43,
+      "Pest_Q4": 14.59
+    },
+    "Indapur||Sunflower": {
+      "Pest_Q1": 3.72,
+      "Pest_Q2": 8.92,
+      "Pest_Q3": 18.29,
+      "Pest_Q4": 4.62
+    },
+    "Indapur||Tomato": {
+      "Pest_Q1": 26.92,
+      "Pest_Q2": 34.03,
+      "Pest_Q3": 8.18,
+      "Pest_Q4": 5.54
+    },
+    "Indapur||Turmeric": {
+      "Pest_Q1": 1.62,
+      "Pest_Q2": 8.14,
+      "Pest_Q3": 26.4,
+      "Pest_Q4": 4.65
+    },
+    "Indapur||Wheat": {
+      "Pest_Q1": 17.775,
+      "Pest_Q2": 13.725,
+      "Pest_Q3": 15.43,
+      "Pest_Q4": 22.34
+    },
+    "Jaggayyapeta||Arecanut": {
+      "Pest_Q1": 15.22,
+      "Pest_Q2": 2.59,
+      "Pest_Q3": 11.19,
+      "Pest_Q4": 28.19
+    },
+    "Jaggayyapeta||Bengal Gram": {
+      "Pest_Q1": 29.165,
+      "Pest_Q2": 30.345,
+      "Pest_Q3": 23.924999999999997,
+      "Pest_Q4": 21.555
+    },
+    "Jaggayyapeta||Coffee": {
+      "Pest_Q1": 5.33,
+      "Pest_Q2": 11.73,
+      "Pest_Q3": 25.19,
+      "Pest_Q4": 5.62
+    },
+    "Jaggayyapeta||Cotton": {
+      "Pest_Q1": 32.94,
+      "Pest_Q2": 31.86,
+      "Pest_Q3": 26.42,
+      "Pest_Q4": 16.78
+    },
+    "Jaggayyapeta||Groundnut": {
+      "Pest_Q1": 4.06,
+      "Pest_Q2": 11.13,
+      "Pest_Q3": 29.34,
+      "Pest_Q4": 3.69
+    },
+    "Jaggayyapeta||Jowar": {
+      "Pest_Q1": 3.02,
+      "Pest_Q2": 11.285,
+      "Pest_Q3": 25.14,
+      "Pest_Q4": 4.7
+    },
+    "Jaggayyapeta||Mango": {
+      "Pest_Q1": 2.55,
+      "Pest_Q2": 12.98,
+      "Pest_Q3": 23.7,
+      "Pest_Q4": 3.02
+    },
+    "Jaggayyapeta||Millet": {
+      "Pest_Q1": 2.37,
+      "Pest_Q2": 10.14,
+      "Pest_Q3": 23.07,
+      "Pest_Q4": 1.82
+    },
+    "Jaggayyapeta||Onion": {
+      "Pest_Q1": 16.24,
+      "Pest_Q2": 21.355,
+      "Pest_Q3": 17.475,
+      "Pest_Q4": 6.345000000000001
+    },
+    "Jaggayyapeta||Pepper": {
+      "Pest_Q1": 2.29,
+      "Pest_Q2": 12.91,
+      "Pest_Q3": 20.55,
+      "Pest_Q4": 6.85
+    },
+    "Jaggayyapeta||Potato": {
+      "Pest_Q1": 15.834999999999999,
+      "Pest_Q2": 19.7,
+      "Pest_Q3": 24.75,
+      "Pest_Q4": 11.46
+    },
+    "Jaggayyapeta||Sunflower": {
+      "Pest_Q1": 2.51,
+      "Pest_Q2": 14.8,
+      "Pest_Q3": 17.5,
+      "Pest_Q4": 4.97
+    },
+    "Jaggayyapeta||Tomato": {
+      "Pest_Q1": 29.2,
+      "Pest_Q2": 26.29,
+      "Pest_Q3": 23.26,
+      "Pest_Q4": 13.98
+    },
+    "Jaggayyapeta||Wheat": {
+      "Pest_Q1": 4.54,
+      "Pest_Q2": 9.93,
+      "Pest_Q3": 19.62,
+      "Pest_Q4": 5.34
+    },
+    "Jalgaon||Arecanut": {
+      "Pest_Q1": 6.91,
+      "Pest_Q2": 63.68,
+      "Pest_Q3": 70.31,
+      "Pest_Q4": 12.61
+    },
+    "Jalgaon||Bengal Gram": {
+      "Pest_Q1": 22.939999999999998,
+      "Pest_Q2": 17.765,
+      "Pest_Q3": 17.685000000000002,
+      "Pest_Q4": 22.39
+    },
+    "Jalgaon||Coffee": {
+      "Pest_Q1": 7.45,
+      "Pest_Q2": 30.49,
+      "Pest_Q3": 29.37,
+      "Pest_Q4": 13.04
+    },
+    "Jalgaon||Cotton": {
+      "Pest_Q1": 1.28,
+      "Pest_Q2": 13.93,
+      "Pest_Q3": 28.52,
+      "Pest_Q4": 7.68
+    },
+    "Jalgaon||Groundnut": {
+      "Pest_Q1": 3.35,
+      "Pest_Q2": 10.68,
+      "Pest_Q3": 22.63,
+      "Pest_Q4": 3.83
+    },
+    "Jalgaon||Jowar": {
+      "Pest_Q1": 1.34,
+      "Pest_Q2": 11.78,
+      "Pest_Q3": 27.28,
+      "Pest_Q4": 4.73
+    },
+    "Jalgaon||Maize": {
+      "Pest_Q1": 0.73,
+      "Pest_Q2": 10.92,
+      "Pest_Q3": 29.77,
+      "Pest_Q4": 5.9
+    },
+    "Jalgaon||Mango": {
+      "Pest_Q1": 16.06,
+      "Pest_Q2": 21.634999999999998,
+      "Pest_Q3": 23.455,
+      "Pest_Q4": 7.92
+    },
+    "Jalgaon||Onion": {
+      "Pest_Q1": 12.780000000000001,
+      "Pest_Q2": 19.755,
+      "Pest_Q3": 20.735,
+      "Pest_Q4": 6.085
+    },
+    "Jalgaon||Pepper": {
+      "Pest_Q1": 13.680000000000001,
+      "Pest_Q2": 42.17,
+      "Pest_Q3": 41.145,
+      "Pest_Q4": 19.23
+    },
+    "Jalgaon||Tomato": {
+      "Pest_Q1": 0.95,
+      "Pest_Q2": 11.17,
+      "Pest_Q3": 19.11,
+      "Pest_Q4": 1.57
+    },
+    "Jalgaon||Turmeric": {
+      "Pest_Q1": 4.31,
+      "Pest_Q2": 39.7,
+      "Pest_Q3": 47.92,
+      "Pest_Q4": 11.25
+    },
+    "Jalgaon||Wheat": {
+      "Pest_Q1": 27.12,
+      "Pest_Q2": 31.53,
+      "Pest_Q3": 21.44,
+      "Pest_Q4": 25.2
+    },
+    "Jamnagar||Arecanut": {
+      "Pest_Q1": 13.684999999999999,
+      "Pest_Q2": 41.3,
+      "Pest_Q3": 40.75,
+      "Pest_Q4": 17.619999999999997
+    },
+    "Jamnagar||Cotton": {
+      "Pest_Q1": 8.61,
+      "Pest_Q2": 58.1,
+      "Pest_Q3": 61.07,
+      "Pest_Q4": 15.82
+    },
+    "Jamnagar||Groundnut": {
+      "Pest_Q1": 4.67,
+      "Pest_Q2": 13.05,
+      "Pest_Q3": 28.57,
+      "Pest_Q4": 6.96
+    },
+    "Jamnagar||Jowar": {
+      "Pest_Q1": 2.86,
+      "Pest_Q2": 9.61,
+      "Pest_Q3": 24.98,
+      "Pest_Q4": 3.28
+    },
+    "Jamnagar||Maize": {
+      "Pest_Q1": 1.145,
+      "Pest_Q2": 11.77,
+      "Pest_Q3": 21.884999999999998,
+      "Pest_Q4": 3.325
+    },
+    "Jamnagar||Millet": {
+      "Pest_Q1": 26.7,
+      "Pest_Q2": 36.07,
+      "Pest_Q3": 8.68,
+      "Pest_Q4": 8.0
+    },
+    "Jamnagar||Onion": {
+      "Pest_Q1": 14.58,
+      "Pest_Q2": 6.51,
+      "Pest_Q3": 11.34,
+      "Pest_Q4": 26.23
+    },
+    "Jamnagar||Paddy": {
+      "Pest_Q1": 2.685,
+      "Pest_Q2": 32.805,
+      "Pest_Q3": 40.765,
+      "Pest_Q4": 9.525
+    },
+    "Jamnagar||Pepper": {
+      "Pest_Q1": 20.78,
+      "Pest_Q2": 24.2,
+      "Pest_Q3": 11.71,
+      "Pest_Q4": 6.72
+    },
+    "Jamnagar||Ragi": {
+      "Pest_Q1": 7.56,
+      "Pest_Q2": 54.77,
+      "Pest_Q3": 59.97,
+      "Pest_Q4": 12.25
+    },
+    "Jamnagar||Sugarcane": {
+      "Pest_Q1": 18.78,
+      "Pest_Q2": 20.015,
+      "Pest_Q3": 23.36,
+      "Pest_Q4": 11.795
+    },
+    "Jamnagar||Sunflower": {
+      "Pest_Q1": 2.72,
+      "Pest_Q2": 32.375,
+      "Pest_Q3": 41.345,
+      "Pest_Q4": 9.22
+    },
+    "Jamnagar||Tomato": {
+      "Pest_Q1": 2.05,
+      "Pest_Q2": 11.125,
+      "Pest_Q3": 20.439999999999998,
+      "Pest_Q4": 2.34
+    },
+    "Jamnagar||Turmeric": {
+      "Pest_Q1": 9.23,
+      "Pest_Q2": 56.5,
+      "Pest_Q3": 63.14,
+      "Pest_Q4": 15.28
+    },
+    "Jamnagar||Wheat": {
+      "Pest_Q1": 12.46,
+      "Pest_Q2": 37.625,
+      "Pest_Q3": 39.75,
+      "Pest_Q4": 10.66
+    },
+    "Kanakapura||Arecanut": {
+      "Pest_Q1": 2.51,
+      "Pest_Q2": 11.59,
+      "Pest_Q3": 22.41,
+      "Pest_Q4": 5.13
+    },
+    "Kanakapura||Bengal Gram": {
+      "Pest_Q1": 2.46,
+      "Pest_Q2": 11.355,
+      "Pest_Q3": 23.49,
+      "Pest_Q4": 2.8499999999999996
+    },
+    "Kanakapura||Coffee": {
+      "Pest_Q1": 9.85,
+      "Pest_Q2": 4.79,
+      "Pest_Q3": 15.475000000000001,
+      "Pest_Q4": 16.279999999999998
+    },
+    "Kanakapura||Cotton": {
+      "Pest_Q1": 1.3,
+      "Pest_Q2": 10.6,
+      "Pest_Q3": 19.22,
+      "Pest_Q4": 2.12
+    },
+    "Kanakapura||Groundnut": {
+      "Pest_Q1": 35.47,
+      "Pest_Q2": 32.67,
+      "Pest_Q3": 26.99,
+      "Pest_Q4": 19.61
+    },
+    "Kanakapura||Jowar": {
+      "Pest_Q1": 24.23,
+      "Pest_Q2": 27.79,
+      "Pest_Q3": 19.28,
+      "Pest_Q4": 21.6
+    },
+    "Kanakapura||Millet": {
+      "Pest_Q1": 1.15,
+      "Pest_Q2": 15.04,
+      "Pest_Q3": 25.68,
+      "Pest_Q4": 3.74
+    },
+    "Kanakapura||Onion": {
+      "Pest_Q1": 20.6,
+      "Pest_Q2": 19.23,
+      "Pest_Q3": 10.85,
+      "Pest_Q4": 6.37
+    },
+    "Kanakapura||Paddy": {
+      "Pest_Q1": 2.09,
+      "Pest_Q2": 14.34,
+      "Pest_Q3": 22.58,
+      "Pest_Q4": 6.43
+    },
+    "Kanakapura||Pepper": {
+      "Pest_Q1": -0.13,
+      "Pest_Q2": 9.04,
+      "Pest_Q3": 21.84,
+      "Pest_Q4": 3.42
+    },
+    "Kanakapura||Potato": {
+      "Pest_Q1": 5.48,
+      "Pest_Q2": 59.17,
+      "Pest_Q3": 64.54,
+      "Pest_Q4": 15.09
+    },
+    "Kanakapura||Ragi": {
+      "Pest_Q1": 9.82,
+      "Pest_Q2": 61.03,
+      "Pest_Q3": 64.26,
+      "Pest_Q4": 16.11
+    },
+    "Kanakapura||Sugarcane": {
+      "Pest_Q1": 23.11,
+      "Pest_Q2": 29.07,
+      "Pest_Q3": 17.07,
+      "Pest_Q4": 25.51
+    },
+    "Kanakapura||Turmeric": {
+      "Pest_Q1": 1.02,
+      "Pest_Q2": 15.19,
+      "Pest_Q3": 29.68,
+      "Pest_Q4": 2.98
+    },
+    "Khanapur||Bengal Gram": {
+      "Pest_Q1": 28.42,
+      "Pest_Q2": 34.16,
+      "Pest_Q3": 7.27,
+      "Pest_Q4": 7.54
+    },
+    "Khanapur||Cotton": {
+      "Pest_Q1": 15.275,
+      "Pest_Q2": 18.97,
+      "Pest_Q3": 22.305,
+      "Pest_Q4": 9.925
+    },
+    "Khanapur||Groundnut": {
+      "Pest_Q1": 3.9000000000000004,
+      "Pest_Q2": 12.195,
+      "Pest_Q3": 26.72,
+      "Pest_Q4": 4.045
+    },
+    "Khanapur||Jowar": {
+      "Pest_Q1": 4.24,
+      "Pest_Q2": 7.13,
+      "Pest_Q3": 24.49,
+      "Pest_Q4": 4.78
+    },
+    "Khanapur||Mango": {
+      "Pest_Q1": 11.96,
+      "Pest_Q2": 12.96,
+      "Pest_Q3": 19.7,
+      "Pest_Q4": 13.5
+    },
+    "Khanapur||Millet": {
+      "Pest_Q1": 7.675,
+      "Pest_Q2": 8.18,
+      "Pest_Q3": 16.235,
+      "Pest_Q4": 13.47
+    },
+    "Khanapur||Onion": {
+      "Pest_Q1": 5.18,
+      "Pest_Q2": 11.21,
+      "Pest_Q3": 31.9,
+      "Pest_Q4": 3.49
+    },
+    "Khanapur||Paddy": {
+      "Pest_Q1": 1.04,
+      "Pest_Q2": 11.66,
+      "Pest_Q3": 31.44,
+      "Pest_Q4": 2.98
+    },
+    "Khanapur||Pepper": {
+      "Pest_Q1": 16.465,
+      "Pest_Q2": 19.045,
+      "Pest_Q3": 21.765,
+      "Pest_Q4": 8.27
+    },
+    "Khanapur||Potato": {
+      "Pest_Q1": 15.7,
+      "Pest_Q2": 19.475,
+      "Pest_Q3": 22.295,
+      "Pest_Q4": 7.680000000000001
+    },
+    "Khanapur||Ragi": {
+      "Pest_Q1": 19.075,
+      "Pest_Q2": 46.985,
+      "Pest_Q3": 42.575,
+      "Pest_Q4": 15.745
+    },
+    "Khanapur||Sunflower": {
+      "Pest_Q1": 4.5,
+      "Pest_Q2": 9.54,
+      "Pest_Q3": 21.92,
+      "Pest_Q4": 3.6849999999999996
+    },
+    "Khanapur||Turmeric": {
+      "Pest_Q1": 1.04,
+      "Pest_Q2": 10.6,
+      "Pest_Q3": 21.88,
+      "Pest_Q4": 4.54
+    },
+    "Khanapur||Wheat": {
+      "Pest_Q1": 2.815,
+      "Pest_Q2": 9.495000000000001,
+      "Pest_Q3": 26.994999999999997,
+      "Pest_Q4": 5.65
+    },
+    "Kolar||Bengal Gram": {
+      "Pest_Q1": 3.04,
+      "Pest_Q2": 10.465,
+      "Pest_Q3": 18.785,
+      "Pest_Q4": 4.32
+    },
+    "Kolar||Mango": {
+      "Pest_Q1": 27.265,
+      "Pest_Q2": 35.055,
+      "Pest_Q3": 7.79,
+      "Pest_Q4": 7.79
+    },
+    "Kolar||Millet": {
+      "Pest_Q1": 0.0,
+      "Pest_Q2": 9.07,
+      "Pest_Q3": 21.79,
+      "Pest_Q4": 5.44
+    },
+    "Kolar||Onion": {
+      "Pest_Q1": 2.88,
+      "Pest_Q2": 9.34,
+      "Pest_Q3": 17.16,
+      "Pest_Q4": 3.85
+    },
+    "Kolar||Pepper": {
+      "Pest_Q1": 2.52,
+      "Pest_Q2": 9.35,
+      "Pest_Q3": 14.68,
+      "Pest_Q4": 5.14
+    },
+    "Kolar||Ragi": {
+      "Pest_Q1": 1.605,
+      "Pest_Q2": 8.004999999999999,
+      "Pest_Q3": 19.200000000000003,
+      "Pest_Q4": 3.2
+    },
+    "Kolar||Sunflower": {
+      "Pest_Q1": 25.975,
+      "Pest_Q2": 33.695,
+      "Pest_Q3": 8.46,
+      "Pest_Q4": 7.005000000000001
+    },
+    "Kolar||Tomato": {
+      "Pest_Q1": 25.69,
+      "Pest_Q2": 36.2,
+      "Pest_Q3": 10.47,
+      "Pest_Q4": 7.78
+    },
+    "Kolar||Turmeric": {
+      "Pest_Q1": 2.65,
+      "Pest_Q2": 7.73,
+      "Pest_Q3": 17.045,
+      "Pest_Q4": 4.035
+    },
+    "Kolar||Wheat": {
+      "Pest_Q1": 3.4050000000000002,
+      "Pest_Q2": 9.14,
+      "Pest_Q3": 18.119999999999997,
+      "Pest_Q4": 3.815
+    },
+    "Kolaras||Bengal Gram": {
+      "Pest_Q1": 16.42,
+      "Pest_Q2": 23.69,
+      "Pest_Q3": 9.64,
+      "Pest_Q4": 9.87
+    },
+    "Kolaras||Cotton": {
+      "Pest_Q1": 6.55,
+      "Pest_Q2": 10.35,
+      "Pest_Q3": 19.51,
+      "Pest_Q4": 14.865
+    },
+    "Kolaras||Groundnut": {
+      "Pest_Q1": 12.135,
+      "Pest_Q2": 17.564999999999998,
+      "Pest_Q3": 23.625,
+      "Pest_Q4": 8.41
+    },
+    "Kolaras||Jowar": {
+      "Pest_Q1": 15.49,
+      "Pest_Q2": 15.04,
+      "Pest_Q3": 12.4,
+      "Pest_Q4": 16.765
+    },
+    "Kolaras||Maize": {
+      "Pest_Q1": 0.1299999999999999,
+      "Pest_Q2": 12.865,
+      "Pest_Q3": 26.71,
+      "Pest_Q4": 7.1
+    },
+    "Kolaras||Mango": {
+      "Pest_Q1": 10.76,
+      "Pest_Q2": 62.78,
+      "Pest_Q3": 71.35,
+      "Pest_Q4": 15.99
+    },
+    "Kolaras||Millet": {
+      "Pest_Q1": 8.625,
+      "Pest_Q2": 10.865,
+      "Pest_Q3": 22.52,
+      "Pest_Q4": 15.82
+    },
+    "Kolaras||Onion": {
+      "Pest_Q1": 31.8,
+      "Pest_Q2": 27.89,
+      "Pest_Q3": 23.5,
+      "Pest_Q4": 11.91
+    },
+    "Kolaras||Pepper": {
+      "Pest_Q1": 0.14,
+      "Pest_Q2": 8.33,
+      "Pest_Q3": 20.52,
+      "Pest_Q4": 1.41
+    },
+    "Kolaras||Ragi": {
+      "Pest_Q1": 3.495,
+      "Pest_Q2": 8.495,
+      "Pest_Q3": 22.2,
+      "Pest_Q4": 4.765
+    },
+    "Kolaras||Sugarcane": {
+      "Pest_Q1": 1.22,
+      "Pest_Q2": 10.39,
+      "Pest_Q3": 23.93,
+      "Pest_Q4": 4.725
+    },
+    "Kolaras||Tomato": {
+      "Pest_Q1": 2.495,
+      "Pest_Q2": 11.7,
+      "Pest_Q3": 23.62,
+      "Pest_Q4": 4.205
+    },
+    "Kolaras||Turmeric": {
+      "Pest_Q1": 3.86,
+      "Pest_Q2": 11.59,
+      "Pest_Q3": 21.0,
+      "Pest_Q4": 6.38
+    },
+    "Kolaras||Wheat": {
+      "Pest_Q1": 20.32,
+      "Pest_Q2": 20.63,
+      "Pest_Q3": 13.24,
+      "Pest_Q4": 9.69
+    },
+    "Kopargaon||Arecanut": {
+      "Pest_Q1": 3.44,
+      "Pest_Q2": 10.530000000000001,
+      "Pest_Q3": 20.98,
+      "Pest_Q4": 3.125
+    },
+    "Kopargaon||Bengal Gram": {
+      "Pest_Q1": 9.36,
+      "Pest_Q2": 57.68,
+      "Pest_Q3": 65.88,
+      "Pest_Q4": 13.49
+    },
+    "Kopargaon||Coffee": {
+      "Pest_Q1": 0.2,
+      "Pest_Q2": 11.23,
+      "Pest_Q3": 31.24,
+      "Pest_Q4": 4.42
+    },
+    "Kopargaon||Cotton": {
+      "Pest_Q1": 20.535,
+      "Pest_Q2": 24.45,
+      "Pest_Q3": 15.305,
+      "Pest_Q4": 17.51
+    },
+    "Kopargaon||Groundnut": {
+      "Pest_Q1": 16.54,
+      "Pest_Q2": 20.14,
+      "Pest_Q3": 11.95,
+      "Pest_Q4": 6.95
+    },
+    "Kopargaon||Jowar": {
+      "Pest_Q1": 4.46,
+      "Pest_Q2": 12.66,
+      "Pest_Q3": 33.94,
+      "Pest_Q4": 4.84
+    },
+    "Kopargaon||Maize": {
+      "Pest_Q1": 4.29,
+      "Pest_Q2": 12.02,
+      "Pest_Q3": 30.0,
+      "Pest_Q4": 4.03
+    },
+    "Kopargaon||Mango": {
+      "Pest_Q1": 18.6,
+      "Pest_Q2": 17.93,
+      "Pest_Q3": 11.95,
+      "Pest_Q4": 23.4
+    },
+    "Kopargaon||Millet": {
+      "Pest_Q1": 29.08,
+      "Pest_Q2": 25.84,
+      "Pest_Q3": 26.16,
+      "Pest_Q4": 12.76
+    },
+    "Kopargaon||Paddy": {
+      "Pest_Q1": 25.26,
+      "Pest_Q2": 38.27,
+      "Pest_Q3": 8.26,
+      "Pest_Q4": 5.19
+    },
+    "Kopargaon||Pepper": {
+      "Pest_Q1": 25.75,
+      "Pest_Q2": 28.43,
+      "Pest_Q3": 17.91,
+      "Pest_Q4": 24.58
+    },
+    "Kopargaon||Potato": {
+      "Pest_Q1": -0.34,
+      "Pest_Q2": 11.77,
+      "Pest_Q3": 17.39,
+      "Pest_Q4": 4.73
+    },
+    "Kopargaon||Sugarcane": {
+      "Pest_Q1": 1.53,
+      "Pest_Q2": 13.66,
+      "Pest_Q3": 28.855,
+      "Pest_Q4": 4.18
+    },
+    "Kopargaon||Sunflower": {
+      "Pest_Q1": 21.115000000000002,
+      "Pest_Q2": 45.42,
+      "Pest_Q3": 48.13,
+      "Pest_Q4": 15.35
+    },
+    "Kopargaon||Tomato": {
+      "Pest_Q1": 0.245,
+      "Pest_Q2": 11.055,
+      "Pest_Q3": 23.265,
+      "Pest_Q4": 3.515
+    },
+    "Kopargaon||Wheat": {
+      "Pest_Q1": 8.33,
+      "Pest_Q2": 9.71,
+      "Pest_Q3": 20.02,
+      "Pest_Q4": 16.38
+    },
+    "Kottayam||Bengal Gram": {
+      "Pest_Q1": 33.8,
+      "Pest_Q2": 33.58,
+      "Pest_Q3": 27.35,
+      "Pest_Q4": 20.77
+    },
+    "Kottayam||Coffee": {
+      "Pest_Q1": 24.325000000000003,
+      "Pest_Q2": 19.11,
+      "Pest_Q3": 22.185,
+      "Pest_Q4": 20.525
+    },
+    "Kottayam||Groundnut": {
+      "Pest_Q1": 3.34,
+      "Pest_Q2": 13.63,
+      "Pest_Q3": 18.79,
+      "Pest_Q4": 6.63
+    },
+    "Kottayam||Jowar": {
+      "Pest_Q1": 17.965,
+      "Pest_Q2": 20.785,
+      "Pest_Q3": 28.494999999999997,
+      "Pest_Q4": 11.965
+    },
+    "Kottayam||Maize": {
+      "Pest_Q1": 1.97,
+      "Pest_Q2": 12.26,
+      "Pest_Q3": 23.99,
+      "Pest_Q4": 2.35
+    },
+    "Kottayam||Mango": {
+      "Pest_Q1": 5.93,
+      "Pest_Q2": 12.69,
+      "Pest_Q3": 32.43,
+      "Pest_Q4": 4.58
+    },
+    "Kottayam||Millet": {
+      "Pest_Q1": 1.25,
+      "Pest_Q2": 11.8,
+      "Pest_Q3": 30.19,
+      "Pest_Q4": 6.9
+    },
+    "Kottayam||Onion": {
+      "Pest_Q1": 14.42,
+      "Pest_Q2": 23.49,
+      "Pest_Q3": 15.37,
+      "Pest_Q4": 11.13
+    },
+    "Kottayam||Paddy": {
+      "Pest_Q1": 25.15,
+      "Pest_Q2": 29.86,
+      "Pest_Q3": 22.43,
+      "Pest_Q4": 24.21
+    },
+    "Kottayam||Pepper": {
+      "Pest_Q1": 10.575,
+      "Pest_Q2": 10.2,
+      "Pest_Q3": 18.23,
+      "Pest_Q4": 15.120000000000001
+    },
+    "Kottayam||Potato": {
+      "Pest_Q1": 3.215,
+      "Pest_Q2": 13.645,
+      "Pest_Q3": 26.755000000000003,
+      "Pest_Q4": 4.725
+    },
+    "Kottayam||Tomato": {
+      "Pest_Q1": 3.92,
+      "Pest_Q2": 9.41,
+      "Pest_Q3": 25.89,
+      "Pest_Q4": 4.3
+    },
+    "Kottayam||Turmeric": {
+      "Pest_Q1": 3.09,
+      "Pest_Q2": 12.27,
+      "Pest_Q3": 25.01,
+      "Pest_Q4": 3.9
+    },
+    "Mahad||Arecanut": {
+      "Pest_Q1": 3.02,
+      "Pest_Q2": 12.12,
+      "Pest_Q3": 22.56,
+      "Pest_Q4": 5.82
+    },
+    "Mahad||Coffee": {
+      "Pest_Q1": 2.99,
+      "Pest_Q2": 13.19,
+      "Pest_Q3": 22.06,
+      "Pest_Q4": 5.04
+    },
+    "Mahad||Cotton": {
+      "Pest_Q1": 17.56,
+      "Pest_Q2": 6.45,
+      "Pest_Q3": 12.52,
+      "Pest_Q4": 27.92
+    },
+    "Mahad||Groundnut": {
+      "Pest_Q1": 15.935,
+      "Pest_Q2": 13.15,
+      "Pest_Q3": 12.495000000000001,
+      "Pest_Q4": 15.625
+    },
+    "Mahad||Maize": {
+      "Pest_Q1": 4.34,
+      "Pest_Q2": 9.58,
+      "Pest_Q3": 22.22,
+      "Pest_Q4": 2.83
+    },
+    "Mahad||Mango": {
+      "Pest_Q1": 28.42,
+      "Pest_Q2": 30.28,
+      "Pest_Q3": 25.24,
+      "Pest_Q4": 13.74
+    },
+    "Mahad||Millet": {
+      "Pest_Q1": 26.84,
+      "Pest_Q2": 29.31,
+      "Pest_Q3": 19.5,
+      "Pest_Q4": 27.44
+    },
+    "Mahad||Paddy": {
+      "Pest_Q1": 2.8200000000000003,
+      "Pest_Q2": 9.575,
+      "Pest_Q3": 27.575,
+      "Pest_Q4": 4.335
+    },
+    "Mahad||Pepper": {
+      "Pest_Q1": 7.25,
+      "Pest_Q2": 39.71,
+      "Pest_Q3": 28.78,
+      "Pest_Q4": 10.16
+    },
+    "Mahad||Ragi": {
+      "Pest_Q1": 13.9,
+      "Pest_Q2": 25.755000000000003,
+      "Pest_Q3": 23.31,
+      "Pest_Q4": 8.899999999999999
+    },
+    "Mahad||Sunflower": {
+      "Pest_Q1": 16.735,
+      "Pest_Q2": 20.509999999999998,
+      "Pest_Q3": 26.485,
+      "Pest_Q4": 9.805
+    },
+    "Mahad||Tomato": {
+      "Pest_Q1": 18.1,
+      "Pest_Q2": 21.16,
+      "Pest_Q3": 13.89,
+      "Pest_Q4": 11.77
+    },
+    "Mahad||Wheat": {
+      "Pest_Q1": 17.779999999999998,
+      "Pest_Q2": 22.18,
+      "Pest_Q3": 24.615000000000002,
+      "Pest_Q4": 11.23
+    },
+    "Mandya||Bengal Gram": {
+      "Pest_Q1": 32.42,
+      "Pest_Q2": 29.12,
+      "Pest_Q3": 28.61,
+      "Pest_Q4": 15.9
+    },
+    "Mandya||Millet": {
+      "Pest_Q1": 32.7,
+      "Pest_Q2": 33.46,
+      "Pest_Q3": 27.18,
+      "Pest_Q4": 16.96
+    },
+    "Mandya||Onion": {
+      "Pest_Q1": 35.285,
+      "Pest_Q2": 32.99,
+      "Pest_Q3": 30.61,
+      "Pest_Q4": 17.380000000000003
+    },
+    "Mandya||Paddy": {
+      "Pest_Q1": 2.38,
+      "Pest_Q2": 11.89,
+      "Pest_Q3": 28.53,
+      "Pest_Q4": 4.755
+    },
+    "Mandya||Pepper": {
+      "Pest_Q1": 3.465,
+      "Pest_Q2": 11.245000000000001,
+      "Pest_Q3": 28.405,
+      "Pest_Q4": 4.99
+    },
+    "Mandya||Sugarcane": {
+      "Pest_Q1": 34.56,
+      "Pest_Q2": 34.56,
+      "Pest_Q3": 28.799999999999997,
+      "Pest_Q4": 17.28
+    },
+    "Mandya||Sunflower": {
+      "Pest_Q1": 30.4,
+      "Pest_Q2": 31.37,
+      "Pest_Q3": 27.23,
+      "Pest_Q4": 15.9
+    },
+    "Mandya||Tomato": {
+      "Pest_Q1": 2.41,
+      "Pest_Q2": 11.82,
+      "Pest_Q3": 28.36,
+      "Pest_Q4": 5.62
+    },
+    "Mandya||Turmeric": {
+      "Pest_Q1": 18.224999999999998,
+      "Pest_Q2": 23.69,
+      "Pest_Q3": 27.125,
+      "Pest_Q4": 11.915000000000001
+    },
+    "Mandya||Wheat": {
+      "Pest_Q1": 33.83,
+      "Pest_Q2": 34.97,
+      "Pest_Q3": 27.62,
+      "Pest_Q4": 17.42
+    },
+    "Mangalagiri||Arecanut": {
+      "Pest_Q1": 2.22,
+      "Pest_Q2": 10.66,
+      "Pest_Q3": 24.01,
+      "Pest_Q4": 5.16
+    },
+    "Mangalagiri||Bengal Gram": {
+      "Pest_Q1": 1.18,
+      "Pest_Q2": 15.94,
+      "Pest_Q3": 22.58,
+      "Pest_Q4": 4.09
+    },
+    "Mangalagiri||Cotton": {
+      "Pest_Q1": 14.350000000000001,
+      "Pest_Q2": 23.525,
+      "Pest_Q3": 16.810000000000002,
+      "Pest_Q4": 7.005000000000001
+    },
+    "Mangalagiri||Jowar": {
+      "Pest_Q1": 0.47,
+      "Pest_Q2": 15.25,
+      "Pest_Q3": 26.51,
+      "Pest_Q4": 6.33
+    },
+    "Mangalagiri||Maize": {
+      "Pest_Q1": -0.74,
+      "Pest_Q2": 5.85,
+      "Pest_Q3": 23.82,
+      "Pest_Q4": 2.43
+    },
+    "Mangalagiri||Mango": {
+      "Pest_Q1": 0.515,
+      "Pest_Q2": 9.9,
+      "Pest_Q3": 23.955,
+      "Pest_Q4": 5.94
+    },
+    "Mangalagiri||Millet": {
+      "Pest_Q1": 8.795,
+      "Pest_Q2": 14.91,
+      "Pest_Q3": 19.245,
+      "Pest_Q4": 14.175
+    },
+    "Mangalagiri||Onion": {
+      "Pest_Q1": 15.11,
+      "Pest_Q2": 7.3,
+      "Pest_Q3": 10.11,
+      "Pest_Q4": 22.09
+    },
+    "Mangalagiri||Paddy": {
+      "Pest_Q1": 9.78,
+      "Pest_Q2": 35.41,
+      "Pest_Q3": 20.23,
+      "Pest_Q4": 7.48
+    },
+    "Mangalagiri||Pepper": {
+      "Pest_Q1": 17.93,
+      "Pest_Q2": 18.68,
+      "Pest_Q3": 11.58,
+      "Pest_Q4": 10.27
+    },
+    "Mangalagiri||Potato": {
+      "Pest_Q1": 21.69,
+      "Pest_Q2": 22.97,
+      "Pest_Q3": 11.69,
+      "Pest_Q4": 10.42
+    },
+    "Mangalagiri||Sunflower": {
+      "Pest_Q1": 1.18,
+      "Pest_Q2": 5.87,
+      "Pest_Q3": 24.35,
+      "Pest_Q4": 6.25
+    },
+    "Mangalagiri||Tomato": {
+      "Pest_Q1": 20.825,
+      "Pest_Q2": 25.619999999999997,
+      "Pest_Q3": 15.155,
+      "Pest_Q4": 17.69
+    },
+    "Mangalagiri||Wheat": {
+      "Pest_Q1": -0.49,
+      "Pest_Q2": 17.31,
+      "Pest_Q3": 26.2,
+      "Pest_Q4": 3.27
+    },
+    "Manjeshwar||Arecanut": {
+      "Pest_Q1": 15.475,
+      "Pest_Q2": 23.310000000000002,
+      "Pest_Q3": 16.54,
+      "Pest_Q4": 5.48
+    },
+    "Manjeshwar||Coffee": {
+      "Pest_Q1": 3.42,
+      "Pest_Q2": 8.35,
+      "Pest_Q3": 19.99,
+      "Pest_Q4": 3.52
+    },
+    "Manjeshwar||Cotton": {
+      "Pest_Q1": 28.150000000000002,
+      "Pest_Q2": 30.955,
+      "Pest_Q3": 26.345,
+      "Pest_Q4": 20.855
+    },
+    "Manjeshwar||Groundnut": {
+      "Pest_Q1": 9.47,
+      "Pest_Q2": 52.5,
+      "Pest_Q3": 58.79,
+      "Pest_Q4": 14.67
+    },
+    "Manjeshwar||Jowar": {
+      "Pest_Q1": 14.415,
+      "Pest_Q2": 19.61,
+      "Pest_Q3": 25.92,
+      "Pest_Q4": 8.01
+    },
+    "Manjeshwar||Mango": {
+      "Pest_Q1": 0.34,
+      "Pest_Q2": 11.91,
+      "Pest_Q3": 29.55,
+      "Pest_Q4": 2.86
+    },
+    "Manjeshwar||Millet": {
+      "Pest_Q1": 30.6,
+      "Pest_Q2": 37.68,
+      "Pest_Q3": 8.62,
+      "Pest_Q4": 6.72
+    },
+    "Manjeshwar||Onion": {
+      "Pest_Q1": 20.92,
+      "Pest_Q2": 24.96,
+      "Pest_Q3": 15.41,
+      "Pest_Q4": 11.01
+    },
+    "Manjeshwar||Paddy": {
+      "Pest_Q1": 2.2,
+      "Pest_Q2": 14.31,
+      "Pest_Q3": 28.11,
+      "Pest_Q4": 2.66
+    },
+    "Manjeshwar||Pepper": {
+      "Pest_Q1": -1.12,
+      "Pest_Q2": 13.85,
+      "Pest_Q3": 28.18,
+      "Pest_Q4": 2.13
+    },
+    "Manjeshwar||Potato": {
+      "Pest_Q1": 16.8,
+      "Pest_Q2": 24.03,
+      "Pest_Q3": 19.745,
+      "Pest_Q4": 7.220000000000001
+    },
+    "Manjeshwar||Ragi": {
+      "Pest_Q1": 20.015,
+      "Pest_Q2": 24.29,
+      "Pest_Q3": 29.130000000000003,
+      "Pest_Q4": 10.69
+    },
+    "Manjeshwar||Sugarcane": {
+      "Pest_Q1": 2.22,
+      "Pest_Q2": 8.44,
+      "Pest_Q3": 23.4,
+      "Pest_Q4": 5.28
+    },
+    "Manjeshwar||Sunflower": {
+      "Pest_Q1": 34.13,
+      "Pest_Q2": 34.48,
+      "Pest_Q3": 26.38,
+      "Pest_Q4": 14.29
+    },
+    "Manjeshwar||Tomato": {
+      "Pest_Q1": 29.55,
+      "Pest_Q2": 32.04,
+      "Pest_Q3": 28.04,
+      "Pest_Q4": 15.87
+    },
+    "Manjeshwar||Turmeric": {
+      "Pest_Q1": 1.7,
+      "Pest_Q2": 8.75,
+      "Pest_Q3": 18.91,
+      "Pest_Q4": 3.15
+    },
+    "Manjeshwar||Wheat": {
+      "Pest_Q1": 31.23,
+      "Pest_Q2": 33.17,
+      "Pest_Q3": 29.49,
+      "Pest_Q4": 18.29
+    },
+    "Murud||Coffee": {
+      "Pest_Q1": 17.744999999999997,
+      "Pest_Q2": 21.425,
+      "Pest_Q3": 25.285,
+      "Pest_Q4": 9.885000000000002
+    },
+    "Murud||Cotton": {
+      "Pest_Q1": 29.810000000000002,
+      "Pest_Q2": 29.995,
+      "Pest_Q3": 26.36,
+      "Pest_Q4": 14.864999999999998
+    },
+    "Murud||Groundnut": {
+      "Pest_Q1": 14.379999999999999,
+      "Pest_Q2": 20.595,
+      "Pest_Q3": 28.28,
+      "Pest_Q4": 10.225000000000001
+    },
+    "Murud||Jowar": {
+      "Pest_Q1": 2.06,
+      "Pest_Q2": 11.705,
+      "Pest_Q3": 23.79,
+      "Pest_Q4": 5.5600000000000005
+    },
+    "Murud||Millet": {
+      "Pest_Q1": 1.2449999999999999,
+      "Pest_Q2": 9.379999999999999,
+      "Pest_Q3": 26.244999999999997,
+      "Pest_Q4": 5.300000000000001
+    },
+    "Murud||Onion": {
+      "Pest_Q1": 3.96,
+      "Pest_Q2": 12.07,
+      "Pest_Q3": 26.04,
+      "Pest_Q4": 2.95
+    },
+    "Murud||Paddy": {
+      "Pest_Q1": -0.06,
+      "Pest_Q2": 9.79,
+      "Pest_Q3": 26.76,
+      "Pest_Q4": 2.66
+    },
+    "Murud||Potato": {
+      "Pest_Q1": 1.855,
+      "Pest_Q2": 13.954999999999998,
+      "Pest_Q3": 23.02,
+      "Pest_Q4": 4.055
+    },
+    "Murud||Ragi": {
+      "Pest_Q1": 3.14,
+      "Pest_Q2": 12.03,
+      "Pest_Q3": 24.99,
+      "Pest_Q4": 6.62
+    },
+    "Murud||Sunflower": {
+      "Pest_Q1": 30.335,
+      "Pest_Q2": 32.66,
+      "Pest_Q3": 26.435,
+      "Pest_Q4": 22.545
+    },
+    "Murud||Tomato": {
+      "Pest_Q1": 5.35,
+      "Pest_Q2": 30.294999999999998,
+      "Pest_Q3": 40.075,
+      "Pest_Q4": 10.605
+    },
+    "Murud||Turmeric": {
+      "Pest_Q1": 3.38,
+      "Pest_Q2": 10.88,
+      "Pest_Q3": 23.0,
+      "Pest_Q4": 4.36
+    },
+    "Murud||Wheat": {
+      "Pest_Q1": -0.265,
+      "Pest_Q2": 10.41,
+      "Pest_Q3": 25.54,
+      "Pest_Q4": 3.6049999999999995
+    },
+    "Nandapur||Arecanut": {
+      "Pest_Q1": 27.18,
+      "Pest_Q2": 26.07,
+      "Pest_Q3": 21.44,
+      "Pest_Q4": 15.66
+    },
+    "Nandapur||Bengal Gram": {
+      "Pest_Q1": 3.17,
+      "Pest_Q2": 14.22,
+      "Pest_Q3": 27.68,
+      "Pest_Q4": 3.09
+    },
+    "Nandapur||Cotton": {
+      "Pest_Q1": 11.49,
+      "Pest_Q2": 20.425,
+      "Pest_Q3": 21.72,
+      "Pest_Q4": 13.135000000000002
+    },
+    "Nandapur||Groundnut": {
+      "Pest_Q1": 18.985,
+      "Pest_Q2": 22.419999999999998,
+      "Pest_Q3": 22.68,
+      "Pest_Q4": 9.365
+    },
+    "Nandapur||Maize": {
+      "Pest_Q1": 15.99,
+      "Pest_Q2": 7.39,
+      "Pest_Q3": 12.5,
+      "Pest_Q4": 30.47
+    },
+    "Nandapur||Mango": {
+      "Pest_Q1": 37.63,
+      "Pest_Q2": 33.09,
+      "Pest_Q3": 27.73,
+      "Pest_Q4": 18.32
+    },
+    "Nandapur||Onion": {
+      "Pest_Q1": 3.48,
+      "Pest_Q2": 11.47,
+      "Pest_Q3": 25.5,
+      "Pest_Q4": 2.18
+    },
+    "Nandapur||Paddy": {
+      "Pest_Q1": 12.02,
+      "Pest_Q2": 19.305,
+      "Pest_Q3": 21.29,
+      "Pest_Q4": 13.665
+    },
+    "Nandapur||Pepper": {
+      "Pest_Q1": 0.12,
+      "Pest_Q2": 15.33,
+      "Pest_Q3": 28.87,
+      "Pest_Q4": 4.72
+    },
+    "Nandapur||Potato": {
+      "Pest_Q1": 1.32,
+      "Pest_Q2": 10.04,
+      "Pest_Q3": 27.29,
+      "Pest_Q4": 6.87
+    },
+    "Nandapur||Ragi": {
+      "Pest_Q1": 14.235,
+      "Pest_Q2": 16.825,
+      "Pest_Q3": 25.055,
+      "Pest_Q4": 7.31
+    },
+    "Nandapur||Sunflower": {
+      "Pest_Q1": 3.15,
+      "Pest_Q2": 9.38,
+      "Pest_Q3": 20.02,
+      "Pest_Q4": 2.53
+    },
+    "Nandapur||Tomato": {
+      "Pest_Q1": 16.155,
+      "Pest_Q2": 27.08,
+      "Pest_Q3": 19.17,
+      "Pest_Q4": 7.19
+    },
+    "Nandapur||Turmeric": {
+      "Pest_Q1": 4.74,
+      "Pest_Q2": 13.44,
+      "Pest_Q3": 27.12,
+      "Pest_Q4": 4.34
+    },
+    "Nandapur||Wheat": {
+      "Pest_Q1": 0.74,
+      "Pest_Q2": 14.54,
+      "Pest_Q3": 27.09,
+      "Pest_Q4": 3.87
+    },
+    "Nanjangud||Arecanut": {
+      "Pest_Q1": 1.92,
+      "Pest_Q2": 7.81,
+      "Pest_Q3": 22.32,
+      "Pest_Q4": 4.74
+    },
+    "Nanjangud||Bengal Gram": {
+      "Pest_Q1": 28.464999999999996,
+      "Pest_Q2": 28.945,
+      "Pest_Q3": 20.03,
+      "Pest_Q4": 15.844999999999999
+    },
+    "Nanjangud||Coffee": {
+      "Pest_Q1": -0.39,
+      "Pest_Q2": 9.4,
+      "Pest_Q3": 19.95,
+      "Pest_Q4": 2.54
+    },
+    "Nanjangud||Jowar": {
+      "Pest_Q1": 2.14,
+      "Pest_Q2": 14.02,
+      "Pest_Q3": 24.015,
+      "Pest_Q4": 3.955
+    },
+    "Nanjangud||Maize": {
+      "Pest_Q1": 25.66,
+      "Pest_Q2": 32.67,
+      "Pest_Q3": 22.29,
+      "Pest_Q4": 24.98
+    },
+    "Nanjangud||Mango": {
+      "Pest_Q1": 23.83,
+      "Pest_Q2": 30.5,
+      "Pest_Q3": 19.45,
+      "Pest_Q4": 24.18
+    },
+    "Nanjangud||Millet": {
+      "Pest_Q1": 1.39,
+      "Pest_Q2": 15.03,
+      "Pest_Q3": 28.51,
+      "Pest_Q4": 6.2
+    },
+    "Nanjangud||Onion": {
+      "Pest_Q1": 20.63,
+      "Pest_Q2": 19.54,
+      "Pest_Q3": 11.98,
+      "Pest_Q4": 8.95
+    },
+    "Nanjangud||Paddy": {
+      "Pest_Q1": 24.56,
+      "Pest_Q2": 37.17,
+      "Pest_Q3": 7.97,
+      "Pest_Q4": 5.83
+    },
+    "Nanjangud||Pepper": {
+      "Pest_Q1": 14.72,
+      "Pest_Q2": 23.085,
+      "Pest_Q3": 18.725,
+      "Pest_Q4": 6.145
+    },
+    "Nanjangud||Potato": {
+      "Pest_Q1": 5.05,
+      "Pest_Q2": 15.16,
+      "Pest_Q3": 32.92,
+      "Pest_Q4": 1.93
+    },
+    "Nanjangud||Sugarcane": {
+      "Pest_Q1": 18.69,
+      "Pest_Q2": 18.97,
+      "Pest_Q3": 11.49,
+      "Pest_Q4": 11.24
+    },
+    "Nanjangud||Sunflower": {
+      "Pest_Q1": 14.35,
+      "Pest_Q2": 21.6,
+      "Pest_Q3": 13.775,
+      "Pest_Q4": 5.525
+    },
+    "Nanjangud||Turmeric": {
+      "Pest_Q1": 12.18,
+      "Pest_Q2": 19.45,
+      "Pest_Q3": 18.405,
+      "Pest_Q4": 14.525
+    },
+    "Nanjangud||Wheat": {
+      "Pest_Q1": 1.36,
+      "Pest_Q2": 11.19,
+      "Pest_Q3": 22.33,
+      "Pest_Q4": 6.52
+    },
+    "Narasaraopet||Arecanut": {
+      "Pest_Q1": 15.23,
+      "Pest_Q2": 20.795,
+      "Pest_Q3": 23.884999999999998,
+      "Pest_Q4": 15.465
+    },
+    "Narasaraopet||Cotton": {
+      "Pest_Q1": 32.01,
+      "Pest_Q2": 37.02,
+      "Pest_Q3": 9.42,
+      "Pest_Q4": 12.42
+    },
+    "Narasaraopet||Jowar": {
+      "Pest_Q1": 28.46,
+      "Pest_Q2": 26.38,
+      "Pest_Q3": 22.27,
+      "Pest_Q4": 15.03
+    },
+    "Narasaraopet||Mango": {
+      "Pest_Q1": 34.17,
+      "Pest_Q2": 34.04,
+      "Pest_Q3": 29.86,
+      "Pest_Q4": 19.88
+    },
+    "Narasaraopet||Onion": {
+      "Pest_Q1": 6.79,
+      "Pest_Q2": 39.11,
+      "Pest_Q3": 32.65,
+      "Pest_Q4": 11.98
+    },
+    "Narasaraopet||Paddy": {
+      "Pest_Q1": 3.37,
+      "Pest_Q2": 14.32,
+      "Pest_Q3": 24.41,
+      "Pest_Q4": 3.91
+    },
+    "Narasaraopet||Pepper": {
+      "Pest_Q1": 18.64,
+      "Pest_Q2": 21.72,
+      "Pest_Q3": 25.47,
+      "Pest_Q4": 10.61
+    },
+    "Narasaraopet||Potato": {
+      "Pest_Q1": 33.35,
+      "Pest_Q2": 32.52,
+      "Pest_Q3": 27.32,
+      "Pest_Q4": 16.24
+    },
+    "Narasaraopet||Ragi": {
+      "Pest_Q1": 15.74,
+      "Pest_Q2": 11.33,
+      "Pest_Q3": 12.63,
+      "Pest_Q4": 8.76
+    },
+    "Narasaraopet||Sunflower": {
+      "Pest_Q1": 18.060000000000002,
+      "Pest_Q2": 18.255,
+      "Pest_Q3": 22.195,
+      "Pest_Q4": 10.59
+    },
+    "Narasaraopet||Tomato": {
+      "Pest_Q1": 11.76,
+      "Pest_Q2": 4.04,
+      "Pest_Q3": 9.12,
+      "Pest_Q4": 26.76
+    },
+    "Narasaraopet||Turmeric": {
+      "Pest_Q1": 11.315000000000001,
+      "Pest_Q2": 16.96,
+      "Pest_Q3": 19.41,
+      "Pest_Q4": 6.13
+    },
+    "Narasaraopet||Wheat": {
+      "Pest_Q1": 2.87,
+      "Pest_Q2": 13.29,
+      "Pest_Q3": 28.52,
+      "Pest_Q4": 5.84
+    },
+    "Narnaul||Arecanut": {
+      "Pest_Q1": 37.2,
+      "Pest_Q2": 34.52,
+      "Pest_Q3": 29.61,
+      "Pest_Q4": 19.79
+    },
+    "Narnaul||Bengal Gram": {
+      "Pest_Q1": 27.91,
+      "Pest_Q2": 29.77,
+      "Pest_Q3": 22.53,
+      "Pest_Q4": 15.96
+    },
+    "Narnaul||Coffee": {
+      "Pest_Q1": 31.08,
+      "Pest_Q2": 30.46,
+      "Pest_Q3": 25.65,
+      "Pest_Q4": 17.21
+    },
+    "Narnaul||Cotton": {
+      "Pest_Q1": 13.9,
+      "Pest_Q2": 9.37,
+      "Pest_Q3": 13.48,
+      "Pest_Q4": 28.43
+    },
+    "Narnaul||Groundnut": {
+      "Pest_Q1": 2.85,
+      "Pest_Q2": 11.87,
+      "Pest_Q3": 23.15,
+      "Pest_Q4": 5.18
+    },
+    "Narnaul||Jowar": {
+      "Pest_Q1": 3.005,
+      "Pest_Q2": 31.645,
+      "Pest_Q3": 45.265,
+      "Pest_Q4": 8.785
+    },
+    "Narnaul||Mango": {
+      "Pest_Q1": 2.51,
+      "Pest_Q2": 11.96,
+      "Pest_Q3": 27.73,
+      "Pest_Q4": 6.15
+    },
+    "Narnaul||Millet": {
+      "Pest_Q1": 2.55,
+      "Pest_Q2": 12.45,
+      "Pest_Q3": 19.13,
+      "Pest_Q4": 2.53
+    },
+    "Narnaul||Onion": {
+      "Pest_Q1": 10.565000000000001,
+      "Pest_Q2": 6.13,
+      "Pest_Q3": 16.835,
+      "Pest_Q4": 17.57
+    },
+    "Narnaul||Pepper": {
+      "Pest_Q1": 32.705,
+      "Pest_Q2": 31.525,
+      "Pest_Q3": 26.875,
+      "Pest_Q4": 16.515
+    },
+    "Narnaul||Potato": {
+      "Pest_Q1": 20.07,
+      "Pest_Q2": 22.86,
+      "Pest_Q3": 11.02,
+      "Pest_Q4": 8.99
+    },
+    "Narnaul||Ragi": {
+      "Pest_Q1": 2.83,
+      "Pest_Q2": 8.84,
+      "Pest_Q3": 18.825,
+      "Pest_Q4": 3.175
+    },
+    "Narnaul||Sugarcane": {
+      "Pest_Q1": 2.06,
+      "Pest_Q2": 13.78,
+      "Pest_Q3": 22.97,
+      "Pest_Q4": 5.46
+    },
+    "Narnaul||Sunflower": {
+      "Pest_Q1": 1.12,
+      "Pest_Q2": 15.3,
+      "Pest_Q3": 23.06,
+      "Pest_Q4": 3.37
+    },
+    "Narnaul||Tomato": {
+      "Pest_Q1": 25.15,
+      "Pest_Q2": 36.14,
+      "Pest_Q3": 18.49,
+      "Pest_Q4": 18.3
+    },
+    "Narnaul||Wheat": {
+      "Pest_Q1": -0.06,
+      "Pest_Q2": 11.91,
+      "Pest_Q3": 22.19,
+      "Pest_Q4": 4.59
+    },
+    "Narsipatnam||Arecanut": {
+      "Pest_Q1": 5.5,
+      "Pest_Q2": 9.34,
+      "Pest_Q3": 22.75,
+      "Pest_Q4": 5.25
+    },
+    "Narsipatnam||Bengal Gram": {
+      "Pest_Q1": 0.25,
+      "Pest_Q2": 10.25,
+      "Pest_Q3": 28.17,
+      "Pest_Q4": 5.48
+    },
+    "Narsipatnam||Coffee": {
+      "Pest_Q1": 31.49,
+      "Pest_Q2": 28.3,
+      "Pest_Q3": 26.05,
+      "Pest_Q4": 16.13
+    },
+    "Narsipatnam||Groundnut": {
+      "Pest_Q1": 2.46,
+      "Pest_Q2": 14.2,
+      "Pest_Q3": 24.7,
+      "Pest_Q4": 6.23
+    },
+    "Narsipatnam||Jowar": {
+      "Pest_Q1": 2.51,
+      "Pest_Q2": 10.275,
+      "Pest_Q3": 25.11,
+      "Pest_Q4": 6.199999999999999
+    },
+    "Narsipatnam||Maize": {
+      "Pest_Q1": 29.74,
+      "Pest_Q2": 28.04,
+      "Pest_Q3": 24.93,
+      "Pest_Q4": 13.49
+    },
+    "Narsipatnam||Mango": {
+      "Pest_Q1": 16.36,
+      "Pest_Q2": 19.74,
+      "Pest_Q3": 12.79,
+      "Pest_Q4": 10.04
+    },
+    "Narsipatnam||Onion": {
+      "Pest_Q1": 28.490000000000002,
+      "Pest_Q2": 35.09,
+      "Pest_Q3": 7.41,
+      "Pest_Q4": 5.785
+    },
+    "Narsipatnam||Pepper": {
+      "Pest_Q1": 19.35,
+      "Pest_Q2": 17.9,
+      "Pest_Q3": 12.69,
+      "Pest_Q4": 7.29
+    },
+    "Narsipatnam||Ragi": {
+      "Pest_Q1": 1.435,
+      "Pest_Q2": 9.05,
+      "Pest_Q3": 19.305,
+      "Pest_Q4": 3.855
+    },
+    "Narsipatnam||Sugarcane": {
+      "Pest_Q1": 4.12,
+      "Pest_Q2": 31.834999999999997,
+      "Pest_Q3": 45.2,
+      "Pest_Q4": 8.895
+    },
+    "Narsipatnam||Sunflower": {
+      "Pest_Q1": 4.54,
+      "Pest_Q2": 12.8,
+      "Pest_Q3": 25.2,
+      "Pest_Q4": 6.41
+    },
+    "Narsipatnam||Tomato": {
+      "Pest_Q1": 0.93,
+      "Pest_Q2": 10.52,
+      "Pest_Q3": 28.39,
+      "Pest_Q4": 3.98
+    },
+    "Narsipatnam||Wheat": {
+      "Pest_Q1": 28.94,
+      "Pest_Q2": 23.55,
+      "Pest_Q3": 19.0,
+      "Pest_Q4": 13.03
+    },
+    "Pandaripur||Arecanut": {
+      "Pest_Q1": 24.17,
+      "Pest_Q2": 25.3,
+      "Pest_Q3": 17.31,
+      "Pest_Q4": 6.82
+    },
+    "Pandaripur||Bengal Gram": {
+      "Pest_Q1": 0.7100000000000001,
+      "Pest_Q2": 13.85,
+      "Pest_Q3": 23.555,
+      "Pest_Q4": 5.225
+    },
+    "Pandaripur||Coffee": {
+      "Pest_Q1": 1.96,
+      "Pest_Q2": 9.67,
+      "Pest_Q3": 25.07,
+      "Pest_Q4": 4.5
+    },
+    "Pandaripur||Cotton": {
+      "Pest_Q1": 13.239999999999998,
+      "Pest_Q2": 19.96,
+      "Pest_Q3": 20.32,
+      "Pest_Q4": 13.515
+    },
+    "Pandaripur||Groundnut": {
+      "Pest_Q1": 16.93,
+      "Pest_Q2": 22.14,
+      "Pest_Q3": 24.04,
+      "Pest_Q4": 7.765
+    },
+    "Pandaripur||Maize": {
+      "Pest_Q1": 4.42,
+      "Pest_Q2": 12.14,
+      "Pest_Q3": 29.87,
+      "Pest_Q4": 5.77
+    },
+    "Pandaripur||Mango": {
+      "Pest_Q1": 10.16,
+      "Pest_Q2": 18.685,
+      "Pest_Q3": 23.869999999999997,
+      "Pest_Q4": 8.46
+    },
+    "Pandaripur||Millet": {
+      "Pest_Q1": 22.85,
+      "Pest_Q2": 28.9,
+      "Pest_Q3": 15.7,
+      "Pest_Q4": 23.01
+    },
+    "Pandaripur||Onion": {
+      "Pest_Q1": 3.95,
+      "Pest_Q2": 9.96,
+      "Pest_Q3": 23.24,
+      "Pest_Q4": 1.84
+    },
+    "Pandaripur||Pepper": {
+      "Pest_Q1": 20.19,
+      "Pest_Q2": 23.17,
+      "Pest_Q3": 27.395,
+      "Pest_Q4": 11.215
+    },
+    "Pandaripur||Sunflower": {
+      "Pest_Q1": 2.6,
+      "Pest_Q2": 11.899999999999999,
+      "Pest_Q3": 27.939999999999998,
+      "Pest_Q4": 4.06
+    },
+    "Pandaripur||Turmeric": {
+      "Pest_Q1": 19.455000000000002,
+      "Pest_Q2": 22.53,
+      "Pest_Q3": 23.91,
+      "Pest_Q4": 7.33
+    },
+    "Pandaripur||Wheat": {
+      "Pest_Q1": 16.59,
+      "Pest_Q2": 20.97,
+      "Pest_Q3": 10.66,
+      "Pest_Q4": 7.98
+    },
+    "Peddapalli||Arecanut": {
+      "Pest_Q1": 1.07,
+      "Pest_Q2": 14.844999999999999,
+      "Pest_Q3": 25.475,
+      "Pest_Q4": 4.75
+    },
+    "Peddapalli||Bengal Gram": {
+      "Pest_Q1": 16.52,
+      "Pest_Q2": 21.53,
+      "Pest_Q3": 23.17,
+      "Pest_Q4": 8.93
+    },
+    "Peddapalli||Coffee": {
+      "Pest_Q1": 3.14,
+      "Pest_Q2": 8.1,
+      "Pest_Q3": 26.59,
+      "Pest_Q4": 4.67
+    },
+    "Peddapalli||Cotton": {
+      "Pest_Q1": 7.23,
+      "Pest_Q2": 64.73,
+      "Pest_Q3": 71.51,
+      "Pest_Q4": 14.31
+    },
+    "Peddapalli||Groundnut": {
+      "Pest_Q1": 17.375,
+      "Pest_Q2": 23.455,
+      "Pest_Q3": 23.37,
+      "Pest_Q4": 10.115
+    },
+    "Peddapalli||Maize": {
+      "Pest_Q1": 33.48,
+      "Pest_Q2": 34.48,
+      "Pest_Q3": 27.97,
+      "Pest_Q4": 15.84
+    },
+    "Peddapalli||Mango": {
+      "Pest_Q1": 21.55,
+      "Pest_Q2": 19.69,
+      "Pest_Q3": 12.03,
+      "Pest_Q4": 13.28
+    },
+    "Peddapalli||Millet": {
+      "Pest_Q1": 9.42,
+      "Pest_Q2": 63.77,
+      "Pest_Q3": 72.07,
+      "Pest_Q4": 17.24
+    },
+    "Peddapalli||Paddy": {
+      "Pest_Q1": 2.165,
+      "Pest_Q2": 9.19,
+      "Pest_Q3": 26.270000000000003,
+      "Pest_Q4": 5.24
+    },
+    "Peddapalli||Pepper": {
+      "Pest_Q1": 9.65,
+      "Pest_Q2": 62.61,
+      "Pest_Q3": 68.36,
+      "Pest_Q4": 13.89
+    },
+    "Peddapalli||Potato": {
+      "Pest_Q1": 31.63,
+      "Pest_Q2": 29.59,
+      "Pest_Q3": 24.59,
+      "Pest_Q4": 16.35
+    },
+    "Peddapalli||Ragi": {
+      "Pest_Q1": 28.1,
+      "Pest_Q2": 36.7,
+      "Pest_Q3": 6.2,
+      "Pest_Q4": 9.65
+    },
+    "Peddapalli||Sugarcane": {
+      "Pest_Q1": 26.78,
+      "Pest_Q2": 35.37,
+      "Pest_Q3": 19.55,
+      "Pest_Q4": 15.8
+    },
+    "Peddapalli||Tomato": {
+      "Pest_Q1": 3.17,
+      "Pest_Q2": 11.465,
+      "Pest_Q3": 29.11,
+      "Pest_Q4": 3.77
+    },
+    "Peddapalli||Wheat": {
+      "Pest_Q1": 18.729999999999997,
+      "Pest_Q2": 24.235,
+      "Pest_Q3": 27.6,
+      "Pest_Q4": 9.44
+    },
+    "Pollachi||Arecanut": {
+      "Pest_Q1": 20.46,
+      "Pest_Q2": 18.740000000000002,
+      "Pest_Q3": 15.309999999999999,
+      "Pest_Q4": 26.66
+    },
+    "Pollachi||Coffee": {
+      "Pest_Q1": 15.77,
+      "Pest_Q2": 7.29,
+      "Pest_Q3": 12.67,
+      "Pest_Q4": 27.24
+    },
+    "Pollachi||Cotton": {
+      "Pest_Q1": 32.08,
+      "Pest_Q2": 38.28,
+      "Pest_Q3": 11.07,
+      "Pest_Q4": 9.95
+    },
+    "Pollachi||Groundnut": {
+      "Pest_Q1": 4.49,
+      "Pest_Q2": 12.49,
+      "Pest_Q3": 29.62,
+      "Pest_Q4": 4.24
+    },
+    "Pollachi||Jowar": {
+      "Pest_Q1": 4.93,
+      "Pest_Q2": 11.51,
+      "Pest_Q3": 23.18,
+      "Pest_Q4": 4.63
+    },
+    "Pollachi||Maize": {
+      "Pest_Q1": 20.09,
+      "Pest_Q2": 27.47,
+      "Pest_Q3": 15.5,
+      "Pest_Q4": 10.66
+    },
+    "Pollachi||Mango": {
+      "Pest_Q1": 30.095,
+      "Pest_Q2": 31.409999999999997,
+      "Pest_Q3": 25.095,
+      "Pest_Q4": 15.325
+    },
+    "Pollachi||Onion": {
+      "Pest_Q1": 12.04,
+      "Pest_Q2": 9.92,
+      "Pest_Q3": 17.99,
+      "Pest_Q4": 24.58
+    },
+    "Pollachi||Paddy": {
+      "Pest_Q1": 29.255000000000003,
+      "Pest_Q2": 27.695,
+      "Pest_Q3": 25.29,
+      "Pest_Q4": 16.095
+    },
+    "Pollachi||Pepper": {
+      "Pest_Q1": 7.19,
+      "Pest_Q2": 30.64,
+      "Pest_Q3": 24.22,
+      "Pest_Q4": 13.39
+    },
+    "Pollachi||Potato": {
+      "Pest_Q1": 18.85,
+      "Pest_Q2": 24.47,
+      "Pest_Q3": 14.48,
+      "Pest_Q4": 10.17
+    },
+    "Pollachi||Tomato": {
+      "Pest_Q1": 3.29,
+      "Pest_Q2": 7.95,
+      "Pest_Q3": 27.43,
+      "Pest_Q4": 6.75
+    },
+    "Pollachi||Turmeric": {
+      "Pest_Q1": 16.45,
+      "Pest_Q2": 22.45,
+      "Pest_Q3": 9.59,
+      "Pest_Q4": 10.89
+    },
+    "Raichur||Bengal Gram": {
+      "Pest_Q1": 3.28,
+      "Pest_Q2": 13.15,
+      "Pest_Q3": 25.65,
+      "Pest_Q4": 5.34
+    },
+    "Raichur||Cotton": {
+      "Pest_Q1": 7.44,
+      "Pest_Q2": 59.5,
+      "Pest_Q3": 66.94,
+      "Pest_Q4": 14.875
+    },
+    "Raichur||Millet": {
+      "Pest_Q1": 6.205,
+      "Pest_Q2": 57.905,
+      "Pest_Q3": 65.265,
+      "Pest_Q4": 15.22
+    },
+    "Raichur||Onion": {
+      "Pest_Q1": 3.515,
+      "Pest_Q2": 36.695,
+      "Pest_Q3": 48.205,
+      "Pest_Q4": 10.135
+    },
+    "Raichur||Paddy": {
+      "Pest_Q1": 2.085,
+      "Pest_Q2": 10.405000000000001,
+      "Pest_Q3": 24.96,
+      "Pest_Q4": 4.16
+    },
+    "Raichur||Pepper": {
+      "Pest_Q1": 6.385,
+      "Pest_Q2": 55.730000000000004,
+      "Pest_Q3": 60.72,
+      "Pest_Q4": 13.370000000000001
+    },
+    "Raichur||Sunflower": {
+      "Pest_Q1": 3.915,
+      "Pest_Q2": 12.114999999999998,
+      "Pest_Q3": 28.189999999999998,
+      "Pest_Q4": 5.025
+    },
+    "Raichur||Tomato": {
+      "Pest_Q1": 3.1550000000000002,
+      "Pest_Q2": 11.625,
+      "Pest_Q3": 26.455,
+      "Pest_Q4": 5.175
+    },
+    "Raichur||Turmeric": {
+      "Pest_Q1": 8.29,
+      "Pest_Q2": 59.355000000000004,
+      "Pest_Q3": 66.25,
+      "Pest_Q4": 15.14
+    },
+    "Raichur||Wheat": {
+      "Pest_Q1": 3.95,
+      "Pest_Q2": 11.05,
+      "Pest_Q3": 27.8,
+      "Pest_Q4": 6.5
+    },
+    "Ranebennur||Arecanut": {
+      "Pest_Q1": 30.45,
+      "Pest_Q2": 32.22,
+      "Pest_Q3": 25.64,
+      "Pest_Q4": 14.16
+    },
+    "Ranebennur||Bengal Gram": {
+      "Pest_Q1": 13.08,
+      "Pest_Q2": 6.81,
+      "Pest_Q3": 8.95,
+      "Pest_Q4": 24.69
+    },
+    "Ranebennur||Coffee": {
+      "Pest_Q1": 5.565,
+      "Pest_Q2": 35.15,
+      "Pest_Q3": 48.795,
+      "Pest_Q4": 11.405000000000001
+    },
+    "Ranebennur||Cotton": {
+      "Pest_Q1": 4.73,
+      "Pest_Q2": 10.31,
+      "Pest_Q3": 28.65,
+      "Pest_Q4": 5.03
+    },
+    "Ranebennur||Groundnut": {
+      "Pest_Q1": 1.415,
+      "Pest_Q2": 6.93,
+      "Pest_Q3": 19.025,
+      "Pest_Q4": 1.955
+    },
+    "Ranebennur||Jowar": {
+      "Pest_Q1": 12.28,
+      "Pest_Q2": 7.21,
+      "Pest_Q3": 13.59,
+      "Pest_Q4": 24.36
+    },
+    "Ranebennur||Onion": {
+      "Pest_Q1": 12.505,
+      "Pest_Q2": 19.75,
+      "Pest_Q3": 21.53,
+      "Pest_Q4": 7.085000000000001
+    },
+    "Ranebennur||Paddy": {
+      "Pest_Q1": 8.315,
+      "Pest_Q2": 9.17,
+      "Pest_Q3": 18.19,
+      "Pest_Q4": 12.8
+    },
+    "Ranebennur||Pepper": {
+      "Pest_Q1": 2.975,
+      "Pest_Q2": 9.02,
+      "Pest_Q3": 25.375,
+      "Pest_Q4": 2.5549999999999997
+    },
+    "Ranebennur||Ragi": {
+      "Pest_Q1": 12.915,
+      "Pest_Q2": 19.285,
+      "Pest_Q3": 23.560000000000002,
+      "Pest_Q4": 9.379999999999999
+    },
+    "Ranebennur||Tomato": {
+      "Pest_Q1": 1.345,
+      "Pest_Q2": 12.85,
+      "Pest_Q3": 28.950000000000003,
+      "Pest_Q4": 4.404999999999999
+    },
+    "Ranebennur||Turmeric": {
+      "Pest_Q1": 26.8,
+      "Pest_Q2": 38.24,
+      "Pest_Q3": 8.8,
+      "Pest_Q4": 9.11
+    },
+    "Ranebennur||Wheat": {
+      "Pest_Q1": 9.75,
+      "Pest_Q2": 25.09,
+      "Pest_Q3": 25.92,
+      "Pest_Q4": 13.81
+    },
+    "Sakleshpur||Arecanut": {
+      "Pest_Q1": 15.490000000000002,
+      "Pest_Q2": 47.935,
+      "Pest_Q3": 45.775,
+      "Pest_Q4": 20.785
+    },
+    "Sakleshpur||Bengal Gram": {
+      "Pest_Q1": 0.53,
+      "Pest_Q2": 14.19,
+      "Pest_Q3": 28.61,
+      "Pest_Q4": 5.44
+    },
+    "Sakleshpur||Coffee": {
+      "Pest_Q1": 29.585,
+      "Pest_Q2": 27.810000000000002,
+      "Pest_Q3": 22.075,
+      "Pest_Q4": 14.965
+    },
+    "Sakleshpur||Groundnut": {
+      "Pest_Q1": 4.05,
+      "Pest_Q2": 11.92,
+      "Pest_Q3": 19.765,
+      "Pest_Q4": 2.04
+    },
+    "Sakleshpur||Jowar": {
+      "Pest_Q1": 3.885,
+      "Pest_Q2": 11.605,
+      "Pest_Q3": 26.285,
+      "Pest_Q4": 3.59
+    },
+    "Sakleshpur||Maize": {
+      "Pest_Q1": 14.21,
+      "Pest_Q2": 5.59,
+      "Pest_Q3": 10.43,
+      "Pest_Q4": 25.56
+    },
+    "Sakleshpur||Mango": {
+      "Pest_Q1": 17.96,
+      "Pest_Q2": 15.035,
+      "Pest_Q3": 14.344999999999999,
+      "Pest_Q4": 25.445
+    },
+    "Sakleshpur||Millet": {
+      "Pest_Q1": 9.605,
+      "Pest_Q2": 15.475,
+      "Pest_Q3": 21.299999999999997,
+      "Pest_Q4": 11.65
+    },
+    "Sakleshpur||Paddy": {
+      "Pest_Q1": 29.91,
+      "Pest_Q2": 33.39,
+      "Pest_Q3": 24.66,
+      "Pest_Q4": 17.64
+    },
+    "Sakleshpur||Pepper": {
+      "Pest_Q1": 20.16,
+      "Pest_Q2": 27.38,
+      "Pest_Q3": 13.33,
+      "Pest_Q4": 11.83
+    },
+    "Sakleshpur||Potato": {
+      "Pest_Q1": 2.28,
+      "Pest_Q2": 11.18,
+      "Pest_Q3": 27.06,
+      "Pest_Q4": 2.55
+    },
+    "Sakleshpur||Ragi": {
+      "Pest_Q1": 1.4,
+      "Pest_Q2": 15.29,
+      "Pest_Q3": 24.43,
+      "Pest_Q4": 4.04
+    },
+    "Sakleshpur||Sugarcane": {
+      "Pest_Q1": 1.2,
+      "Pest_Q2": 7.57,
+      "Pest_Q3": 17.52,
+      "Pest_Q4": 6.26
+    },
+    "Sakleshpur||Sunflower": {
+      "Pest_Q1": 8.265,
+      "Pest_Q2": 7.43,
+      "Pest_Q3": 16.080000000000002,
+      "Pest_Q4": 15.32
+    },
+    "Sakleshpur||Turmeric": {
+      "Pest_Q1": 20.09,
+      "Pest_Q2": 26.55,
+      "Pest_Q3": 14.24,
+      "Pest_Q4": 14.36
+    },
+    "Sathyamangalam||Arecanut": {
+      "Pest_Q1": 7.88,
+      "Pest_Q2": 59.4,
+      "Pest_Q3": 66.19,
+      "Pest_Q4": 13.2
+    },
+    "Sathyamangalam||Coffee": {
+      "Pest_Q1": 21.88,
+      "Pest_Q2": 23.83,
+      "Pest_Q3": 13.08,
+      "Pest_Q4": 8.54
+    },
+    "Sathyamangalam||Cotton": {
+      "Pest_Q1": 2.99,
+      "Pest_Q2": 10.12,
+      "Pest_Q3": 28.71,
+      "Pest_Q4": 5.41
+    },
+    "Sathyamangalam||Jowar": {
+      "Pest_Q1": 2.55,
+      "Pest_Q2": 13.51,
+      "Pest_Q3": 28.86,
+      "Pest_Q4": 5.75
+    },
+    "Sathyamangalam||Maize": {
+      "Pest_Q1": 22.29,
+      "Pest_Q2": 23.47,
+      "Pest_Q3": 17.29,
+      "Pest_Q4": 23.3
+    },
+    "Sathyamangalam||Mango": {
+      "Pest_Q1": 3.22,
+      "Pest_Q2": 10.74,
+      "Pest_Q3": 24.66,
+      "Pest_Q4": 6.63
+    },
+    "Sathyamangalam||Millet": {
+      "Pest_Q1": 3.52,
+      "Pest_Q2": 9.18,
+      "Pest_Q3": 23.2,
+      "Pest_Q4": 4.11
+    },
+    "Sathyamangalam||Onion": {
+      "Pest_Q1": 18.45,
+      "Pest_Q2": 23.63,
+      "Pest_Q3": 10.27,
+      "Pest_Q4": 9.34
+    },
+    "Sathyamangalam||Paddy": {
+      "Pest_Q1": 16.22,
+      "Pest_Q2": 21.92,
+      "Pest_Q3": 13.42,
+      "Pest_Q4": 12.27
+    },
+    "Sathyamangalam||Potato": {
+      "Pest_Q1": 25.7,
+      "Pest_Q2": 27.805,
+      "Pest_Q3": 19.43,
+      "Pest_Q4": 13.690000000000001
+    },
+    "Sathyamangalam||Ragi": {
+      "Pest_Q1": 1.88,
+      "Pest_Q2": 12.5,
+      "Pest_Q3": 31.42,
+      "Pest_Q4": 5.12
+    },
+    "Sathyamangalam||Sugarcane": {
+      "Pest_Q1": 12.025,
+      "Pest_Q2": 19.72,
+      "Pest_Q3": 19.96,
+      "Pest_Q4": 6.08
+    },
+    "Sathyamangalam||Tomato": {
+      "Pest_Q1": 29.59,
+      "Pest_Q2": 26.7,
+      "Pest_Q3": 24.31,
+      "Pest_Q4": 15.98
+    },
+    "Sathyamangalam||Turmeric": {
+      "Pest_Q1": 1.65,
+      "Pest_Q2": 12.76,
+      "Pest_Q3": 24.48,
+      "Pest_Q4": 4.76
+    },
+    "Shahpur||Arecanut": {
+      "Pest_Q1": 0.49,
+      "Pest_Q2": 13.76,
+      "Pest_Q3": 33.09,
+      "Pest_Q4": 3.04
+    },
+    "Shahpur||Bengal Gram": {
+      "Pest_Q1": 3.92,
+      "Pest_Q2": 8.49,
+      "Pest_Q3": 26.51,
+      "Pest_Q4": 4.62
+    },
+    "Shahpur||Cotton": {
+      "Pest_Q1": 24.675,
+      "Pest_Q2": 32.065,
+      "Pest_Q3": 14.155,
+      "Pest_Q4": 17.195
+    },
+    "Shahpur||Jowar": {
+      "Pest_Q1": 12.39,
+      "Pest_Q2": 10.79,
+      "Pest_Q3": 12.51,
+      "Pest_Q4": 5.51
+    },
+    "Shahpur||Maize": {
+      "Pest_Q1": 3.26,
+      "Pest_Q2": 16.86,
+      "Pest_Q3": 27.53,
+      "Pest_Q4": 5.3
+    },
+    "Shahpur||Millet": {
+      "Pest_Q1": 15.05,
+      "Pest_Q2": 17.96,
+      "Pest_Q3": 19.695,
+      "Pest_Q4": 13.845
+    },
+    "Shahpur||Onion": {
+      "Pest_Q1": 31.66,
+      "Pest_Q2": 29.39,
+      "Pest_Q3": 29.26,
+      "Pest_Q4": 16.59
+    },
+    "Shahpur||Paddy": {
+      "Pest_Q1": 1.745,
+      "Pest_Q2": 7.845,
+      "Pest_Q3": 27.905,
+      "Pest_Q4": 5.265
+    },
+    "Shahpur||Potato": {
+      "Pest_Q1": 14.39,
+      "Pest_Q2": 7.35,
+      "Pest_Q3": 12.77,
+      "Pest_Q4": 23.22
+    },
+    "Shahpur||Ragi": {
+      "Pest_Q1": 9.38,
+      "Pest_Q2": 8.68,
+      "Pest_Q3": 19.815,
+      "Pest_Q4": 15.055
+    },
+    "Shahpur||Sunflower": {
+      "Pest_Q1": 15.030000000000001,
+      "Pest_Q2": 21.675,
+      "Pest_Q3": 17.93,
+      "Pest_Q4": 6.755
+    },
+    "Shahpur||Turmeric": {
+      "Pest_Q1": 1.49,
+      "Pest_Q2": 6.995,
+      "Pest_Q3": 18.525,
+      "Pest_Q4": 4.4350000000000005
+    },
+    "Shahpur||Wheat": {
+      "Pest_Q1": 18.38,
+      "Pest_Q2": 20.959999999999997,
+      "Pest_Q3": 24.33,
+      "Pest_Q4": 10.7
+    },
+    "Shimoga||Arecanut": {
+      "Pest_Q1": 2.6399999999999997,
+      "Pest_Q2": 10.335,
+      "Pest_Q3": 24.795,
+      "Pest_Q4": 3.3549999999999995
+    },
+    "Shimoga||Coffee": {
+      "Pest_Q1": 1.5299999999999998,
+      "Pest_Q2": 9.620000000000001,
+      "Pest_Q3": 22.755000000000003,
+      "Pest_Q4": 3.34
+    },
+    "Shimoga||Groundnut": {
+      "Pest_Q1": 5.22,
+      "Pest_Q2": 55.96,
+      "Pest_Q3": 61.29,
+      "Pest_Q4": 17.5
+    },
+    "Shimoga||Maize": {
+      "Pest_Q1": 26.01,
+      "Pest_Q2": 28.81,
+      "Pest_Q3": 20.69,
+      "Pest_Q4": 11.26
+    },
+    "Shimoga||Mango": {
+      "Pest_Q1": 16.94,
+      "Pest_Q2": 22.97,
+      "Pest_Q3": 23.740000000000002,
+      "Pest_Q4": 16.175
+    },
+    "Shimoga||Millet": {
+      "Pest_Q1": 28.67,
+      "Pest_Q2": 33.54,
+      "Pest_Q3": 18.34,
+      "Pest_Q4": 25.73
+    },
+    "Shimoga||Paddy": {
+      "Pest_Q1": 0.6,
+      "Pest_Q2": 11.07,
+      "Pest_Q3": 32.08,
+      "Pest_Q4": 5.88
+    },
+    "Shimoga||Potato": {
+      "Pest_Q1": 12.59,
+      "Pest_Q2": 4.87,
+      "Pest_Q3": 11.66,
+      "Pest_Q4": 30.28
+    },
+    "Shimoga||Ragi": {
+      "Pest_Q1": 2.36,
+      "Pest_Q2": 14.58,
+      "Pest_Q3": 35.44,
+      "Pest_Q4": 4.26
+    },
+    "Shimoga||Sugarcane": {
+      "Pest_Q1": 14.495,
+      "Pest_Q2": 20.830000000000002,
+      "Pest_Q3": 13.82,
+      "Pest_Q4": 4.484999999999999
+    },
+    "Shimoga||Sunflower": {
+      "Pest_Q1": 11.015,
+      "Pest_Q2": 13.44,
+      "Pest_Q3": 15.575000000000001,
+      "Pest_Q4": 4.779999999999999
+    },
+    "Shimoga||Tomato": {
+      "Pest_Q1": 2.83,
+      "Pest_Q2": 14.63,
+      "Pest_Q3": 29.69,
+      "Pest_Q4": 7.77
+    },
+    "Shimoga||Wheat": {
+      "Pest_Q1": 3.09,
+      "Pest_Q2": 15.92,
+      "Pest_Q3": 24.43,
+      "Pest_Q4": 7.03
+    },
+    "Shivamogga||Arecanut": {
+      "Pest_Q1": 23.240000000000002,
+      "Pest_Q2": 27.884999999999998,
+      "Pest_Q3": 18.59,
+      "Pest_Q4": 23.240000000000002
+    },
+    "Shivamogga||Bengal Gram": {
+      "Pest_Q1": 22.32,
+      "Pest_Q2": 27.61,
+      "Pest_Q3": 19.2,
+      "Pest_Q4": 22.27
+    },
+    "Shivamogga||Millet": {
+      "Pest_Q1": 2.16,
+      "Pest_Q2": 13.024999999999999,
+      "Pest_Q3": 30.189999999999998,
+      "Pest_Q4": 5.109999999999999
+    },
+    "Shivamogga||Onion": {
+      "Pest_Q1": 25.08,
+      "Pest_Q2": 29.77,
+      "Pest_Q3": 18.93,
+      "Pest_Q4": 24.9
+    },
+    "Shivamogga||Paddy": {
+      "Pest_Q1": 2.605,
+      "Pest_Q2": 13.015,
+      "Pest_Q3": 31.229999999999997,
+      "Pest_Q4": 5.205
+    },
+    "Shivamogga||Pepper": {
+      "Pest_Q1": 23.645000000000003,
+      "Pest_Q2": 27.725,
+      "Pest_Q3": 20.265,
+      "Pest_Q4": 23.765
+    },
+    "Shivamogga||Sunflower": {
+      "Pest_Q1": 20.77,
+      "Pest_Q2": 26.02,
+      "Pest_Q3": 18.78,
+      "Pest_Q4": 21.08
+    },
+    "Shivamogga||Tomato": {
+      "Pest_Q1": 22.08,
+      "Pest_Q2": 28.71,
+      "Pest_Q3": 20.72,
+      "Pest_Q4": 24.4
+    },
+    "Shivamogga||Turmeric": {
+      "Pest_Q1": 11.835,
+      "Pest_Q2": 20.435,
+      "Pest_Q3": 26.314999999999998,
+      "Pest_Q4": 14.135
+    },
+    "Shivamogga||Wheat": {
+      "Pest_Q1": 13.34,
+      "Pest_Q2": 20.645,
+      "Pest_Q3": 25.405,
+      "Pest_Q4": 13.07
+    },
+    "Shrirampur||Arecanut": {
+      "Pest_Q1": 29.39,
+      "Pest_Q2": 34.44,
+      "Pest_Q3": 22.38,
+      "Pest_Q4": 11.63
+    },
+    "Shrirampur||Bengal Gram": {
+      "Pest_Q1": 38.25,
+      "Pest_Q2": 40.14,
+      "Pest_Q3": 29.3,
+      "Pest_Q4": 17.17
+    },
+    "Shrirampur||Coffee": {
+      "Pest_Q1": 1.87,
+      "Pest_Q2": 10.21,
+      "Pest_Q3": 21.98,
+      "Pest_Q4": 5.15
+    },
+    "Shrirampur||Groundnut": {
+      "Pest_Q1": 12.925,
+      "Pest_Q2": 42.67,
+      "Pest_Q3": 43.730000000000004,
+      "Pest_Q4": 12.105
+    },
+    "Shrirampur||Maize": {
+      "Pest_Q1": 9.975,
+      "Pest_Q2": 15.25,
+      "Pest_Q3": 17.05,
+      "Pest_Q4": 8.315000000000001
+    },
+    "Shrirampur||Millet": {
+      "Pest_Q1": -1.87,
+      "Pest_Q2": 9.4,
+      "Pest_Q3": 22.49,
+      "Pest_Q4": 3.64
+    },
+    "Shrirampur||Onion": {
+      "Pest_Q1": 13.175,
+      "Pest_Q2": 20.02,
+      "Pest_Q3": 20.345,
+      "Pest_Q4": 14.69
+    },
+    "Shrirampur||Paddy": {
+      "Pest_Q1": 4.25,
+      "Pest_Q2": 10.34,
+      "Pest_Q3": 32.01,
+      "Pest_Q4": 3.87
+    },
+    "Shrirampur||Pepper": {
+      "Pest_Q1": 27.42,
+      "Pest_Q2": 24.06,
+      "Pest_Q3": 22.8,
+      "Pest_Q4": 10.72
+    },
+    "Shrirampur||Potato": {
+      "Pest_Q1": 18.0,
+      "Pest_Q2": 20.47,
+      "Pest_Q3": 13.29,
+      "Pest_Q4": 8.48
+    },
+    "Shrirampur||Ragi": {
+      "Pest_Q1": 3.74,
+      "Pest_Q2": 11.29,
+      "Pest_Q3": 21.59,
+      "Pest_Q4": 4.07
+    },
+    "Shrirampur||Sugarcane": {
+      "Pest_Q1": 11.120000000000001,
+      "Pest_Q2": 12.989999999999998,
+      "Pest_Q3": 18.45,
+      "Pest_Q4": 7.555
+    },
+    "Shrirampur||Sunflower": {
+      "Pest_Q1": -0.03,
+      "Pest_Q2": 10.15,
+      "Pest_Q3": 23.87,
+      "Pest_Q4": 5.47
+    },
+    "Shrirampur||Tomato": {
+      "Pest_Q1": 0.65,
+      "Pest_Q2": 14.54,
+      "Pest_Q3": 23.42,
+      "Pest_Q4": 6.43
+    },
+    "Shrirampur||Turmeric": {
+      "Pest_Q1": 28.91,
+      "Pest_Q2": 34.35,
+      "Pest_Q3": 19.825000000000003,
+      "Pest_Q4": 13.645
+    },
+    "Sindhanur||Arecanut": {
+      "Pest_Q1": 31.259999999999998,
+      "Pest_Q2": 34.16,
+      "Pest_Q3": 27.795,
+      "Pest_Q4": 15.440000000000001
+    },
+    "Sindhanur||Bengal Gram": {
+      "Pest_Q1": 10.865,
+      "Pest_Q2": 16.75,
+      "Pest_Q3": 18.485,
+      "Pest_Q4": 6.96
+    },
+    "Sindhanur||Coffee": {
+      "Pest_Q1": 1.96,
+      "Pest_Q2": 13.94,
+      "Pest_Q3": 27.45,
+      "Pest_Q4": 6.61
+    },
+    "Sindhanur||Cotton": {
+      "Pest_Q1": 3.17,
+      "Pest_Q2": 12.75,
+      "Pest_Q3": 20.84,
+      "Pest_Q4": 4.36
+    },
+    "Sindhanur||Groundnut": {
+      "Pest_Q1": 2.98,
+      "Pest_Q2": 11.49,
+      "Pest_Q3": 26.17,
+      "Pest_Q4": 3.95
+    },
+    "Sindhanur||Jowar": {
+      "Pest_Q1": 34.03,
+      "Pest_Q2": 33.35,
+      "Pest_Q3": 28.66,
+      "Pest_Q4": 18.965
+    },
+    "Sindhanur||Maize": {
+      "Pest_Q1": 2.53,
+      "Pest_Q2": 12.12,
+      "Pest_Q3": 26.85,
+      "Pest_Q4": 5.42
+    },
+    "Sindhanur||Millet": {
+      "Pest_Q1": 3.54,
+      "Pest_Q2": 11.35,
+      "Pest_Q3": 23.38,
+      "Pest_Q4": 3.27
+    },
+    "Sindhanur||Onion": {
+      "Pest_Q1": 9.12,
+      "Pest_Q2": 7.765000000000001,
+      "Pest_Q3": 16.015,
+      "Pest_Q4": 15.49
+    },
+    "Sindhanur||Pepper": {
+      "Pest_Q1": 17.33,
+      "Pest_Q2": 24.22,
+      "Pest_Q3": 20.76,
+      "Pest_Q4": 8.29
+    },
+    "Sindhanur||Sugarcane": {
+      "Pest_Q1": 30.410000000000004,
+      "Pest_Q2": 30.869999999999997,
+      "Pest_Q3": 24.04,
+      "Pest_Q4": 19.25
+    },
+    "Sindhanur||Sunflower": {
+      "Pest_Q1": 15.049999999999999,
+      "Pest_Q2": 23.935,
+      "Pest_Q3": 14.525,
+      "Pest_Q4": 5.21
+    },
+    "Sindhanur||Turmeric": {
+      "Pest_Q1": 1.99,
+      "Pest_Q2": 10.185,
+      "Pest_Q3": 25.189999999999998,
+      "Pest_Q4": 3.06
+    },
+    "Siruguppa||Coffee": {
+      "Pest_Q1": 10.715,
+      "Pest_Q2": 21.915,
+      "Pest_Q3": 20.994999999999997,
+      "Pest_Q4": 15.48
+    },
+    "Siruguppa||Groundnut": {
+      "Pest_Q1": 26.27,
+      "Pest_Q2": 23.869999999999997,
+      "Pest_Q3": 22.2,
+      "Pest_Q4": 20.725
+    },
+    "Siruguppa||Jowar": {
+      "Pest_Q1": 26.88,
+      "Pest_Q2": 30.71,
+      "Pest_Q3": 23.94,
+      "Pest_Q4": 27.69
+    },
+    "Siruguppa||Mango": {
+      "Pest_Q1": 27.39,
+      "Pest_Q2": 30.33,
+      "Pest_Q3": 27.51,
+      "Pest_Q4": 15.22
+    },
+    "Siruguppa||Millet": {
+      "Pest_Q1": 33.43,
+      "Pest_Q2": 29.09,
+      "Pest_Q3": 27.33,
+      "Pest_Q4": 14.82
+    },
+    "Siruguppa||Onion": {
+      "Pest_Q1": 0.04,
+      "Pest_Q2": 11.58,
+      "Pest_Q3": 22.72,
+      "Pest_Q4": 6.8
+    },
+    "Siruguppa||Paddy": {
+      "Pest_Q1": 21.16,
+      "Pest_Q2": 26.0,
+      "Pest_Q3": 17.65,
+      "Pest_Q4": 22.9
+    },
+    "Siruguppa||Pepper": {
+      "Pest_Q1": 1.215,
+      "Pest_Q2": 11.620000000000001,
+      "Pest_Q3": 27.47,
+      "Pest_Q4": 2.6300000000000003
+    },
+    "Siruguppa||Potato": {
+      "Pest_Q1": 5.6,
+      "Pest_Q2": 11.34,
+      "Pest_Q3": 25.36,
+      "Pest_Q4": 6.34
+    },
+    "Siruguppa||Ragi": {
+      "Pest_Q1": 2.045,
+      "Pest_Q2": 11.735,
+      "Pest_Q3": 25.165,
+      "Pest_Q4": 3.01
+    },
+    "Siruguppa||Sugarcane": {
+      "Pest_Q1": 1.8699999999999999,
+      "Pest_Q2": 10.030000000000001,
+      "Pest_Q3": 21.485,
+      "Pest_Q4": 3.495
+    },
+    "Siruguppa||Tomato": {
+      "Pest_Q1": 21.64,
+      "Pest_Q2": 25.56,
+      "Pest_Q3": 17.57,
+      "Pest_Q4": 24.56
+    },
+    "Siruguppa||Turmeric": {
+      "Pest_Q1": 24.5,
+      "Pest_Q2": 32.4,
+      "Pest_Q3": 8.67,
+      "Pest_Q4": 8.96
+    },
+    "Tandur||Arecanut": {
+      "Pest_Q1": 8.12,
+      "Pest_Q2": 60.41,
+      "Pest_Q3": 64.5,
+      "Pest_Q4": 16.05
+    },
+    "Tandur||Bengal Gram": {
+      "Pest_Q1": 0.98,
+      "Pest_Q2": 13.39,
+      "Pest_Q3": 25.46,
+      "Pest_Q4": 4.03
+    },
+    "Tandur||Coffee": {
+      "Pest_Q1": 24.97,
+      "Pest_Q2": 31.195,
+      "Pest_Q3": 14.205,
+      "Pest_Q4": 15.015
+    },
+    "Tandur||Groundnut": {
+      "Pest_Q1": 16.53,
+      "Pest_Q2": 22.96,
+      "Pest_Q3": 11.4,
+      "Pest_Q4": 10.14
+    },
+    "Tandur||Maize": {
+      "Pest_Q1": 23.465,
+      "Pest_Q2": 23.064999999999998,
+      "Pest_Q3": 21.994999999999997,
+      "Pest_Q4": 9.765
+    },
+    "Tandur||Mango": {
+      "Pest_Q1": 10.07,
+      "Pest_Q2": 62.61,
+      "Pest_Q3": 70.74,
+      "Pest_Q4": 18.4
+    },
+    "Tandur||Millet": {
+      "Pest_Q1": 2.745,
+      "Pest_Q2": 12.19,
+      "Pest_Q3": 25.65,
+      "Pest_Q4": 5.949999999999999
+    },
+    "Tandur||Onion": {
+      "Pest_Q1": 1.24,
+      "Pest_Q2": 15.8,
+      "Pest_Q3": 31.35,
+      "Pest_Q4": 2.98
+    },
+    "Tandur||Pepper": {
+      "Pest_Q1": 3.11,
+      "Pest_Q2": 13.64,
+      "Pest_Q3": 24.74,
+      "Pest_Q4": 3.06
+    },
+    "Tandur||Sugarcane": {
+      "Pest_Q1": 15.81,
+      "Pest_Q2": 7.41,
+      "Pest_Q3": 13.4,
+      "Pest_Q4": 10.42
+    },
+    "Tandur||Tomato": {
+      "Pest_Q1": 8.89,
+      "Pest_Q2": 56.16,
+      "Pest_Q3": 62.47,
+      "Pest_Q4": 14.91
+    },
+    "Tandur||Turmeric": {
+      "Pest_Q1": 0.8300000000000001,
+      "Pest_Q2": 9.16,
+      "Pest_Q3": 18.509999999999998,
+      "Pest_Q4": 3.895
+    },
+    "Tandur||Wheat": {
+      "Pest_Q1": 18.515,
+      "Pest_Q2": 22.18,
+      "Pest_Q3": 27.244999999999997,
+      "Pest_Q4": 10.684999999999999
+    },
+    "Tiptur||Arecanut": {
+      "Pest_Q1": 2.35,
+      "Pest_Q2": 12.415,
+      "Pest_Q3": 23.83,
+      "Pest_Q4": 3.045
+    },
+    "Tiptur||Bengal Gram": {
+      "Pest_Q1": 3.0,
+      "Pest_Q2": 14.23,
+      "Pest_Q3": 26.299999999999997,
+      "Pest_Q4": 4.245
+    },
+    "Tiptur||Coffee": {
+      "Pest_Q1": 16.16,
+      "Pest_Q2": 23.16,
+      "Pest_Q3": 12.78,
+      "Pest_Q4": 10.79
+    },
+    "Tiptur||Cotton": {
+      "Pest_Q1": 4.06,
+      "Pest_Q2": 15.54,
+      "Pest_Q3": 26.53,
+      "Pest_Q4": 5.52
+    },
+    "Tiptur||Groundnut": {
+      "Pest_Q1": 11.65,
+      "Pest_Q2": 22.115000000000002,
+      "Pest_Q3": 20.58,
+      "Pest_Q4": 15.969999999999999
+    },
+    "Tiptur||Jowar": {
+      "Pest_Q1": 27.115000000000002,
+      "Pest_Q2": 32.650000000000006,
+      "Pest_Q3": 14.16,
+      "Pest_Q4": 14.915
+    },
+    "Tiptur||Maize": {
+      "Pest_Q1": 20.105,
+      "Pest_Q2": 21.465,
+      "Pest_Q3": 26.995,
+      "Pest_Q4": 9.455
+    },
+    "Tiptur||Mango": {
+      "Pest_Q1": 2.04,
+      "Pest_Q2": 11.46,
+      "Pest_Q3": 26.32,
+      "Pest_Q4": 7.46
+    },
+    "Tiptur||Onion": {
+      "Pest_Q1": 2.68,
+      "Pest_Q2": 14.43,
+      "Pest_Q3": 27.55,
+      "Pest_Q4": 6.92
+    },
+    "Tiptur||Paddy": {
+      "Pest_Q1": 2.67,
+      "Pest_Q2": 10.5,
+      "Pest_Q3": 22.37,
+      "Pest_Q4": 6.01
+    },
+    "Tiptur||Pepper": {
+      "Pest_Q1": 2.58,
+      "Pest_Q2": 9.25,
+      "Pest_Q3": 26.22,
+      "Pest_Q4": 4.84
+    },
+    "Tiptur||Ragi": {
+      "Pest_Q1": 3.88,
+      "Pest_Q2": 9.96,
+      "Pest_Q3": 21.27,
+      "Pest_Q4": 3.25
+    },
+    "Tiptur||Sunflower": {
+      "Pest_Q1": 19.715,
+      "Pest_Q2": 16.15,
+      "Pest_Q3": 15.145,
+      "Pest_Q4": 25.6
+    },
+    "Tiptur||Wheat": {
+      "Pest_Q1": 15.65,
+      "Pest_Q2": 7.19,
+      "Pest_Q3": 19.24,
+      "Pest_Q4": 13.03
+    },
+    "Tumakuru||Arecanut": {
+      "Pest_Q1": 2.9000000000000004,
+      "Pest_Q2": 9.785,
+      "Pest_Q3": 24.505000000000003,
+      "Pest_Q4": 3.545
+    },
+    "Tumakuru||Bengal Gram": {
+      "Pest_Q1": 28.189999999999998,
+      "Pest_Q2": 28.935000000000002,
+      "Pest_Q3": 21.125,
+      "Pest_Q4": 13.81
+    },
+    "Tumakuru||Cotton": {
+      "Pest_Q1": 14.09,
+      "Pest_Q2": 4.01,
+      "Pest_Q3": 12.58,
+      "Pest_Q4": 29.85
+    },
+    "Tumakuru||Jowar": {
+      "Pest_Q1": 3.53,
+      "Pest_Q2": 9.06,
+      "Pest_Q3": 25.51,
+      "Pest_Q4": 3.52
+    },
+    "Tumakuru||Maize": {
+      "Pest_Q1": 5.76,
+      "Pest_Q2": 12.82,
+      "Pest_Q3": 30.4,
+      "Pest_Q4": 4.65
+    },
+    "Tumakuru||Millet": {
+      "Pest_Q1": 16.055,
+      "Pest_Q2": 23.505000000000003,
+      "Pest_Q3": 18.94,
+      "Pest_Q4": 4.8100000000000005
+    },
+    "Tumakuru||Onion": {
+      "Pest_Q1": 7.59,
+      "Pest_Q2": 57.88,
+      "Pest_Q3": 66.93,
+      "Pest_Q4": 13.11
+    },
+    "Tumakuru||Paddy": {
+      "Pest_Q1": 23.255,
+      "Pest_Q2": 29.03,
+      "Pest_Q3": 18.485,
+      "Pest_Q4": 21.63
+    },
+    "Tumakuru||Pepper": {
+      "Pest_Q1": 37.72,
+      "Pest_Q2": 35.13,
+      "Pest_Q3": 29.32,
+      "Pest_Q4": 18.99
+    },
+    "Tumakuru||Ragi": {
+      "Pest_Q1": 13.445,
+      "Pest_Q2": 19.015,
+      "Pest_Q3": 26.064999999999998,
+      "Pest_Q4": 8.535
+    },
+    "Tumakuru||Sugarcane": {
+      "Pest_Q1": 16.935,
+      "Pest_Q2": 19.46,
+      "Pest_Q3": 24.735,
+      "Pest_Q4": 10.14
+    },
+    "Tumakuru||Sunflower": {
+      "Pest_Q1": -1.76,
+      "Pest_Q2": 6.98,
+      "Pest_Q3": 23.05,
+      "Pest_Q4": 1.19
+    },
+    "Tumakuru||Tomato": {
+      "Pest_Q1": 12.57,
+      "Pest_Q2": 21.96,
+      "Pest_Q3": 21.564999999999998,
+      "Pest_Q4": 12.895
+    },
+    "Tumakuru||Turmeric": {
+      "Pest_Q1": 22.16,
+      "Pest_Q2": 26.85,
+      "Pest_Q3": 18.42,
+      "Pest_Q4": 22.4
+    },
+    "Tumakuru||Wheat": {
+      "Pest_Q1": 0.43,
+      "Pest_Q2": 13.17,
+      "Pest_Q3": 29.05,
+      "Pest_Q4": 6.45
+    },
+    "Udumalpet||Arecanut": {
+      "Pest_Q1": 5.41,
+      "Pest_Q2": 53.3,
+      "Pest_Q3": 64.15,
+      "Pest_Q4": 12.72
+    },
+    "Udumalpet||Bengal Gram": {
+      "Pest_Q1": 3.49,
+      "Pest_Q2": 13.66,
+      "Pest_Q3": 24.1,
+      "Pest_Q4": 4.31
+    },
+    "Udumalpet||Groundnut": {
+      "Pest_Q1": 1.58,
+      "Pest_Q2": 13.385,
+      "Pest_Q3": 26.025,
+      "Pest_Q4": 5.275
+    },
+    "Udumalpet||Jowar": {
+      "Pest_Q1": 29.95,
+      "Pest_Q2": 29.45,
+      "Pest_Q3": 24.59,
+      "Pest_Q4": 10.31
+    },
+    "Udumalpet||Maize": {
+      "Pest_Q1": 16.07,
+      "Pest_Q2": 33.705,
+      "Pest_Q3": 28.73,
+      "Pest_Q4": 15.969999999999999
+    },
+    "Udumalpet||Mango": {
+      "Pest_Q1": 37.035,
+      "Pest_Q2": 38.7,
+      "Pest_Q3": 30.87,
+      "Pest_Q4": 17.47
+    },
+    "Udumalpet||Onion": {
+      "Pest_Q1": 1.96,
+      "Pest_Q2": 11.65,
+      "Pest_Q3": 30.41,
+      "Pest_Q4": 4.84
+    },
+    "Udumalpet||Paddy": {
+      "Pest_Q1": 5.11,
+      "Pest_Q2": 31.74,
+      "Pest_Q3": 40.77,
+      "Pest_Q4": 7.855
+    },
+    "Udumalpet||Pepper": {
+      "Pest_Q1": 8.04,
+      "Pest_Q2": 58.38,
+      "Pest_Q3": 64.94,
+      "Pest_Q4": 16.09
+    },
+    "Udumalpet||Potato": {
+      "Pest_Q1": 2.53,
+      "Pest_Q2": 13.12,
+      "Pest_Q3": 26.62,
+      "Pest_Q4": 3.45
+    },
+    "Udumalpet||Ragi": {
+      "Pest_Q1": 20.47,
+      "Pest_Q2": 27.13,
+      "Pest_Q3": 26.12,
+      "Pest_Q4": 18.64
+    },
+    "Udumalpet||Sunflower": {
+      "Pest_Q1": 34.51,
+      "Pest_Q2": 33.09,
+      "Pest_Q3": 27.68,
+      "Pest_Q4": 18.25
+    },
+    "Udumalpet||Tomato": {
+      "Pest_Q1": 19.22,
+      "Pest_Q2": 18.59,
+      "Pest_Q3": 13.68,
+      "Pest_Q4": 11.08
+    },
+    "Udumalpet||Wheat": {
+      "Pest_Q1": 28.61,
+      "Pest_Q2": 39.0,
+      "Pest_Q3": 9.12,
+      "Pest_Q4": 7.43
+    },
+    "Unjha||Arecanut": {
+      "Pest_Q1": 22.62,
+      "Pest_Q2": 27.51,
+      "Pest_Q3": 27.75,
+      "Pest_Q4": 15.65
+    },
+    "Unjha||Bengal Gram": {
+      "Pest_Q1": 5.39,
+      "Pest_Q2": 55.86,
+      "Pest_Q3": 62.67,
+      "Pest_Q4": 13.46
+    },
+    "Unjha||Coffee": {
+      "Pest_Q1": 3.96,
+      "Pest_Q2": 13.504999999999999,
+      "Pest_Q3": 25.805,
+      "Pest_Q4": 3.8
+    },
+    "Unjha||Cotton": {
+      "Pest_Q1": 24.09,
+      "Pest_Q2": 29.16,
+      "Pest_Q3": 18.77,
+      "Pest_Q4": 22.88
+    },
+    "Unjha||Groundnut": {
+      "Pest_Q1": 25.79,
+      "Pest_Q2": 36.01,
+      "Pest_Q3": 7.3,
+      "Pest_Q4": 10.02
+    },
+    "Unjha||Maize": {
+      "Pest_Q1": 7.375,
+      "Pest_Q2": 8.175,
+      "Pest_Q3": 16.2,
+      "Pest_Q4": 14.855
+    },
+    "Unjha||Mango": {
+      "Pest_Q1": 2.38,
+      "Pest_Q2": 10.25,
+      "Pest_Q3": 25.78,
+      "Pest_Q4": 2.35
+    },
+    "Unjha||Millet": {
+      "Pest_Q1": 1.35,
+      "Pest_Q2": 5.05,
+      "Pest_Q3": 18.17,
+      "Pest_Q4": 3.93
+    },
+    "Unjha||Onion": {
+      "Pest_Q1": 10.51,
+      "Pest_Q2": 17.355,
+      "Pest_Q3": 15.465,
+      "Pest_Q4": 7.739999999999999
+    },
+    "Unjha||Pepper": {
+      "Pest_Q1": 13.09,
+      "Pest_Q2": 17.634999999999998,
+      "Pest_Q3": 22.535,
+      "Pest_Q4": 14.685
+    },
+    "Unjha||Potato": {
+      "Pest_Q1": 23.195,
+      "Pest_Q2": 32.445,
+      "Pest_Q3": 11.33,
+      "Pest_Q4": 16.580000000000002
+    },
+    "Unjha||Sugarcane": {
+      "Pest_Q1": 0.09,
+      "Pest_Q2": 10.52,
+      "Pest_Q3": 22.16,
+      "Pest_Q4": 2.37
+    },
+    "Unjha||Sunflower": {
+      "Pest_Q1": 12.43,
+      "Pest_Q2": 5.88,
+      "Pest_Q3": 12.81,
+      "Pest_Q4": 18.96
+    },
+    "Unjha||Tomato": {
+      "Pest_Q1": 27.87,
+      "Pest_Q2": 26.56,
+      "Pest_Q3": 23.66,
+      "Pest_Q4": 13.08
+    },
+    "Unjha||Turmeric": {
+      "Pest_Q1": 11.13,
+      "Pest_Q2": 61.44,
+      "Pest_Q3": 71.6,
+      "Pest_Q4": 14.73
+    },
+    "Unjha||Wheat": {
+      "Pest_Q1": 4.05,
+      "Pest_Q2": 38.77,
+      "Pest_Q3": 48.975,
+      "Pest_Q4": 9.495000000000001
+    },
+    "Vijayapura||Arecanut": {
+      "Pest_Q1": 17.07,
+      "Pest_Q2": 17.93,
+      "Pest_Q3": 13.26,
+      "Pest_Q4": 7.01
+    },
+    "Vijayapura||Coffee": {
+      "Pest_Q1": 27.4,
+      "Pest_Q2": 28.77,
+      "Pest_Q3": 25.104999999999997,
+      "Pest_Q4": 13.7
+    },
+    "Vijayapura||Cotton": {
+      "Pest_Q1": -0.47,
+      "Pest_Q2": 12.87,
+      "Pest_Q3": 25.58,
+      "Pest_Q4": 7.46
+    },
+    "Vijayapura||Groundnut": {
+      "Pest_Q1": 24.84,
+      "Pest_Q2": 33.46,
+      "Pest_Q3": 7.72,
+      "Pest_Q4": 7.68
+    },
+    "Vijayapura||Jowar": {
+      "Pest_Q1": 14.559999999999999,
+      "Pest_Q2": 7.5200000000000005,
+      "Pest_Q3": 12.530000000000001,
+      "Pest_Q4": 25.72
+    },
+    "Vijayapura||Maize": {
+      "Pest_Q1": 3.49,
+      "Pest_Q2": 14.47,
+      "Pest_Q3": 29.13,
+      "Pest_Q4": 6.31
+    },
+    "Vijayapura||Mango": {
+      "Pest_Q1": 7.09,
+      "Pest_Q2": 6.595,
+      "Pest_Q3": 12.940000000000001,
+      "Pest_Q4": 12.53
+    },
+    "Vijayapura||Millet": {
+      "Pest_Q1": 22.32,
+      "Pest_Q2": 26.83,
+      "Pest_Q3": 19.8,
+      "Pest_Q4": 21.9
+    },
+    "Vijayapura||Paddy": {
+      "Pest_Q1": 7.73,
+      "Pest_Q2": 60.63,
+      "Pest_Q3": 65.77,
+      "Pest_Q4": 14.62
+    },
+    "Vijayapura||Pepper": {
+      "Pest_Q1": 13.495,
+      "Pest_Q2": 21.73,
+      "Pest_Q3": 22.96,
+      "Pest_Q4": 15.93
+    },
+    "Vijayapura||Potato": {
+      "Pest_Q1": 2.62,
+      "Pest_Q2": 13.25,
+      "Pest_Q3": 25.79,
+      "Pest_Q4": 5.29
+    },
+    "Vijayapura||Ragi": {
+      "Pest_Q1": 24.53,
+      "Pest_Q2": 32.17,
+      "Pest_Q3": 6.44,
+      "Pest_Q4": 5.34
+    },
+    "Vijayapura||Sugarcane": {
+      "Pest_Q1": 2.49,
+      "Pest_Q2": 12.74,
+      "Pest_Q3": 24.89,
+      "Pest_Q4": 3.72
+    },
+    "Vijayapura||Tomato": {
+      "Pest_Q1": 35.29,
+      "Pest_Q2": 30.21,
+      "Pest_Q3": 28.59,
+      "Pest_Q4": 18.31
+    },
+    "Vijayapura||Turmeric": {
+      "Pest_Q1": 35.71,
+      "Pest_Q2": 35.56,
+      "Pest_Q3": 33.75,
+      "Pest_Q4": 18.72
+    },
+    "Vijayapura||Wheat": {
+      "Pest_Q1": 1.74,
+      "Pest_Q2": 10.09,
+      "Pest_Q3": 29.46,
+      "Pest_Q4": 4.7
+    },
+    "Wani||Arecanut": {
+      "Pest_Q1": 4.22,
+      "Pest_Q2": 14.08,
+      "Pest_Q3": 26.01,
+      "Pest_Q4": 6.02
+    },
+    "Wani||Coffee": {
+      "Pest_Q1": 8.925,
+      "Pest_Q2": 17.27,
+      "Pest_Q3": 17.169999999999998,
+      "Pest_Q4": 7.1499999999999995
+    },
+    "Wani||Cotton": {
+      "Pest_Q1": 1.49,
+      "Pest_Q2": 15.02,
+      "Pest_Q3": 31.13,
+      "Pest_Q4": 3.47
+    },
+    "Wani||Jowar": {
+      "Pest_Q1": 6.155,
+      "Pest_Q2": 38.08,
+      "Pest_Q3": 49.07,
+      "Pest_Q4": 9.775
+    },
+    "Wani||Maize": {
+      "Pest_Q1": 7.89,
+      "Pest_Q2": 55.42,
+      "Pest_Q3": 60.59,
+      "Pest_Q4": 15.51
+    },
+    "Wani||Mango": {
+      "Pest_Q1": 7.3,
+      "Pest_Q2": 9.395,
+      "Pest_Q3": 20.32,
+      "Pest_Q4": 15.94
+    },
+    "Wani||Millet": {
+      "Pest_Q1": 12.93,
+      "Pest_Q2": 5.98,
+      "Pest_Q3": 9.69,
+      "Pest_Q4": 24.33
+    },
+    "Wani||Onion": {
+      "Pest_Q1": 1.84,
+      "Pest_Q2": 7.44,
+      "Pest_Q3": 20.82,
+      "Pest_Q4": 3.41
+    },
+    "Wani||Paddy": {
+      "Pest_Q1": 6.39,
+      "Pest_Q2": 61.72,
+      "Pest_Q3": 69.27,
+      "Pest_Q4": 14.03
+    },
+    "Wani||Pepper": {
+      "Pest_Q1": 2.09,
+      "Pest_Q2": 12.45,
+      "Pest_Q3": 31.68,
+      "Pest_Q4": 3.5
+    },
+    "Wani||Potato": {
+      "Pest_Q1": 3.4,
+      "Pest_Q2": 14.44,
+      "Pest_Q3": 36.82,
+      "Pest_Q4": 4.93
+    },
+    "Wani||Ragi": {
+      "Pest_Q1": 21.165,
+      "Pest_Q2": 22.82,
+      "Pest_Q3": 13.875,
+      "Pest_Q4": 16.95
+    },
+    "Wani||Sugarcane": {
+      "Pest_Q1": 2.18,
+      "Pest_Q2": 10.73,
+      "Pest_Q3": 17.88,
+      "Pest_Q4": 4.66
+    },
+    "Wani||Sunflower": {
+      "Pest_Q1": 27.61,
+      "Pest_Q2": 29.62,
+      "Pest_Q3": 23.01,
+      "Pest_Q4": 24.49
+    },
+    "Wani||Tomato": {
+      "Pest_Q1": 26.665,
+      "Pest_Q2": 30.674999999999997,
+      "Pest_Q3": 17.3,
+      "Pest_Q4": 10.129999999999999
+    },
+    "Wani||Turmeric": {
+      "Pest_Q1": 16.42,
+      "Pest_Q2": 4.83,
+      "Pest_Q3": 12.0,
+      "Pest_Q4": 26.66
+    },
+    "Wani||Wheat": {
+      "Pest_Q1": 2.14,
+      "Pest_Q2": 12.89,
+      "Pest_Q3": 25.32,
+      "Pest_Q4": 6.29
+    },
+    "Yelandur||Arecanut": {
+      "Pest_Q1": 24.95,
+      "Pest_Q2": 28.95,
+      "Pest_Q3": 20.1,
+      "Pest_Q4": 27.33
+    },
+    "Yelandur||Bengal Gram": {
+      "Pest_Q1": 27.285,
+      "Pest_Q2": 27.16,
+      "Pest_Q3": 19.84,
+      "Pest_Q4": 12.045
+    },
+    "Yelandur||Coffee": {
+      "Pest_Q1": 2.6900000000000004,
+      "Pest_Q2": 10.254999999999999,
+      "Pest_Q3": 24.884999999999998,
+      "Pest_Q4": 4.555
+    },
+    "Yelandur||Cotton": {
+      "Pest_Q1": 0.48,
+      "Pest_Q2": 7.48,
+      "Pest_Q3": 20.52,
+      "Pest_Q4": 4.33
+    },
+    "Yelandur||Jowar": {
+      "Pest_Q1": 9.81,
+      "Pest_Q2": 17.355,
+      "Pest_Q3": 17.97,
+      "Pest_Q4": 7.525
+    },
+    "Yelandur||Maize": {
+      "Pest_Q1": 4.16,
+      "Pest_Q2": 10.13,
+      "Pest_Q3": 21.87,
+      "Pest_Q4": 2.75
+    },
+    "Yelandur||Mango": {
+      "Pest_Q1": 17.93,
+      "Pest_Q2": 7.08,
+      "Pest_Q3": 9.99,
+      "Pest_Q4": 28.85
+    },
+    "Yelandur||Millet": {
+      "Pest_Q1": 22.39,
+      "Pest_Q2": 27.7,
+      "Pest_Q3": 18.81,
+      "Pest_Q4": 22.02
+    },
+    "Yelandur||Onion": {
+      "Pest_Q1": 5.66,
+      "Pest_Q2": 21.049999999999997,
+      "Pest_Q3": 26.825,
+      "Pest_Q4": 9.875
+    },
+    "Yelandur||Paddy": {
+      "Pest_Q1": 19.61,
+      "Pest_Q2": 24.36,
+      "Pest_Q3": 26.759999999999998,
+      "Pest_Q4": 9.84
+    },
+    "Yelandur||Potato": {
+      "Pest_Q1": 3.51,
+      "Pest_Q2": 38.65,
+      "Pest_Q3": 48.825,
+      "Pest_Q4": 9.5
+    },
+    "Yelandur||Ragi": {
+      "Pest_Q1": 31.79,
+      "Pest_Q2": 33.37,
+      "Pest_Q3": 28.84,
+      "Pest_Q4": 15.98
+    },
+    "Yelandur||Sugarcane": {
+      "Pest_Q1": -0.43,
+      "Pest_Q2": 7.5,
+      "Pest_Q3": 26.65,
+      "Pest_Q4": 7.42
+    },
+    "Yelandur||Sunflower": {
+      "Pest_Q1": 0.23,
+      "Pest_Q2": 9.07,
+      "Pest_Q3": 22.58,
+      "Pest_Q4": 1.81
+    },
+    "Yermal||Arecanut": {
+      "Pest_Q1": 3.54,
+      "Pest_Q2": 13.79,
+      "Pest_Q3": 26.21,
+      "Pest_Q4": 4.51
+    },
+    "Yermal||Bengal Gram": {
+      "Pest_Q1": 2.28,
+      "Pest_Q2": 9.47,
+      "Pest_Q3": 27.85,
+      "Pest_Q4": 3.14
+    },
+    "Yermal||Coffee": {
+      "Pest_Q1": 0.79,
+      "Pest_Q2": 8.66,
+      "Pest_Q3": 19.06,
+      "Pest_Q4": 3.65
+    },
+    "Yermal||Groundnut": {
+      "Pest_Q1": 16.66,
+      "Pest_Q2": 27.75,
+      "Pest_Q3": 15.68,
+      "Pest_Q4": 21.83
+    },
+    "Yermal||Jowar": {
+      "Pest_Q1": 15.47,
+      "Pest_Q2": 6.48,
+      "Pest_Q3": 13.03,
+      "Pest_Q4": 24.82
+    },
+    "Yermal||Mango": {
+      "Pest_Q1": 4.35,
+      "Pest_Q2": 12.27,
+      "Pest_Q3": 22.61,
+      "Pest_Q4": 4.09
+    },
+    "Yermal||Millet": {
+      "Pest_Q1": 27.86,
+      "Pest_Q2": 31.86,
+      "Pest_Q3": 16.89,
+      "Pest_Q4": 14.57
+    },
+    "Yermal||Onion": {
+      "Pest_Q1": 3.51,
+      "Pest_Q2": 9.7,
+      "Pest_Q3": 18.07,
+      "Pest_Q4": 5.05
+    },
+    "Yermal||Pepper": {
+      "Pest_Q1": 35.17,
+      "Pest_Q2": 36.37,
+      "Pest_Q3": 31.9,
+      "Pest_Q4": 19.67
+    },
+    "Yermal||Potato": {
+      "Pest_Q1": 2.645,
+      "Pest_Q2": 12.19,
+      "Pest_Q3": 26.65,
+      "Pest_Q4": 3.04
+    },
+    "Yermal||Ragi": {
+      "Pest_Q1": 15.09,
+      "Pest_Q2": 14.62,
+      "Pest_Q3": 13.63,
+      "Pest_Q4": 9.31
+    },
+    "Yermal||Turmeric": {
+      "Pest_Q1": 0.36,
+      "Pest_Q2": 8.27,
+      "Pest_Q3": 19.72,
+      "Pest_Q4": 1.51
+    },
+    "Yermal||Wheat": {
+      "Pest_Q1": 22.61,
+      "Pest_Q2": 26.27,
+      "Pest_Q3": 17.63,
+      "Pest_Q4": 22.84
+    },
+    "Zaheerabad||Bengal Gram": {
+      "Pest_Q1": 3.39,
+      "Pest_Q2": 14.85,
+      "Pest_Q3": 28.96,
+      "Pest_Q4": 6.58
+    },
+    "Zaheerabad||Cotton": {
+      "Pest_Q1": 19.85,
+      "Pest_Q2": 22.96,
+      "Pest_Q3": 26.035,
+      "Pest_Q4": 12.275
+    },
+    "Zaheerabad||Groundnut": {
+      "Pest_Q1": 16.650000000000002,
+      "Pest_Q2": 20.634999999999998,
+      "Pest_Q3": 26.72,
+      "Pest_Q4": 9.754999999999999
+    },
+    "Zaheerabad||Maize": {
+      "Pest_Q1": 17.9,
+      "Pest_Q2": 45.14,
+      "Pest_Q3": 34.019999999999996,
+      "Pest_Q4": 11.455
+    },
+    "Zaheerabad||Mango": {
+      "Pest_Q1": 14.43,
+      "Pest_Q2": 24.634999999999998,
+      "Pest_Q3": 15.645,
+      "Pest_Q4": 6.59
+    },
+    "Zaheerabad||Onion": {
+      "Pest_Q1": 23.26,
+      "Pest_Q2": 25.56,
+      "Pest_Q3": 18.11,
+      "Pest_Q4": 20.62
+    },
+    "Zaheerabad||Paddy": {
+      "Pest_Q1": 20.58,
+      "Pest_Q2": 24.42,
+      "Pest_Q3": 11.35,
+      "Pest_Q4": 9.07
+    },
+    "Zaheerabad||Pepper": {
+      "Pest_Q1": 11.84,
+      "Pest_Q2": 14.200000000000001,
+      "Pest_Q3": 20.54,
+      "Pest_Q4": 7.88
+    },
+    "Zaheerabad||Ragi": {
+      "Pest_Q1": 5.695,
+      "Pest_Q2": 8.935,
+      "Pest_Q3": 17.265,
+      "Pest_Q4": 14.575
+    },
+    "Zaheerabad||Sugarcane": {
+      "Pest_Q1": 2.05,
+      "Pest_Q2": 15.22,
+      "Pest_Q3": 29.27,
+      "Pest_Q4": 7.03
+    },
+    "Zaheerabad||Sunflower": {
+      "Pest_Q1": 15.094999999999999,
+      "Pest_Q2": 27.1,
+      "Pest_Q3": 13.25,
+      "Pest_Q4": 6.89
+    },
+    "Zaheerabad||Tomato": {
+      "Pest_Q1": 24.025,
+      "Pest_Q2": 26.965,
+      "Pest_Q3": 10.405000000000001,
+      "Pest_Q4": 9.225
+    },
+    "Zaheerabad||Turmeric": {
+      "Pest_Q1": 24.205,
+      "Pest_Q2": 20.68,
+      "Pest_Q3": 19.765,
+      "Pest_Q4": 20.835
+    }
+  }
+}

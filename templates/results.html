@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>🌾 Ultimate Crop Insights — Dashboard</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Optional: icons (uses emoji + simple inline SVGs) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+  /* ===============================
+     ULTIMATE BEAST DASHBOARD CSS
+     - lots of variables for theme tuning
+     - large readable sizes, animations, grid layout
+     - polished cards, modals, sliders, tooltips
+     =============================== */
+
+  :root{
+    --bg-1: #f6fff8;
+    --bg-2: #eef7ff;
+    --panel-bg: #ffffff;
+    --accent: #027a48;   /* deep green */
+    --accent-2:#0b7bcc;  /* blue */
+    --danger: #e64545;
+    --muted: #64748b;
+    --glass: rgba(255,255,255,0.85);
+    --radius-lg: 14px;
+    --radius-md: 10px;
+    --shadow-1: 0 6px 24px rgba(10,20,30,0.08);
+    --shadow-2: 0 3px 12px rgba(10,20,30,0.06);
+    --card-padding: 20px;
+    --max-width: 1400px;
+    --font-base: "Inter", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));
+    font-family:var(--font-base); color:#0f172a; -webkit-font-smoothing:antialiased;}
+
+  /* top sticky header */
+  .topbar{
+    position:sticky; top:0; z-index:1200;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 26px; gap:16px;
+    background:linear-gradient(90deg, rgba(255,255,255,0.7), rgba(255,255,255,0.55));
+    backdrop-filter: blur(6px);
+    box-shadow: 0 3px 8px rgba(10,20,30,0.06);
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+  }
+  .top-left{display:flex;align-items:center;gap:14px}
+  .brand {
+    display:flex; gap:12px; align-items:center;
+  }
+  .logo {
+    width:48px;height:48px;border-radius:12px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:20px;
+    box-shadow: var(--shadow-2);
+  }
+  .title {font-size:20px;font-weight:700}
+  .subtitle {font-size:12px;color:var(--muted);margin-top:2px}
+
+  /* layout: left sidebar + content */
+  .layout {display:flex; width:100%; max-width:var(--max-width); margin:18px auto; gap:22px; padding:0 18px; box-sizing:border-box;}
+  .sidebar {
+    width:260px; flex:0 0 260px; background:linear-gradient(180deg,#052e1b,#074a2e); color:white;
+    border-radius:var(--radius-lg); padding:18px 18px 24px 18px; box-shadow:var(--shadow-1);
+    height:calc(100vh - 120px); position:sticky; top:80px; overflow:auto;
+    /* improvements to visually anchor the sidebar and avoid left empty gap */
+    margin-left:6px;
+  }
+  .sidebar .section-title{font-size:13px; color:rgba(255,255,255,0.95); margin-bottom:12px}
+  .nav {display:flex;flex-direction:column; gap:8px}
+  /* improved nav style: stronger contrast and subtle inner spacing so links are visible and not "blended" */
+  .nav a {
+    color:white; text-decoration:none;
+    padding:10px 14px; border-radius:10px;
+    display:flex; align-items:center; gap:10px; font-weight:700;
+    transition:all .18s; background:transparent; box-shadow:none;
+  }
+  .nav a:hover{ transform:translateX(6px); background:rgba(255,255,255,0.06)}
+  .nav a.active{background:rgba(255,255,255,0.08); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02)}
+  .nav a .emoji { filter:drop-shadow(0 1px 0 rgba(0,0,0,0.25)); }
+
+  .content {flex:1; min-width:700px; overflow:auto; }
+
+  /* top KPI row */
+  .kpi-row {display:flex; gap:18px; margin-bottom:18px; align-items:stretch}
+  .kpi {
+    background:var(--panel-bg); border-radius:12px; padding:18px; flex:1; box-shadow:var(--shadow-2);
+    display:flex; align-items:center; gap:14px; min-height:86px;
+  }
+  .kpi .icon {width:56px;height:56;border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-size:20px}
+  .kpi .kpi-value {font-size:22px; font-weight:700}
+  .kpi .kpi-label {font-size:12px;color:var(--muted)}
+
+  .big {font-size:28px}
+
+  /* card sections */
+  .card {background:var(--panel-bg); padding:var(--card-padding); border-radius:var(--radius-md); box-shadow:var(--shadow-2); margin-bottom:18px}
+  .card h3 {margin:0; margin-bottom:12px; color:var(--accent)}
+
+  /* tables */
+  .wide-table {width:100%; border-collapse:collapse; font-size:14px}
+  .wide-table th, .wide-table td {padding:10px 12px; border-bottom:1px solid rgba(15,23,42,0.06); text-align:center}
+  .wide-table th{background:linear-gradient(180deg,#f3fff7,#ffffff); font-weight:700; color:#052e1b}
+
+  /* badges */
+  .badge {padding:6px 10px; border-radius:8px; font-weight:700;color:white;font-size:13px}
+  .badge.green{background:var(--accent)}
+  .badge.red{background:var(--danger)}
+  .badge.gray{background:#94a3b8;color:white}
+
+  /* crop cards area */
+  .grid {display:grid; grid-template-columns: repeat(2, 1fr); gap:18px}
+  .full {grid-column:1 / -1}
+
+  /* crop detail card */
+  .crop-card {
+    background: linear-gradient(180deg,#ffffff,#fbfff9); border-radius:12px; padding:16px; box-shadow:var(--shadow-2);
+    display:flex; gap:12px; align-items:flex-start;
+  }
+  .crop-card .left {width:120px; display:flex; flex-direction:column; align-items:center; gap:8px}
+  .crop-img {width:96px;height:72px;border-radius:8px; background:linear-gradient(90deg,#dff6e9,#c7f0e0); display:flex; align-items:center; justify-content:center; font-weight:700; color:#075a34}
+  .crop-name {font-weight:800; font-size:18px}
+  .mini {font-size:12px; color:var(--muted)}
+
+  /* factor cards inside crop */
+  .factors {display:flex; flex-direction:column; gap:8px; width:100%}
+  .factor-row {display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px; border-radius:10px; background:linear-gradient(180deg,#fbfff9,#ffffff); box-shadow:0 2px 6px rgba(0,0,0,0.03)}
+  .factor-row .feat {font-weight:700}
+  .factor-row .delta {font-weight:700; font-size:13px}
+
+  /* modal */
+  .modal-backdrop {position:fixed; inset:0; background:rgba(3,11,8,0.45); display:none; align-items:center; justify-content:center; z-index:4000; padding:20px}
+  .modal {width:930px; max-width:95%; background:white; border-radius:12px; padding:18px; box-shadow:0 10px 40px rgba(0,0,0,0.45); max-height:90vh; overflow:auto;}
+  .modal .row {display:flex; gap:14px; align-items:flex-start}
+
+  /* sliders area */
+  .sim-row {display:flex; gap:12px; align-items:center}
+  .sim-col {flex:1; background:linear-gradient(180deg,#ffffff,#f7fff5); padding:12px; border-radius:10px; box-shadow:var(--shadow-2)}
+
+  /* controls */
+  .btn {background:var(--accent); color:white; padding:10px 14px; border-radius:10px; border:0; cursor:pointer; font-weight:800}
+  .btn.ghost {background:transparent; border:1px solid rgba(0,0,0,0.06); color:#0b1b14}
+
+  /* small helpers */
+  .muted {color:var(--muted); font-size:13px}
+  .right {text-align:right}
+  .left {text-align:left}
+
+  /* responsive */
+  @media (max-width:1100px){
+    .layout{flex-direction:column; padding:12px}
+    .sidebar{position:relative;width:100%; height:auto; order:2; margin-left:0}
+    .content{order:1}
+    .grid{grid-template-columns:1fr}
+  }
+
+  /* small animation */
+  .pulse {animation:pulse 1.6s infinite}
+  @keyframes pulse {0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+  /* export area */
+  .tools {display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+  .chip {padding:8px 12px; border-radius:999px; background:linear-gradient(90deg,#fff,#f7fff7); border:1px solid rgba(0,0,0,0.04); font-weight:700; color:#0f172a}
+
+  /* make canvas in modal responsive and visible */
+  .modal canvas { width:100% !important; height:240px !important; display:block; }
+
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar" role="banner">
+    <div class="top-left">
+      <div class="brand">
+        <div class="logo">AG</div>
+        <div>
+          <div class="title">SmartAg Crop Insights</div>
+          <div class="subtitle">Village: <strong>{{village}}</strong> · Quarterly analysis & what-if simulations</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-right" style="display:flex;align-items:center;gap:12px">
+      <div class="muted">Model: <strong>final_crop_model.pkl</strong></div>
+      <button class="btn" onclick="window.print()">Print Report</button>
+      <button class="btn ghost" id="downloadCSV">Download CSV</button>
+    </div>
+  </div>
+
+  <!-- LAYOUT -->
+  <div class="layout" role="main">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" role="navigation" aria-label="Dashboard navigation">
+      <div class="section-title">Navigation</div>
+      <nav class="nav">
+        <a href="#kpis"><span class="emoji">✨</span> <span>Overview</span></a>
+        <a href="#table"><span class="emoji">📈</span> <span>Yield Table</span></a>
+        <a href="#chart"><span class="emoji">📊</span> <span>Visual Comparison</span></a>
+        <a href="#factors"><span class="emoji">🔍</span> <span>Crop Factors</span></a>
+        <a href="#simulator"><span class="emoji">⚙</span> <span>What-If Simulator</span></a>
+        <a href="#pesticide"><span class="emoji">🧴</span> <span>Pesticide Use</span></a>
+        <a href="#weather"><span class="emoji">🌤</span> <span>Weather Summary</span></a>
+      </nav>
+
+      <div style="height:12px"></div>
+
+      <div class="section-title">Quick Tools</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="chip">Export: PNG, CSV, Print</div>
+        <div class="chip">Interactive charts</div>
+        <div class="chip">Per-crop deep-dive</div>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <div class="muted" style="font-size:12px">Tip: Click any crop name to open a detailed interactive modal with mini-charts, sliders and recommendations.</div>
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- KPI ROW -->
+      <section id="kpis" class="kpi-row">
+        <div class="kpi card">
+          <div class="icon" style="background:linear-gradient(45deg,var(--accent),#0294a5)">🌾</div>
+          <div>
+            <div class="kpi-value big">{{ "%.2f"|format(results[0].predicted_yield if results else 0) }}</div>
+            <div class="kpi-label">Top predicted yield (best crop)</div>
+          </div>
+        </div>
+
+        <div class="kpi card">
+          <div class="icon" style="background:linear-gradient(45deg,#f59e0b,#f97316)">⚖</div>
+          <div>
+            <div class="kpi-value">{{ "%.2f"|format((results[0].total_pesticide if results else 0)) }}</div>
+            <div class="kpi-label">Total pesticide (top crop)</div>
+          </div>
+        </div>
+
+        <div class="kpi card">
+          <div class="icon" style="background:linear-gradient(45deg,#60a5fa,#2563eb)">📅</div>
+          <div>
+            <div class="kpi-value">{{forecast | length}} params</div>
+            <div class="kpi-label">Forecast parameters used</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- YIELD TABLE -->
+      <section id="table" class="card">
+        <h3>Predicted Crop Yields (summary)</h3>
+        <div style="display:flex; gap:12px; align-items:center; justify-content:space-between; margin-bottom:8px">
+          <div class="muted">Sorted by predicted yield — base forecast (quarterly averages used)</div>
+          <div class="tools">
+            <label class="muted">Theme</label>
+            <button class="btn ghost" onclick="downloadPNG()">Export Chart PNG</button>
+            <button class="btn" onclick="openAllCropModals()">Open All Crop Details</button>
+          </div>
+        </div>
+
+        <table class="wide-table" aria-describedby="Predicted yields">
+          <thead>
+            <tr>
+              <th>Crop</th>
+              <th>Base Yield (hg/ha)</th>
+              <th>Total Pesticide</th>
+              <th>Yield (+20% Pest)</th>
+              <th>% Δ</th>
+              <th>Yield (−20% Pest)</th>
+              <th>% Δ</th>
+              <th>Yield (+10% Weather)</th>
+              <th>% Δ</th>
+              <th>Yield (−10% Weather)</th>
+              <th>% Δ</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in results %}
+            <tr>
+              <td style="text-align:left; padding-left:16px; font-weight:800; cursor:pointer; color:var(--accent)" onclick="openCropModal({{loop.index0}})">{{ r.crop }}</td>
+              <td>{{"%.2f"|format(r.predicted_yield)}}</td>
+              <td>{{"%.2f"|format(r.total_pesticide)}}</td>
+
+              <td>{{"%.2f"|format(r.yield_pest_plus)}}</td>
+              <td>
+                {% if r.pct_pest_plus is not none %}
+                  <span class="badge {{ 'green' if r.pct_pest_plus >=0 else 'red' }}">{{ "%+.2f"|format(r.pct_pest_plus) }}%</span>
+                {% else %}
+                  <span class="badge gray">N/A</span>
+                {% endif %}
+              </td>
+
+              <td>{{"%.2f"|format(r.yield_pest_minus)}}</td>
+              <td>
+                {% if r.pct_pest_minus is not none %}
+                  <span class="badge {{ 'green' if r.pct_pest_minus >=0 else 'red' }}">{{ "%+.2f"|format(r.pct_pest_minus) }}%</span>
+                {% else %}
+                  <span class="badge gray">N/A</span>
+                {% endif %}
+              </td>
+
+              <td>{{"%.2f"|format(r.yield_weather_plus)}}</td>
+              <td>
+                {% if r.pct_weather_plus is not none %}
+                  <span class="badge {{ 'green' if r.pct_weather_plus >=0 else 'red' }}">{{ "%+.2f"|format(r.pct_weather_plus) }}%</span>
+                {% else %}
+                  <span class="badge gray">N/A</span>
+                {% endif %}
+              </td>
+
+              <td>{{"%.2f"|format(r.yield_weather_minus)}}</td>
+              <td>
+                {% if r.pct_weather_minus is not none %}
+                  <span class="badge {{ 'green' if r.pct_weather_minus >=0 else 'red' }}">{{ "%+.2f"|format(r.pct_weather_minus) }}%</span>
+                {% else %}
+                  <span class="badge gray">N/A</span>
+                {% endif %}
+              </td>
+
+              <td><button class="btn ghost" onclick="openCropModal({{loop.index0}})">View</button></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+
+      <!-- CHARTS -->
+      <section id="chart" class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center">
+          <h3>Visual Comparison — All Crops</h3>
+          <div>
+            <button class="btn" onclick="toggleChartMode('pesticide')">Pesticide Impact</button>
+            <button class="btn ghost" onclick="toggleChartMode('weather')">Weather Impact</button>
+          </div>
+        </div>
+
+        <div class="chart-container" style="margin-top:10px; height:420px;">
+          <canvas id="globalYieldChart"></canvas>
+        </div>
+        <div class="muted" style="margin-top:10px">Use the buttons above to switch between pesticide-based scenarios and weather-based scenarios. Hover any bar for exact values and percent changes.</div>
+      </section>
+
+      <!-- FACTORS & INSIGHTS -->
+      <section id="factors" class="card">
+        <h3>Crop Factors & Detailed Insights</h3>
+        <div class="grid">
+          {% for r in results %}
+            <div class="crop-card">
+              <div class="left">
+                <div class="crop-img">{{ r.crop[:2] | upper }}</div>
+                <div style="text-align:center">
+                  <div class="crop-name">{{ r.crop }}</div>
+                  <div class="mini">Base: {{"%.2f"|format(r.predicted_yield)}}</div>
+                </div>
+              </div>
+
+              <div style="flex:1">
+                <div style="display:flex; gap:18px; align-items:center; justify-content:space-between">
+                  <div style="min-width:0">
+                    <div style="font-weight:800; font-size:15px">{{ r.crop }} — Top Factors</div>
+                    <div class="muted" style="margin-top:6px">Delta (Δ) = absolute yield change when this factor is increased slightly (+5% or small absolute bump) — percent ≈ Δ / base</div>
+                  </div>
+
+                  <div style="display:flex; gap:12px; align-items:center">
+                    <button class="btn" onclick="openCropModal({{loop.index0}})">Deep Dive</button>
+                    <button class="btn ghost" onclick="simulateCrop({{loop.index0}})">Simulate</button>
+                  </div>
+                </div>
+
+                <div style="margin-top:12px" class="factors">
+                  <div style="font-weight:700">Top Positive</div>
+                  {% for feat, delta, pct in r.top_positive_factors %}
+                    <div class="factor-row">
+                      <div class="left feat">{{feat}}</div>
+                      <div class="right delta" style="color:var(--accent)">{{ "%.4f"|format(delta) }} ({{"%.2f"|format(pct)}}%)</div>
+                    </div>
+                  {% endfor %}
+                </div>
+
+                <div style="margin-top:12px" class="factors">
+                  <div style="font-weight:700">Top Negative</div>
+                  {% for feat, delta, pct in r.top_negative_factors %}
+                    <div class="factor-row">
+                      <div class="left feat">{{feat}}</div>
+                      <div class="right delta" style="color:var(--danger)">{{ "%.4f"|format(delta) }} ({{"%.2f"|format(pct)}}%)</div>
+                    </div>
+                  {% endfor %}
+                </div>
+
+                <div style="margin-top:12px" class="interpretation-box">
+                  <div style="font-weight:800; margin-bottom:6px">Interpretation</div>
+                  <div class="muted">
+                    <strong>{{ r.crop }}</strong> shows strong responsiveness to <strong>{{ r.top_positive_factors[0][0] }}</strong>.
+                    That means improving this parameter (e.g., Q3 rainfall) tends to increase yields significantly.
+                   {% if r.top_negative_factors and r.top_negative_factors[0] %}
+<p>
+  Conversely, increases in <strong>{{ r.top_negative_factors[0][0] }}</strong> tend to reduce yield — monitor these carefully.
+</p>
+{% else %}
+<p>
+  Conversely, some factors may negatively impact yield — monitor soil, weather, and pest conditions carefully.
+</p>
+{% endif %}
+                    Recommendation: combine data-driven pesticide control with weather-aware scheduling to maximize returns.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- SIMULATOR -->
+      <section id="simulator" class="card">
+        <h3>⚙ What-If Simulator — Adjust & Preview</h3>
+        <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap">
+          <div style="flex:2; min-width:420px">
+            <div style="margin-bottom:12px" class="muted">Choose a crop to simulate instant changes. You will see predicted yield update as you tweak pesticide and weather sliders (client-side simulation using the current modelled sensitivities).</div>
+
+            <div style="display:flex; gap:10px; margin-bottom:10px">
+              <select id="simCrop" style="padding:10px; border-radius:8px; font-weight:700">
+                {% for r in results %}
+                  <option value="{{ loop.index0 }}">{{ r.crop }}</option>
+                {% endfor %}
+              </select>
+              <button class="btn" onclick="runSimulator()">Run Simulation</button>
+              <button class="btn ghost" onclick="resetSimulator()">Reset</button>
+            </div>
+
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:100%" class="sim-col">
+                <div style="font-weight:800; margin-bottom:6px">Pesticide Scale (%)</div>
+                <input id="simPest" type="range" min="0" max="200" value="100" step="1" style="width:100%">
+                <div class="muted">Scale pesticide usage relative to recommended median (100% = recommended)</div>
+              </div>
+
+              <div style="width:100%" class="sim-col">
+                <div style="font-weight:800; margin-bottom:6px">Weather Scale (%)</div>
+                <input id="simWeather" type="range" min="50" max="150" value="100" step="1" style="width:100%">
+                <div class="muted">Scale rainfall & temp together (100% = baseline forecast)</div>
+              </div>
+            </div>
+
+            <div style="margin-top:10px">
+              <div style="font-weight:700">Simulated Yield:</div>
+              <div id="simResult" style="font-size:20px; font-weight:800; color:var(--accent); margin-top:6px">—</div>
+              <div class="muted">This uses linear scaling on the modelled scenarios to provide quick interactive feedback (approximate, for exploration).</div>
+            </div>
+          </div>
+
+          <div style="flex:1; min-width:240px">
+            <div class="card" style="padding:12px">
+              <div style="font-weight:800; margin-bottom:6px">Legend & Tips</div>
+              <ul style="margin:0; padding-left:18px">
+                <li>Use pesticide scale to test +/- pesticide impacts.</li>
+                <li>Use weather scale to simulate drier/wetter or cooler/warmer seasons.</li>
+                <li>Charts below update with simulated values.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pesticide Table -->
+      <section id="pesticide" class="card">
+        <h3>Quarterly Pesticide Usage (medians used)</h3>
+        <table class="wide-table">
+          <thead>
+            <tr><th>Crop</th><th>Pest_Q1</th><th>Pest_Q2</th><th>Pest_Q3</th><th>Pest_Q4</th><th>Total</th></tr>
+          </thead>
+          <tbody>
+            {% for r in results %}
+            <tr>
+              <td style="text-align:left;padding-left:12px">{{r.crop}}</td>
+              <td>{{r.pest_per_quarter.Pest_Q1 or 0}}</td>
+              <td>{{r.pest_per_quarter.Pest_Q2 or 0}}</td>
+              <td>{{r.pest_per_quarter.Pest_Q3 or 0}}</td>
+              <td>{{r.pest_per_quarter.Pest_Q4 or 0}}</td>
+              <td>{{"%.2f"|format(r.total_pesticide)}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+
+      <!-- WEATHER -->
+      <section id="weather" class="card">
+        <h3>🌤 Average Weather — {{village}}</h3>
+        {% if village_avg %}
+        <div style="display:flex; gap:18px; align-items:center">
+          <div style="flex:1">
+            <div style="font-weight:800">Avg Temperature (°C)</div>
+            <div style="font-size:22px; font-weight:800">{{ village_avg.avg_temp }}</div>
+          </div>
+          <div style="flex:1">
+            <div style="font-weight:800">Avg Rainfall (mm)</div>
+            <div style="font-size:22px; font-weight:800">{{ village_avg.avg_rain }}</div>
+          </div>
+        </div>
+        {% else %}
+        <div class="muted">No village-level weather data available.</div>
+        {% endif %}
+      </section>
+
+      <!-- FOOTER -->
+      <div style="height:40px"></div>
+    </div>
+  </div>
+
+  <!-- CROPS MODALS (one per crop) -->
+  <div id="modalsRoot"></div>
+
+  <!-- modal template generation & scripts -->
+  <script>
+  /*************************************************************************
+   * Client-side data: transform Jinja arrays into JS arrays for charts
+   *
+   * Note: The template uses Jinja2 placeholders like {{village}} and results.
+   * This file remains frontend-only and keeps the original template syntax.
+   **************************************************************************/
+  const RESULTS = [
+    {% for r in results %}
+    {
+      crop: {{ r.crop | tojson }},
+      predicted_yield: {{ r.predicted_yield }},
+      total_pesticide: {{ r.total_pesticide }},
+      pest_per_quarter: {{ r.pest_per_quarter | tojson }},
+      yield_pest_plus: {{ r.yield_pest_plus }},
+      yield_pest_minus: {{ r.yield_pest_minus }},
+      yield_weather_plus: {{ r.yield_weather_plus }},
+      yield_weather_minus: {{ r.yield_weather_minus }},
+      pct_pest_plus: {{ r.pct_pest_plus if r.pct_pest_plus is not none else 'null' }},
+      pct_pest_minus: {{ r.pct_pest_minus if r.pct_pest_minus is not none else 'null' }},
+      pct_weather_plus: {{ r.pct_weather_plus if r.pct_weather_plus is not none else 'null' }},
+      pct_weather_minus: {{ r.pct_weather_minus if r.pct_weather_minus is not none else 'null' }},
+      top_positive_factors: {{ r.top_positive_factors | tojson }},
+      top_negative_factors: {{ r.top_negative_factors | tojson }}
+    },
+    {% endfor %}
+  ];
+
+  const FORECAST = {{ forecast | tojson }};
+  const VILLAGE = {{ village | tojson }};
+  const VILLAGE_AVG = {{ village_avg | tojson }};
+
+  /*************************************************************************
+   * Global chart: render base/pest/weather datasets
+   **************************************************************************/
+  let globalChart = null;
+  function drawGlobalChart(mode='pesticide') {
+    const canvas = document.getElementById('globalYieldChart');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    const labels = RESULTS.map(r => r.crop);
+    const baseData = RESULTS.map(r => r.predicted_yield);
+    const pestPlus = RESULTS.map(r => r.yield_pest_plus);
+    const pestMinus = RESULTS.map(r => r.yield_pest_minus);
+    const weatherPlus = RESULTS.map(r => r.yield_weather_plus);
+    const weatherMinus = RESULTS.map(r => r.yield_weather_minus);
+
+    const datasets = [
+      { label:'Base', data: baseData, backgroundColor:'rgba(16,185,129,0.85)' }
+    ];
+
+    if (mode==='pesticide') {
+      datasets.push({label:'+20% Pest', data:pestPlus, backgroundColor:'rgba(59,130,246,0.85)'});
+      datasets.push({label:'-20% Pest', data:pestMinus, backgroundColor:'rgba(239,68,68,0.85)'});
+    } else {
+      datasets.push({label:'+10% Weather', data:weatherPlus, backgroundColor:'rgba(59,130,246,0.85)'});
+      datasets.push({label:'-10% Weather', data:weatherMinus, backgroundColor:'rgba(239,68,68,0.85)'});
+    }
+
+    if (globalChart) { globalChart.destroy(); globalChart = null; }
+
+    globalChart = new Chart(ctx, {
+      type: 'bar',
+      data: { labels, datasets },
+      options: {
+        responsive:true, maintainAspectRatio:false,
+        plugins: {
+          legend:{position:'top'},
+          tooltip:{
+            callbacks:{
+              label: function(ctx){
+                const val = ctx.raw;
+                return ctx.dataset.label + ': ' + Number(val).toFixed(2);
+              }
+            }
+          }
+        },
+        scales: { y:{ beginAtZero:true } }
+      }
+    });
+  }
+
+  // initial draw (defer until DOMContentLoaded to ensure canvas sizing)
+  document.addEventListener('DOMContentLoaded', ()=>{
+    drawGlobalChart('pesticide');
+  });
+
+  // chart mode toggle
+  function toggleChartMode(mode){
+    drawGlobalChart(mode);
+  }
+
+  /*************************************************************************
+   * Per-crop modals: create DOM nodes for each crop popup (detail + mini charts)
+   * We'll keep a registry of mini charts so we can update them when sliders change
+   **************************************************************************/
+  const miniCharts = []; // store Chart instances for each modal
+
+  function createCropModals(){
+    const root = document.getElementById('modalsRoot');
+    RESULTS.forEach((r, idx) => {
+      const wrapper = document.createElement('div');
+      wrapper.id = 'modal-'+idx;
+      wrapper.className = 'modal-backdrop';
+      wrapper.style.display='none';
+      wrapper.setAttribute('aria-hidden', 'true');
+
+      wrapper.innerHTML = `
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-${idx}">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px">
+            <div>
+              <div id="modal-title-${idx}" style="font-weight:800; font-size:18px">${r.crop} — Deep Dive</div>
+              <div class="muted">Village: ${VILLAGE}</div>
+            </div>
+            <div style="display:flex; gap:8px">
+              <button class="btn ghost" type="button" onclick="closeCropModal(${idx})">Close</button>
+            </div>
+          </div>
+
+          <div class="row" style="display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap">
+            <div style="flex:1; min-width:280px">
+              <div style="display:flex; gap:12px; align-items:center; margin-bottom:8px">
+                <div style="width:84px;height:84px;border-radius:12px; background:linear-gradient(135deg,#dff7e9,#c7f0e0);display:flex;align-items:center;justify-content:center;font-weight:800;color:#075a34">${r.crop.slice(0,2).toUpperCase()}</div>
+                <div>
+                  <div style="font-weight:900; font-size:20px">${r.crop}</div>
+                  <div class="muted">Base yield: ${r.predicted_yield.toFixed(2)}</div>
+                  <div style="margin-top:8px;"><strong>Top positive:</strong> ${r.top_positive_factors.map(x=>x[0]).slice(0,3).join(', ')}</div>
+                  <div><strong>Top negative:</strong> ${r.top_negative_factors.map(x=>x[0]).slice(0,3).join(', ')}</div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:12px; align-items:center; margin-bottom:10px">
+                <div style="flex:1; min-width:160px;">
+                  <label style="font-weight:700">Pesticide multiplier</label>
+                  <input type="range" min="0" max="200" value="100" id="modalPest-${idx}" style="width:100%" />
+                  <div class="muted">Scale pesticide relative to median (100% = median)</div>
+                </div>
+                <div style="flex:1; min-width:160px;">
+                  <label style="font-weight:700">Weather multiplier</label>
+                  <input type="range" min="50" max="150" value="100" id="modalWeather-${idx}" style="width:100%" />
+                  <div class="muted">Scale weather (100% = baseline)</div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:12px; margin-bottom:10px; flex-wrap:wrap">
+                <div style="flex:1; min-width:200px; padding:12px; border-radius:8px; background:#f5fff8;">
+                  <div style="font-weight:800">Simulated Yield</div>
+                  <div id="modalSimResult-${idx}" style="font-size:20px; font-weight:800; color:var(--accent)">${r.predicted_yield.toFixed(2)}</div>
+                  <div class="muted">Updates as sliders move (client-side approximation)</div>
+                </div>
+
+                <div style="flex:1; min-width:200px; padding:12px; border-radius:8px; background:#fff7f7;">
+                  <div style="font-weight:800">Scenario Snapshot</div>
+                  <div class="muted">+20% pest -> ${r.yield_pest_plus.toFixed(2)} ; -20% pest -> ${r.yield_pest_minus.toFixed(2)}</div>
+                  <div class="muted">+10% weather -> ${r.yield_weather_plus.toFixed(2)} ; -10% weather -> ${r.yield_weather_minus.toFixed(2)}</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div style="width:420px; max-width:100%;">
+              <div style="font-weight:800; margin-bottom:6px">Mini Charts</div>
+              <canvas id="miniChart-${idx}" style="width:100%; height:240px"></canvas>
+
+              <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap">
+                <button class="btn" type="button" onclick="downloadCropPNG(${idx})">Download Chart</button>
+                <button class="btn ghost" type="button" onclick="resetModal(${idx})">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      root.appendChild(wrapper);
+
+      // small asynchronous setup to attach listeners once elements are in DOM
+      setTimeout(()=>{
+        const pest = document.getElementById('modalPest-'+idx);
+        const weather = document.getElementById('modalWeather-'+idx);
+        // attach listeners safely (some templates may not have sliders if data missing)
+        if (pest) pest.addEventListener('input', ()=> updateModalSim(idx));
+        if (weather) weather.addEventListener('input', ()=> updateModalSim(idx));
+        // create mini chart placeholder (we'll build Chart instance lazily when modal opens to ensure correct size)
+        miniCharts[idx] = null;
+      }, 50);
+    });
+  }
+
+  // create modals now
+  createCropModals();
+
+  // helper: build mini chart instance for an index (or update existing)
+  function buildOrUpdateMiniChart(idx, dataOverride) {
+    const canvas = document.getElementById('miniChart-'+idx);
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const r = RESULTS[idx];
+
+    // derive values (dataOverride can override base values e.g. after slider)
+    const base = (dataOverride && dataOverride.base != null) ? dataOverride.base : r.predicted_yield;
+    const pPlus = (dataOverride && dataOverride.pPlus != null) ? dataOverride.pPlus : r.yield_pest_plus;
+    const pMinus = (dataOverride && dataOverride.pMinus != null) ? dataOverride.pMinus : r.yield_pest_minus;
+    const wPlus = (dataOverride && dataOverride.wPlus != null) ? dataOverride.wPlus : r.yield_weather_plus;
+    const wMinus = (dataOverride && dataOverride.wMinus != null) ? dataOverride.wMinus : r.yield_weather_minus;
+
+    const labels = ['Base','+20%P','-20%P','+10%W','-10%W'];
+    const data = [base, pPlus, pMinus, wPlus, wMinus];
+
+    // If chart exists, update its data; else create new
+    if (miniCharts[idx] && typeof miniCharts[idx].destroy === 'function') {
+      miniCharts[idx].data.labels = labels;
+      miniCharts[idx].data.datasets[0].data = data;
+      miniCharts[idx].update();
+    } else {
+      // ensure previous instance destroyed (safety)
+      try { if (miniCharts[idx]) miniCharts[idx].destroy(); } catch(e){ /ignore/ }
+      miniCharts[idx] = new Chart(ctx, {
+        type:'bar',
+        data:{ labels, datasets:[{label:'Yield', data, backgroundColor:['#10b981','#06b6d4','#ef4444','#3b82f6','#f97316'] }]},
+        options:{responsive:true, maintainAspectRatio:false, scales:{y:{beginAtZero:true}}}
+      });
+    }
+  }
+
+  // open/close modal (ensure charts are drawn/resized and visible)
+  function openCropModal(idx){
+    const el = document.getElementById('modal-'+idx);
+    if (!el) return;
+    el.style.display='flex';
+    el.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow='hidden';
+    // build mini chart freshly so Chart.js has correct sizing
+    setTimeout(()=>{
+      // force chart to build with current baseline values
+      buildOrUpdateMiniChart(idx);
+      // recalc sim (in case user opened modal after changing sim)
+      updateModalSim(idx);
+      // attempt to resize global chart to avoid overlaps
+      if (globalChart && typeof globalChart.resize === 'function') globalChart.resize();
+    }, 80);
+  }
+  function closeCropModal(idx){
+    const el = document.getElementById('modal-'+idx);
+    if (!el) return;
+    el.style.display='none';
+    el.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow='';
+  }
+
+  function resetModal(idx){
+    const pestEl = document.getElementById('modalPest-'+idx);
+    const weatherEl = document.getElementById('modalWeather-'+idx);
+    if (pestEl) pestEl.value = 100;
+    if (weatherEl) weatherEl.value = 100;
+    updateModalSim(idx);
+  }
+
+  function updateModalSim(idx){
+    const r = RESULTS[idx];
+    const pestEl = document.getElementById('modalPest-'+idx);
+    const weatherEl = document.getElementById('modalWeather-'+idx);
+    const simResultEl = document.getElementById('modalSimResult-'+idx);
+    if (!r || !simResultEl) return;
+
+    const pestMult = pestEl ? (+pestEl.value / 100.0) : 1.0;
+    const weatherMult = weatherEl ? (+weatherEl.value / 100.0) : 1.0;
+
+    // Quick approximate simulation strategy (same as page-level):
+    let pestSim;
+    if (pestMult >= 1){
+      const t = (pestMult - 1) / (1.2 - 1); // map to 0..1 where 1.2 => full +20%
+      pestSim = r.predicted_yield + t*(r.yield_pest_plus - r.predicted_yield);
+    } else {
+      const t = (1 - pestMult) / (1 - 0.8); // map to 0..1 where 0.8 => full -20%
+      pestSim = r.predicted_yield - t*(r.predicted_yield - r.yield_pest_minus);
+    }
+
+    let weatherSim;
+    if (weatherMult >= 1){
+      const t = (weatherMult - 1) / (1.1 - 1);
+      weatherSim = r.predicted_yield + t*(r.yield_weather_plus - r.predicted_yield);
+    } else {
+      const t = (1 - weatherMult) / (1 - 0.9);
+      weatherSim = r.predicted_yield - t*(r.predicted_yield - r.yield_weather_minus);
+    }
+
+    // combine effects (average) -> final approx
+    const sim = (pestSim + weatherSim) / 2.0;
+    simResultEl.innerText = sim.toFixed(2);
+
+    // update the mini chart so users see simulated "base" updated visually
+    buildOrUpdateMiniChart(idx, {
+      base: sim,
+      pPlus: r.yield_pest_plus,
+      pMinus: r.yield_pest_minus,
+      wPlus: r.yield_weather_plus,
+      wMinus: r.yield_weather_minus
+    });
+  }
+
+  /*************************************************************************
+   * Simulator (page-level)
+   **************************************************************************/
+  function runSimulator(){
+    const idx = +document.getElementById('simCrop').value;
+    const pestScale = +document.getElementById('simPest').value / 100.0;
+    const weatherScale = +document.getElementById('simWeather').value / 100.0;
+    const r = RESULTS[idx];
+    // reuse modal approach approximation:
+    let pestSim;
+    if (pestScale >= 1){
+      const t = (pestScale - 1) / (1.2 - 1);
+      pestSim = r.predicted_yield + t*(r.yield_pest_plus - r.predicted_yield);
+    } else {
+      const t = (1 - pestScale) / (1 - 0.8);
+      pestSim = r.predicted_yield - t*(r.predicted_yield - r.yield_pest_minus);
+    }
+
+    let weatherSim;
+    if (weatherScale >= 1){
+      const t = (weatherScale - 1) / (1.1 - 1);
+      weatherSim = r.predicted_yield + t*(r.yield_weather_plus - r.predicted_yield);
+    } else {
+      const t = (1 - weatherScale) / (1 - 0.9);
+      weatherSim = r.predicted_yield - t*(r.predicted_yield - r.yield_weather_minus);
+    }
+
+    const sim = (pestSim + weatherSim)/2.0;
+    document.getElementById('simResult').innerText = sim.toFixed(2) + " (hg/ha)";
+
+    // highlight crop in chart visually
+    highlightCropOnChart(idx);
+  }
+
+  function resetSimulator(){
+    document.getElementById('simPest').value = 100;
+    document.getElementById('simWeather').value = 100;
+    document.getElementById('simResult').innerText = '—';
+    clearChartHighlight();
+  }
+
+  /*************************************************************************
+   * Chart highlight helpers
+   **************************************************************************/
+  function highlightCropOnChart(idx){
+    if (!globalChart) return;
+    // create border effect by toggling borderWidth & borderColor per item
+    globalChart.data.datasets.forEach(ds=>{
+      ds.borderWidth = ds.data.map((_,i)=> i === idx ? 3 : 0);
+      ds.borderColor = ds.data.map((_,i)=> i === idx ? '#1f2937' : 'rgba(0,0,0,0)');
+    });
+    globalChart.update();
+  }
+  function clearChartHighlight(){
+    if (!globalChart) return;
+    globalChart.data.datasets.forEach(ds=>{
+      ds.borderWidth = ds.data.map(()=>0);
+      ds.borderColor = ds.data.map(()=> 'rgba(0,0,0,0)');
+    });
+    globalChart.update();
+  }
+
+  /*************************************************************************
+   * Utility: download CSV & PNG
+   * Fixed filenames so they don't break when used inside JS runtime.
+   **************************************************************************/
+  function downloadCSV(){
+    const headers = ['Crop','BaseYield','TotalPest','Yield+20P','Pct+20P','Yield-20P','Pct-20P','Yield+10W','Pct+10W','Yield-10W','Pct-10W'];
+    const rows = RESULTS.map(r=> [
+      r.crop,
+      r.predicted_yield,
+      r.total_pesticide,
+      r.yield_pest_plus,
+      (r.pct_pest_plus != null) ? r.pct_pest_plus : '',
+      r.yield_pest_minus,
+      (r.pct_pest_minus != null) ? r.pct_pest_minus : '',
+      r.yield_weather_plus,
+      (r.pct_weather_plus != null) ? r.pct_weather_plus : '',
+      r.yield_weather_minus,
+      (r.pct_weather_minus != null) ? r.pct_weather_minus : ''
+    ]);
+    let csv = headers.join(',') + '\n';
+    rows.forEach(r => { csv += r.join(',') + '\n' });
+    const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href = url;
+    try {
+      a.download = 'crop_insights_' + (VILLAGE || 'village') + '.csv';
+    } catch(e) {
+      a.download = 'crop_insights.csv';
+    }
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+  document.getElementById('downloadCSV').addEventListener('click', downloadCSV);
+
+  function downloadPNG(){
+    if (!globalChart) return alert('Chart not ready');
+    const a = document.createElement('a');
+    a.href = globalChart.toBase64Image();
+    try {
+      a.download = 'yield_chart_' + (VILLAGE || 'village') + '.png';
+    } catch(e){
+      a.download = 'yield_chart.png';
+    }
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  function downloadCropPNG(idx){
+    const canvas = document.getElementById('miniChart-'+idx);
+    if (!canvas) return;
+    const a = document.createElement('a');
+    a.href = canvas.toDataURL('image/png');
+    const safeName = (RESULTS[idx] && RESULTS[idx].crop) ? RESULTS[idx].crop.replace(/\s+/g,'') : ('crop'+idx);
+    a.download = safeName + '_mini_chart.png';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
+  /*************************************************************************
+   * Utility: open all modals
+   **************************************************************************/
+  function openAllCropModals(){
+    RESULTS.forEach((_,i)=> openCropModal(i));
+  }
+
+  /*************************************************************************
+   * Sim helpers: simulateCrop called when user clicks "Simulate"
+   **************************************************************************/
+  function simulateCrop(idx){
+    document.getElementById('simCrop').value = idx;
+    document.getElementById('simPest').value = 100;
+    document.getElementById('simWeather').value = 100;
+    runSimulator();
+    // scroll to simulator
+    const el = document.getElementById('simulator');
+    if (el && el.scrollIntoView) el.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+
+  // global resize handling to keep charts tidy if window changes size
+  window.addEventListener('resize', ()=>{
+    if (globalChart && typeof globalChart.resize === 'function') globalChart.resize();
+    miniCharts.forEach(c => { try { if (c && typeof c.resize === 'function') c.resize(); } catch(e){} });
+  });
+
+  // ensure initial draw when DOM ready
+  document.addEventListener('DOMContentLoaded', function(){
+    // global chart is drawn earlier in DOMContentLoaded handler above,
+    // ensure it is present and sized correctly:
+    setTimeout(()=> {
+      drawGlobalChart('pesticide');
+    }, 60);
+  });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+  <style>
+    /* ==============================
+       GENERAL PAGE STYLING
+    ============================== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a192f;
+      color: #ccd6f6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .light-mode {
+      background-color: #f5f5f5;
+      color: #0a192f;
+    }
+
+    /* ==============================
+       NAVBAR FIXED AND STYLED
+    ============================== */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0a192f;
+      padding: 15px 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar a {
+      color: #64ffda;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ffffff;
+    }
+
+    .toggle-theme {
+      background: none;
+      border: 2px solid #64ffda;
+      color: #64ffda;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .toggle-theme:hover {
+      background-color: #64ffda;
+      color: #0a192f;
+    }
+
+    /* ==============================
+       QUICK LINKS FIX
+    ============================== */
+    .quick-links {
+      background-color: #112240;
+      color: #64ffda;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 120px 40px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .quick-links a {
+      color: #64ffda;
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .quick-links a:hover {
+      color: #ffffff;
+    }
+
+    /* ==============================
+       CHART CONTAINER FIX
+    ============================== */
+    .chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #0a192f;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s;
+    }
+
+    .light-mode .chart-container {
+      background-color: #e0e0e0;
+    }
+
+    canvas {
+      display: block;
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    /* ==============================
+       BUTTONS & CARDS
+    ============================== */
+    button {
+      cursor: pointer;
+      background-color: #64ffda;
+      color: #0a192f;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45e3c4;
+      transform: scale(1.05);
+    }
+
+    /* Smooth fade-in for content */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(15px);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ==============================
+       NAVIGATION BAR
+  ============================== -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#">Home</a>
+      <a href="#">Details</a>
+      <a href="#">Deep Dive</a>
+    </div>
+    <div class="nav-right">
+      <button class="toggle-theme" id="themeToggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- ==============================
+       QUICK LINKS SECTION
+  ============================== -->
+  <div class="quick-links fade-in">
+    <h2>Quick Links</h2>
+    <a href="#details">Details</a>
+    <a href="#deepdive">Deep Dive</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ==============================
+       DETAILS CHART SECTION
+  ============================== -->
+  <div id="details" class="chart-container fade-in">
+    <h2 style="text-align:center;">Details Bar Graph</h2>
+    <canvas id="detailsChart"></canvas>
+  </div>
+
+  <!-- ==============================
+       DEEP DIVE CHART SECTION
+  ============================== -->
+  <div id="deepdive" class="chart-container fade-in">
+    <h2 style="text-align:center;">Deep Dive Analysis</h2>
+    <canvas id="deepDiveChart"></canvas>
+  </div>
+
+  <!-- ==============================
+       SCRIPTS
+  ============================== -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // ==============================
+    // THEME TOGGLE (Light / Dark)
+    // ==============================
+    const body = document.body;
+    const themeToggle = document.getElementById('themeToggle');
+
+    // Load theme from localStorage
+    if (localStorage.getItem('theme') === 'light') {
+      body.classList.add('light-mode');
+      themeToggle.textContent = '🌞';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      if (body.classList.contains('light-mode')) {
+        themeToggle.textContent = '🌞';
+        localStorage.setItem('theme', 'light');
+      } else {
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // ==============================
+    // CHART.JS SETUP
+    // ==============================
+    const chartColors = [
+      '#64ffda', '#00bcd4', '#2196f3', '#ff9800', '#ff5252', '#cddc39'
+    ];
+
+    const detailsCtx = document.getElementById('detailsChart').getContext('2d');
+    const detailsChart = new Chart(detailsCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Crop A', 'Crop B', 'Crop C', 'Crop D'],
+        datasets: [{
+          label: 'Yield (tons)',
+          data: [12, 19, 7, 14],
+          backgroundColor: chartColors,
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { color: '#64ffda' } }
+        },
+        scales: {
+          x: { ticks: { color: '#64ffda' } },
+          y: { ticks: { color: '#64ffda' } }
+        }
+      }
+    });
+
+    const deepDiveCtx = document.getElementById('deepDiveChart').getContext('2d');
+    const deepDiveChart = new Chart(deepDiveCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Soil', 'Rain', 'Fertilizer', 'Sunlight'],
+        datasets: [{
+          label: 'Impact Score',
+          data: [8, 12, 10, 6],
+          backgroundColor: chartColors.reverse(),
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { labels: { color: '#64ffda' } }
+        },
+        scales: {
+          x: { ticks: { color: '#64ffda' } },
+          y: { ticks: { color: '#64ffda' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

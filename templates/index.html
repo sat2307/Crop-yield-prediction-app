@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌾 Crop Recommendation Dashboard</title>
+
+<!-- External Fonts & Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+  :root {
+    --green: #2de739ff;
+    --yellow: #ffcc33;
+    --sky: #4fb3ff;
+    --earth: #1b4332;
+    --cream: #f7fff1;
+    --dark: #062a1a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background: linear-gradient(180deg, var(--cream) 0%, #e6ffe6 40%, #dff9ff 100%);
+    color: var(--dark);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Background image of farm fields and sky */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    opacity: 0.25;
+    z-index: -1;
+  }
+
+  header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background: linear-gradient(90deg, rgba(76,175,80,0.9), rgba(56,142,60,0.9));
+    color: white;
+    border-bottom: 3px solid var(--yellow);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+
+  header h2 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+
+  header p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 5px;
+  }
+
+  /* Form Styling */
+  form {
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  form:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 45px rgba(0,0,0,0.15);
+  }
+
+  label {
+    display: inline-block;
+    width: 48%;
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  select, input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 5px;
+    border: 2px solid #cce8d2;
+    border-radius: 10px;
+    background: #f8fff8;
+    font-size: 15px;
+    color: var(--dark);
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  select:focus, input[type="number"]:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 10px rgba(60,176,67,0.3);
+  }
+
+  button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 14px 55px;
+    background: linear-gradient(135deg, var(--green), var(--sky));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 20px rgba(76,175,80,0.3);
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(79,179,255,0.4);
+  }
+
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--green), transparent);
+    margin: 35px 0;
+  }
+
+  /* Weather Cards */
+  #weather-recommendations {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #weather-recommendations h3 {
+    color: var(--green);
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+
+  .weather-card {
+    display: inline-block;
+    background: white;
+    border: 1px solid #c9eac9;
+    border-radius: 16px;
+    padding: 22px 20px;
+    width: 160px;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .weather-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(60,176,67,0.3);
+  }
+
+  .weather-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(60,176,67,0.1), rgba(255,255,255,0.4));
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+
+  .weather-card:hover::after { opacity: 1; }
+
+  .weather-card h4 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 17px;
+  }
+
+  .weather-card p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  /* Background illustration for crop theme */
+  .crop-banner {
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .crop-banner img {
+    max-width: 180px;
+    opacity: 0.9;
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.2));
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    color: #335533;
+    font-weight: 600;
+    background: #f4fff4;
+    border-top: 2px solid #e0f3e0;
+  }
+
+  footer span {
+    color: var(--green);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    label { width: 100%; }
+    form { padding: 30px 25px; }
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <h2><i class="ri-plant-line"></i> Crop Recommendation Dashboard</h2>
+  <p>Smart predictions for better harvest decisions 🌾</p>
+</header>
+
+<div class="crop-banner">
+  <img src="https://cdn-icons-png.flaticon.com/512/7656/7656134.png" alt="crop image">
+</div>
+
+<form action="/recommend" method="post">
+  <label for="village">🏡 Select Village:</label>
+  <select id="village" name="village" required>
+    <option value="">-- Select Village --</option>
+    {% for v in villages %}
+      <option value="{{v}}">{{v}}</option>
+    {% endfor %}
+  </select>
+
+  <div id="weather-recommendations">
+    {% if recommended_weather %}
+      <h3>🌤 Upcoming Weather Recommendations</h3>
+      <div>
+        {% for key, value in recommended_weather.items() %}
+        <div class="weather-card">
+          <h4>{{ key }}</h4>
+          <p>{{ value }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <hr>
+
+  <h3 style="text-align:center;color:var(--green);">🌦 Enter (or Edit) Quarterly Weather Details</h3>
+
+  {% set quarter_labels = {
+    1: 'Rainfall_Q1 (Jan–Mar)',
+    2: 'Rainfall_Q2 (Apr–Jun)',
+    3: 'Rainfall_Q3 (Jul–Sep)',
+    4: 'Rainfall_Q4 (Oct–Dec)'
+  } %}
+
+  {% for q in range(1,5) %}
+    <label>🌧 {{ quarter_labels[q] }}:
+      <input id="Rainfall_Q{{q}}" name="Rainfall_Q{{q}}" type="number" step="any" required>
+    </label>
+    <label>🌡 Temp_Q{{q}} ({{ ['Jan–Mar','Apr–Jun','Jul–Sep','Oct–Dec'][q-1] }}):
+      <input id="Temp_Q{{q}}" name="Temp_Q{{q}}" type="number" step="any" required>
+    </label>
+    <br>
+  {% endfor %}
+
+  <button type="submit"><i class="ri-seedling-line"></i> Get Crop Recommendation</button>
+</form>
+
+<footer>
+  Made with <span>💚</span> for sustainable agriculture
+</footer>
+
+<script>
+  // Fetch and animate weather cards dynamically
+  $("#village").on("change", function() {
+    const village = $(this).val();
+    if (!village) return;
+
+    $.getJSON("/get_weather/" + village, function(data) {
+      if (!data || Object.keys(data).length === 0) {
+        $("#weather-recommendations").html("<p>No weather data available for this village.</p>");
+        return;
+      }
+
+      let html = "<h3>🌤 Upcoming Weather Recommendations</h3><div>";
+      for (const [k, v] of Object.entries(data)) {
+        html += `<div class="weather-card">
+                    <h4>${k}</h4>
+                    <p data-target="${v}">0</p>
+                 </div>`;
+      }
+      html += "</div>";
+      $("#weather-recommendations").html(html);
+
+      $(".weather-card p").each(function() {
+        const $this = $(this);
+        const target = parseFloat($this.data("target"));
+        let count = 0;
+        const step = target / 50;
+        const interval = setInterval(() => {
+          count += step;
+          if(count >= target) {
+            $this.text(target.toFixed(2));
+            clearInterval(interval);
+          } else {
+            $this.text(count.toFixed(2));
+          }
+        }, 20);
+      });
+
+      const mapping = {
+        "Rainfall_Q1": "Rainfall_Q1",
+        "Temp_Q1": "Temp_Q1",
+        "Rainfall_Q2": "Rainfall_Q2",
+        "Temp_Q2": "Temp_Q2",
+        "Rainfall_Q3": "Rainfall_Q3",
+        "Temp_Q3": "Temp_Q3",
+        "Rainfall_Q4": "Rainfall_Q4",
+        "Temp_Q4": "Temp_Q4"
+      };
+
+      for (const [key, inputId] of Object.entries(mapping)) {
+        if(data[key] !== undefined) {
+          $("#" + inputId).val(data[key]);
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
