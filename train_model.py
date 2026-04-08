@@ -66,7 +66,8 @@ pipeline.fit(X_train, y_train)
 y_pred = pipeline.predict(X_test)
 r2 = r2_score(y_test, y_pred)
 mae = mean_absolute_error(y_test, y_pred)
-rmse = mean_squared_error(y_test, y_pred, squared=False)
+from sklearn.metrics import root_mean_squared_error
+rmse = root_mean_squared_error(y_test, y_pred)
 print(f"Model results: R2={r2:.4f}, MAE={mae:.2f}, RMSE={rmse:.2f}")
 
 joblib.dump(pipeline, os.path.join(OUT_DIR, "final_crop_model.pkl"))
