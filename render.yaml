@@ -2,6 +2,6 @@ services:
   - type: web
     name: crop-yield-app
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && python train_model.py
     startCommand: gunicorn app:app
     plan: free
